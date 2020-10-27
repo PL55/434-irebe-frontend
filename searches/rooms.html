@@ -4,7 +4,7 @@
     <script type="text/javascript" src="/data/courses.json">
       var data = JSON.parse(fs.readFileSync(filePath));
       html = ""
-      data.courses.array.forEach(element => {
+      data.array.forEach(element => {
         html += element.details.name + "\n"
       });
       document.getElementById("room").innerHTML = html
