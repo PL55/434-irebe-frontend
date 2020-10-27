@@ -1,16 +1,16 @@
 <html>
   <body>
     <p id="room"></p>
-    <script type="text/javascript" src="/data/courses.json">
+    <script src="/data/courses.json">
       // var txt = '{"name":"John", "age":30, "city":"New York"}'
       // var obj = JSON.parse(txt);
       // document.getElementById("room").innerHTML = obj.name + ", " + obj.age;
-      var data = JSON.parse(fs.readFileSync("/data/courses.json"));
-      html = ""
-      data.array.forEach(element => {
-        html += element.details.name + "\n"
-      });
-      document.getElementById("room").innerHTML = html
+      var data = JSON.parse(courses);
+      // html = ""
+      // data.array.forEach(element => {
+      //   html += element.details.name + "\n"
+      // });
+      document.getElementById("room").innerHTML = data
     </script>
     <script type="text/javascript" src="/data/schedule.json"></script>
   </body>
