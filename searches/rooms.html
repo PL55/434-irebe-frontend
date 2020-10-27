@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <p id="room"></p>
+    <script type="text/javascript" src="/data/courses.json">
+      var data = JSON.parse(fs.readFileSync(filePath));
+      html = ""
+      data.courses.array.forEach(element => {
+        html += element.details.name + "\n"
+      });
+      document.getElementById("room").innerHTML = html
+    </script>
+    <script type="text/javascript" src="/data/schedule.json"></script>
+  </body>
+</html>
