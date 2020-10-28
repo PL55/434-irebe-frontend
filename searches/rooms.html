@@ -1,16 +1,32 @@
 <html>
   <body>
     <p id="room"></p>
-    <script src="/data/courses.js">
-      // var txt = '{"name":"John", "age":30, "city":"New York"}'
-      // var obj = JSON.parse(txt);
-      // document.getElementById("room").innerHTML = obj.name + ", " + obj.age;
-      // var data = JSON.parse(courseData);
-      // html = ""
-      // data.array.forEach(element => {
-      //   html += element.details.name + "\n"
-      // });
-      document.getElementById("room").innerHTML = courseData
+    <script>
+      var data =  '  "Room_0318": { \
+      "Monday": [\
+        {"course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]} \
+      ], \
+      "Tuesday": [ \
+        {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]}, \
+        {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]}, \
+        {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]} \
+\
+      ], \
+      "Wednesday": [ \
+        {"course": "CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections": ["0101"], "instructors":["Elias Gonzalez"]} \
+      ], \
+      "Thursday": [ \
+        {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]}, \
+        {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]}, \
+        {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]} \
+      ], \
+      "Friday": [] \
+    } '
+      var obj = JSON.parse(data);
+      data.array.forEach(element => {
+        html += element.details.name + "\n"
+      });
+      document.getElementById("room").innerHTML = obj
     </script>
     <script type="text/javascript" src="/data/schedule.json"></script>
   </body>

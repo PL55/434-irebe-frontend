@@ -1,4 +1,4 @@
-var courseData = {
+{
 	"courses": {
 		"CMSC122": {
 			"details": {
