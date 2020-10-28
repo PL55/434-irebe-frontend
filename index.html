@@ -35,8 +35,8 @@
 
             clicked() {
                 var ex = this.obj.Room_0318
-                var message = ex.course + "taught by " + ex.instructors[0] + " section " + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
-                message += "\n There are currently " // + ex.open_seats + "open seats" 
+                var message = ex.course + "\ntaught by " + ex.instructors[0] + " section " + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
+                message += "\n There are currently " + ex.open_seats + "open seats\n" 
                 alert(message);
             }
 
