@@ -76,13 +76,14 @@
             constructor(props) {
                 super(props);
                 this.state = {
-                    ex = this.obj.Room_0318,
-                    data =  '\
+                   
+                };
+                this.data =  '\
                     {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
                     "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
                     ',
-                    obj = JSON.parse(this.data)
-                };
+                this.obj = JSON.parse(this.data)
+                this.ex = this.obj.Room_0318,
                 this.message = ""
             }
 
@@ -91,7 +92,7 @@
                     <div style={{width:"98%",height:"100%"}}>
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
                            
-
+                            YEs
                         </div>
                         {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
                     </div>
