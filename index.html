@@ -32,13 +32,14 @@
                 "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
                 ';
                 this.obj = JSON.parse(this.data)
+                this.message = ""
             }
 
             clicked() {
                 var ex = this.obj.Room_0318
-                var message = ex.course + "\ntaught by " + ex.instructors[0] + " section " 
+                this.message += ex.course + ":\ntaught by " + ex.instructors[0] + " section " 
                 + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
-                message += "\n There are currently " + ex.open_seats + " open seats\n" 
+                this.message += "\n There are currently " + ex.open_seats + " open seats\n" 
                 alert(message);
             }
 
@@ -63,6 +64,9 @@
                             backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                         }}>
                         {this.props.children}
+                        <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
+                            {this.message}
+                        </div>
                     </div>
                 );
             }
@@ -71,19 +75,22 @@
 
     <script type="text/babel">
 
-        class Floor extends React.Component {
+        class Room extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
-                    floor_number: 1,
+                    data =  '\
+                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
+                "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
+                ',
+                    obj = JSON.parse(this.data)
                 };
             }
 
             render() {
                 return (
                     <div style={{width:"98%",height:"100%"}}>
-                        <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>Floor {this.state.floor_number}</div>
-                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
+                        
                     </div>
                 );
             }
@@ -114,7 +121,7 @@
 
                         </div>
                         <div class="content-panel">
-                            <Floor/>
+                            <Room/>
                         </div>
                         <div class="footer"></div>
                     </div>
