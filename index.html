@@ -76,24 +76,23 @@
             constructor(props) {
                 super(props);
                 this.state = {
-                   
+                   message = "yes"
                 };
                 this.data =  '\
                     {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
                     "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
-                    ',
-                this.obj = JSON.parse(this.data)
-                this.ex = this.obj.Room_0318,
-                this.message = ""
+                    ';
+                this.obj = JSON.parse(this.data);
+                this.ex = this.obj.Room_0318;
+                this.message = "";
             }
 
             render() {
                 return (
                     <div style={{width:"98%",height:"100%"}}>
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
-                           {this.ex}
+                            yes
                         </div>
-                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
                     </div>
                 );
             }
