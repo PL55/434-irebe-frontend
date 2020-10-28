@@ -27,15 +27,15 @@
                 this.state = {
                     mouseOver: false
                 };
+                this.data =  '\
+                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
+                ';
+                this.obj = JSON.parse(this.data)
+                this.key = this.props.children
             }
 
             clicked() {
-                var data =  '\
-                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
-                ';
-                var obj = JSON.parse(this.data)
-                var key = this.props.children
-                alert("You clicked " + data);
+                alert("You clicked " + this.data);
             }
 
             mouseEnter() {
