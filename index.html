@@ -82,13 +82,14 @@
                 ',
                     obj = JSON.parse(this.data)
                 };
+                this.message = ""
             }
 
             render() {
                 return (
                     <div style={{width:"98%",height:"100%"}}>
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
-                            Room {this.state.floor_number}
+                            Floor {this.state.floor_number}
                         </div>
                     </div>
                 );
