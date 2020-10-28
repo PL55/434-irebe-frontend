@@ -72,16 +72,17 @@
 
     <script type="text/babel">
 
-        class Room extends React.Component {
+        class Floor extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
-                    data =  '\
+                    floor_number: 1,
+                };
+                this.data =  '\
                 {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
                 "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
-                ',
-                    obj = JSON.parse(this.data)
-                };
+                ';
+                this.obj = JSON.parse(this.data)
                 this.message = ""
             }
 
@@ -91,6 +92,7 @@
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
                             Floor {this.state.floor_number}
                         </div>
+                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
                     </div>
                 );
             }
@@ -121,7 +123,7 @@
 
                         </div>
                         <div class="content-panel">
-                            <Room/>
+                            {["Room_0318"].map(e => <Floor>{e}</Floor>)}
                         </div>
                         <div class="footer"></div>
                     </div>
