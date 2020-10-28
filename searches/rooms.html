@@ -21,13 +21,17 @@
         {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]} \
       ], \
       "Friday": []} \
-    } '
+    } ';
     var obj = JSON.parse(data);
       // var obj = JSON.parse(data);
       // data.array.forEach(element => {
       //   html += element.details.name + "\n"
       // });
-      document.getElementById("room").innerHTML = obj[0];
+      html = "";
+    obj.array.forEach(element => {
+      html += element
+    });
+      document.getElementById("room").innerHTML = obj;
     </script>
   </body>
 </html>
