@@ -27,10 +27,14 @@
                 this.state = {
                     mouseOver: false
                 };
+                this.data =  '\
+      {"Room_0318" { "course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
+    ';
             }
 
             clicked() {
-                alert("You clicked " + this.props.children);
+
+                alert("You clicked " + this.data[this.props.children]);
             }
 
             mouseEnter() {
@@ -100,7 +104,7 @@
                         <div class="side-panel">
                             <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {["A101", "B101", "C101", "D101"].map(e => <Button>{e}</Button>)}
+                                {["Room_0318"].map(e => <Button>{e}</Button>)}
                             </div>
 
                         </div>
