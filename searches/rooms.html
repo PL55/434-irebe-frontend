@@ -2,7 +2,7 @@
   <body>
     <p id="room"></p>
     <script>
-      var data =  '  { "Room_0318": { \
+      var data =  '  { \
       "Monday": [\
         {"course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]} \
       ], \
@@ -20,8 +20,9 @@
         {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]}, \
         {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]} \
       ], \
-      "Friday": []} \
-    } ';
+      "Friday": [] \
+    } \
+    ';
     var obj = JSON.parse(data);
       // var obj = JSON.parse(data);
       // data.array.forEach(element => {
@@ -29,7 +30,7 @@
       // });
     // obj.forEach(element => {
     // });
-    document.getElementById("room").innerHTML = obj;
+    document.getElementById("room").innerHTML = obj.Monday;
     </script>
   </body>
 </html>
