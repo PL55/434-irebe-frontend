@@ -76,22 +76,37 @@
             constructor(props) {
                 super(props);
                 this.state = {
-                   message = "yes"
+                    /* Currently hard coded to show how it would look in the actual app 
+                    will be using actual data from schedule.json in the final project */
+                   data : JSON.parse('{"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
+                   "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], \
+                   "instructors":["Elias Gonzalez"]}} ')
+
                 };
-                this.data =  '\
-                    {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
-                    "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
-                    ';
-                this.obj = JSON.parse(this.data);
-                this.ex = this.obj.Room_0318;
-                this.message = "";
+                // will fetch and display this data more dynamically after parsing the schedule.json file
+                this.course = this.state.data.Room_0318.course;
+                this.start = this.state.data.Room_0318.start_time;
+                this.end = this.state.data.Room_0318.end_time;
+                this.seats = this.state.data.Room_0318.seats;
+                this.open_seats = this.state.data.Room_0318.open_seats;
+                this.sections = this.state.data.Room_0318.sections
+                this.instructors = this.state.data.Room_0318.instructors
             }
+
+
 
             render() {
                 return (
                     <div style={{width:"98%",height:"100%"}}>
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
-                            yes
+                            Room 0318 
+                        </div>
+                        <div style = {{position:"relative",top:20,left:20, fontSize:20}}>
+                            {this.course}: <br/>
+                            Section: {this.sections} <br/>
+                            Instructor: {this.instructors} <br/>
+                            {this.start} - {this.end} <br/>
+                            {this.open_seats} / {this.seats} seats open     
                         </div>
                     </div>
                 );
