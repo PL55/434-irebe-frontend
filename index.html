@@ -149,19 +149,19 @@
             render() {
                 return (
                     <div class="home-panel" style={{ height: "100%" }}>
-                    <div style={{paddingTop:100}}></div>
+                        <div style={{paddingTop:100}}></div>
                         <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
                             <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "5vw" }}>Welcome to Iribe!</div>
                             <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "2vw", paddingTop: 10 }}>How may we assist you?</div>
                         </div>
 
-                        <div style={{ margin: 100, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
+                        <div style={{ margin: 100,marginBottom:0, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
 
                             <PanelButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></PanelButton>
-                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
-                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
-                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
-                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/clipboard.png" caption="Schedules" page="schedule" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/event.png" caption="Events" page="events" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/professor.png" caption="Faculty" page="faculty" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/gallery.png" caption="Gallery" page="gallery" setPage={this.props.setPage}></PanelButton>
                             <PanelButton image="public/question.png" caption="Help" page="help" setPage={this.props.setPage}></PanelButton>
                         </div>
 
