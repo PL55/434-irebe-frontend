@@ -28,15 +28,17 @@
                     mouseOver: false
                 };
                 this.data =  '\
-                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
+                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
+                "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
                 ';
                 this.obj = JSON.parse(this.data)
             }
 
             clicked() {
                 var ex = this.obj.Room_0318
-                var message = ex.course + "\ntaught by " + ex.instructors[0] + " section " + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
-                message += "\n There are currently " + ex.open_seats + "open seats\n" 
+                var message = ex.course + "\ntaught by " + ex.instructors[0] + " section " 
+                + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
+                message += "\n There are currently " + ex.open_seats + " open seats\n" 
                 alert(message);
             }
 
