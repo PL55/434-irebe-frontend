@@ -41,8 +41,26 @@ body {
   width: 100%;
 }
 
+.home-panel {
+  background-color: #999;
+  background: url("public/iribe.jpg") no-repeat center center;
+}
 
+.home-panel-button {
+  width:10vw;
+  height:10vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  filter: drop-shadow(0 0 0.75rem black);
+}
 
+.home-panel-button-picture {
+  width: 5vw;
+  height: 5vw;
+  margin: auto;
+  background-color: #f6f6f6;
+
+}
 
 
 

@@ -72,8 +72,8 @@
 
             render() {
                 return (
-                    <div style={{width:"98%",height:"100%"}}>
-                        <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>Floor {this.state.floor_number}</div>
+                    <div style={{ width: "98%", height: "100%" }}>
+                        <div style={{ position: "relative", top: 20, left: 20, fontSize: 40, fontWeight: "bold" }}>Floor {this.state.floor_number}</div>
                         {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
                     </div>
                 );
@@ -82,15 +82,14 @@
     </script>
 
     <script type="text/babel">
-        class Index extends React.Component {
+        class Map extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = { text: "" };
+                this.state = {};
             }
 
             componentDidMount() {
-                this.setState({ text: "yoyoyo" })
-                //You can run code here and set state!
+
             }
 
             render() {
@@ -105,11 +104,100 @@
 
                         </div>
                         <div class="content-panel">
-                            <Floor/>
+                            <Floor />
                         </div>
                         <div class="footer"></div>
                     </div>
                 );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class PanelButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <button class="home-panel-button" onClick={() => this.props.setPage(this.props.page)}>
+                        <div class="home-panel-button-picture" style={{ background: 'url("' + this.props.image + '") no-repeat center center', backgroundSize: "cover" }}></div>
+                        <div style={{ fontSize: "1.5vw" }}>{this.props.caption}</div>
+                    </button>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Home extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div class="home-panel" style={{ height: "100%" }}>
+                    <div style={{paddingTop:100}}></div>
+                        <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "5vw" }}>Welcome to Iribe!</div>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "2vw", paddingTop: 10 }}>How may we assist you?</div>
+                        </div>
+
+                        <div style={{ margin: 100, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
+
+                            <PanelButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/winch.png" caption="TBD" page="?" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/question.png" caption="Help" page="help" setPage={this.props.setPage}></PanelButton>
+                        </div>
+
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Index extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { page: "home" };
+                this.setPage = this.setPage.bind(this);
+            }
+
+            componentDidMount() {
+
+            }
+
+            setPage(page) {
+                this.setState({ page: page })
+            }
+
+            render() {
+
+                if (this.state.page == "home")
+                    return (
+                        <Home setPage={this.setPage} />
+                    );
+
+                else if (this.state.page == "map")
+                    return (
+                        <Map setPage={this.setPage} />
+                    );
             }
         }
     </script>
