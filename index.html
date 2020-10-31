@@ -11,8 +11,7 @@
 
     <!-- Import the React, React-Dom and Babel libraries from unpkg -->
     <script type="application/javascript" src="libraries/react.js"></script>
-    <script type="application/javascript"
-        src="libraries/react-dom.js"></script>
+    <script type="application/javascript" src="libraries/react-dom.js"></script>
     <script src="libraries/babel.js"></script>
 
 </head>
@@ -50,8 +49,9 @@
                         onMouseLeave={() => this.mouseLeave()}
                         onClick={() => this.clicked()}
                         style={{
-                            fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
-                            backgroundColor: (this.state.mouseOver ? "#333" : "#212121")
+                            color: "white",
+                            fontSize: (this.state.mouseOver ? 40 : 30), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
+                            backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                         }}>
                         {this.props.children}
                     </div>
@@ -59,6 +59,276 @@
             }
         }
     </script>
+
+    <script type="text/babel">
+
+        class Floor extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    floor_number: 1,
+                };
+            }
+
+            render() {
+                return (
+                    <div style={{width:"98%",height:"100%"}}>
+                        <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>Floor {this.state.floor_number}</div>
+                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
+                    </div>
+                );
+            }
+        }
+    </script>
+
+
+    <script type="text/babel">
+
+        class Schedule extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = JSON.parse(JSON.stringify({
+                        "Room_0318": {
+                        "Monday": [
+                            {"course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}
+                        ],
+                        "Tuesday": [
+                            {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]},
+                            {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]},
+                            {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]}
+
+                        ],
+                        "Wednesday": [
+                            {"course": "CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections": ["0101"], "instructors":["Elias Gonzalez"]}
+                        ],
+                        "Thursday": [
+                            {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]},
+                            {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]},
+                            {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]}
+                        ],
+                        "Friday": []
+                        },
+
+                        "Room_0324": {
+                        "Monday": [
+                            {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+                            {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+                            {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]},
+                            {"course":"CMSC320","start_time":"5:00pm","end_time":"6:15pm","seats":"291","open_seats":"0","sections":["0101"],"instructors":["Hector Corrada Bravo"]}
+                        ],
+                        "Tuesday": [
+                            {"course":"CMSC330","start_time":"9:30am","end_time":"10:45am","seats":"298","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208","0209"],"instructors":["Roger Eastman"]},
+                            {"course":"CMSC216","start_time":"11:00am","end_time":"12:15pm","seats":"277","open_seats":"102","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["A Shankar"]},
+                            {"course":"CMSC216","start_time":"12:30pm","end_time":"1:45pm","seats":"280","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208"],"instructors":["Ilchul Yoon"]},
+                            {"course":"CMSC250","start_time":"2:00pm","end_time":"3:15pm","seats":"237","open_seats":"1","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["Jason Filippou","Iason Filippou"]},
+                            {"course":"CMSC250","start_time":"3:30pm","end_time":"4:45pm","seats":"90","open_seats":"0","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Jason Filippou","Iason Filippou"]}
+                        ],
+                        "Wednesday": [
+                            {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+                            {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+                            {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]},
+                            {"course":"CMSC320","start_time":"5:00pm","end_time":"6:15pm","seats":"291","open_seats":"0","sections":["0101"],"instructors":["Hector Corrada Bravo"]}      
+                        ],
+                        "Thursday": [
+                            {"course":"CMSC330","start_time":"9:30am","end_time":"10:45am","seats":"298","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208","0209"],"instructors":["Roger Eastman"]},
+                            {"course":"CMSC216","start_time":"11:00am","end_time":"12:15pm","seats":"277","open_seats":"102","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["A Shankar"]},
+                            {"course":"CMSC216","start_time":"12:30pm","end_time":"1:45pm","seats":"280","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208"],"instructors":["Ilchul Yoon"]},
+                            {"course":"CMSC250","start_time":"2:00pm","end_time":"3:15pm","seats":"237","open_seats":"1","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["Jason Filippou","Iason Filippou"]},
+                            {"course":"CMSC250","start_time":"3:30pm","end_time":"4:45pm","seats":"90","open_seats":"0","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Jason Filippou","Iason Filippou"]}
+                        ],
+                        "Friday": [
+                            {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+                            {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+                            {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+                            {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+                            {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]}
+                        ]
+                        }
+                    }));
+                console.log(this.state);		
+            }
+            
+            render() {
+                return (
+                    <div class="table-container">
+                        <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
+                        <table class="schedule-table">
+                            <tr>
+                                <td class="time-column">&nbsp;</td>
+                                <th class="day-name">Mon</th>
+                                <th class="day-name">Tues</th>
+                                <th class="day-name">Wed</th>
+                                <th class="day-name">Thurs</th>
+                                <th class="day-name">Fri</th>
+                            </tr>
+
+                            <tr>
+                                <td class="main-hour">8:00 am</td>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="sub-hour">8:15 am</td>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="main-hour">8:30 am</td>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="sub-hour">8:45 am</td>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="sub-hour">8:50 am</td>
+                                <td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="main-hour">9:00 am</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 330</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 330</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                            </tr>
+                            <tr><td class="sub-hour">9:15 am</td></tr>
+                            <tr><td class="main-hour">9:30 am</td></tr>
+                            <tr><td class="sub-hour">9:45 am</td></tr>
+                            <tr><td class="sub-hour">9:50 am</td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">10:00 am</td>
+                                <td class="class-cell" rowspan="4">CMSC 351</td>
+                                <td class="class-cell" rowspan="4">CMSC 351</td>
+                                <td class="class-cell" rowspan="4">CMSC 351</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">10:15 am</td><td></td><td></td></tr>
+                            <tr><td class="main-hour">10:30 am</td></tr>
+                            <tr><td class="sub-hour">10:45 am</td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">10:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">11:00 am</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 216</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 216</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                            </tr>
+
+                            <tr><td class="sub-hour">11:15 am</td></tr>
+                            <tr><td class="main-hour">11:30 am</td></tr>
+                            <tr><td class="sub-hour">11:45 am</td></tr>
+                            <tr><td class="sub-hour">11:50 am</td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">12:00 pm</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">12:15 pm</td></tr>
+
+                            <tr>
+                                <td class="main-hour">12:30 pm</td>
+                                <td class="class-cell" rowspan="6">CMSC 216</td>
+                                <td class="class-cell" rowspan="6">CMSC 216</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">12:45 pm</td></tr>
+                            <tr><td class="sub-hour">12:50 pm</td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">1:00 pm</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">1:15 pm</td></tr>
+                            <tr><td class="main-hour">1:30 pm</td></tr>
+                            <tr><td class="sub-hour">1:45 pm</td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">1:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">2:00 pm</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 250</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="6">CMSC 250</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                            </tr>
+
+                            <tr><td class="sub-hour">2:15 pm</td></tr>
+                            <tr><td class="main-hour">2:30 pm</td></tr>
+                            <tr><td class="sub-hour">2:45 pm</td></tr>
+                            <tr><td class="sub-hour">2:50 pm</td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">3:00 pm</td>
+                                <td class="class-cell" rowspan="4">CMSC 131</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                                <td class="class-cell" rowspan="4">CMSC 132</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">3:15 pm</td></tr>
+
+                            <tr>
+                                <td class="main-hour">3:30 pm</td>
+                                <td class="class-cell" rowspan="6">CMSC 250</td>
+                                <td class="class-cell" rowspan="6">CMSC 250</td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">3:45 pm</td></tr>
+                            <tr><td class="sub-hour">3:50 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">4:00 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">4:15 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">4:30 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">4:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">4:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">5:00 pm</td>
+                                <td class="class-cell" rowspan="6">CMSC 320</td>
+                                <td></td>
+                                <td class="class-cell" rowspan="6">CMSC 320</td>
+                                <td></td><td></td>
+                            </tr>
+                            
+                            <tr><td class="sub-hour">5:15 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">5:30 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">5:45 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">5:50 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">6:00 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">6:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            
+                        </table>
+                    </div>
+                );
+
+            }
+
+        }
+    </script>
+
+
+
 
     <script type="text/babel">
         class Index extends React.Component {
@@ -77,12 +347,16 @@
                     <div style={{ height: "100%", display: "inline" }}>
 
                         <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center" }}>Iribe Information Kiosk</div>
-                            {[1, 2, 3, 4, 5, "testing", "these", "are", "buttons", "using", "map!"].map(e => <Button>{e}</Button>)}
-                        </div>
-                        <div class="content-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Iribe Center</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {["Map", "Lecture Hall Schedule", "Faculty", "Events", "Help"].map(e => <Button>{e}</Button>)}
+                            </div>
 
                         </div>
+                        <div class="content-panel">
+                            <Schedule/>
+                        </div>
+                        <div class="footer"></div>
                     </div>
                 );
             }
@@ -90,7 +364,7 @@
     </script>
 
     <script type="text/babel">
-        //
+
         const rootElement = document.getElementById('root')
 
         function App() {
@@ -106,6 +380,9 @@
             rootElement
         )
     </script>
+
+
+    
 
 </body>
 
