@@ -99,10 +99,8 @@
                 return (
                     <div style={{width:"98%",height:"100%"}}>
                         <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
-                            Room 0318 
-                        </div>
+                            {this.course}: <br/>                        </div>
                         <div style = {{position:"relative",top:20,left:20, fontSize:20}}>
-                            {this.course}: <br/>
                             Section: {this.sections} <br/>
                             Instructor: {this.instructors} <br/>
                             {this.start} - {this.end} <br/>
@@ -131,7 +129,7 @@
                     <div style={{ height: "100%", display: "inline" }}>
 
                         <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Room Selected: </div>
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
                                 {["Room_0318"].map(e => <Button>{e}</Button>)}
                             </div>
