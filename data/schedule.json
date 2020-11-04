@@ -1,0 +1,71 @@
+{
+  "schedule": {
+    "Room_0318": {
+      "Monday": [
+        {"course":"CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}
+      ],
+      "Tuesday": [
+        {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]},
+        {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]},
+        {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]}
+
+      ],
+      "Wednesday": [
+        {"course": "CMSC389N", "start_time":"3:30pm", "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections": ["0101"], "instructors":["Elias Gonzalez"]}
+      ],
+      "Thursday": [
+        {"course":"CMSC423", "start_time":"11:00am", "end_time":"12:15pm", "seats":"95", "open_seats":"1", "sections":["0101"], "instructors":["Robert Patro"]},
+        {"course":"CMSC456", "start_time":"2:00pm",  "end_time":"3:15pm",  "seats":"60", "open_seats":"2", "sections":["0201"], "instructors":["Gorjan Alagic"]},
+        {"course":"CMSC414", "start_time":"3:30pm",  "end_time":"4:45pm",  "seats":"97", "open_seats":"0", "sections":["0201"], "instructors":["David Levin"]}
+      ],
+      "Friday": []
+    },
+
+    "Room_0324": {
+      "Monday": [
+        {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+        {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+        {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]},
+        {"course":"CMSC320","start_time":"5:00pm","end_time":"6:15pm","seats":"291","open_seats":"0","sections":["0101"],"instructors":["Hector Corrada Bravo"]}
+      ],
+      "Tuesday": [
+        {"course":"CMSC330","start_time":"9:30am","end_time":"10:45am","seats":"298","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208","0209"],"instructors":["Roger Eastman"]},
+        {"course":"CMSC216","start_time":"11:00am","end_time":"12:15pm","seats":"277","open_seats":"102","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["A Shankar"]},
+        {"course":"CMSC216","start_time":"12:30pm","end_time":"1:45pm","seats":"280","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208"],"instructors":["Ilchul Yoon"]},
+        {"course":"CMSC250","start_time":"2:00pm","end_time":"3:15pm","seats":"237","open_seats":"1","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["Jason Filippou","Iason Filippou"]},
+        {"course":"CMSC250","start_time":"3:30pm","end_time":"4:45pm","seats":"90","open_seats":"0","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Jason Filippou","Iason Filippou"]}
+      ],
+      "Wednesday": [
+        {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+        {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+        {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]},
+        {"course":"CMSC320","start_time":"5:00pm","end_time":"6:15pm","seats":"291","open_seats":"0","sections":["0101"],"instructors":["Hector Corrada Bravo"]}      
+      ],
+      "Thursday": [
+        {"course":"CMSC330","start_time":"9:30am","end_time":"10:45am","seats":"298","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208","0209"],"instructors":["Roger Eastman"]},
+        {"course":"CMSC216","start_time":"11:00am","end_time":"12:15pm","seats":"277","open_seats":"102","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["A Shankar"]},
+        {"course":"CMSC216","start_time":"12:30pm","end_time":"1:45pm","seats":"280","open_seats":"2","sections":["0201","0202","0203","0204","0205","0206","0207","0208"],"instructors":["Ilchul Yoon"]},
+        {"course":"CMSC250","start_time":"2:00pm","end_time":"3:15pm","seats":"237","open_seats":"1","sections":["0101","0102","0103","0104","0105","0106","0107","0108"],"instructors":["Jason Filippou","Iason Filippou"]},
+        {"course":"CMSC250","start_time":"3:30pm","end_time":"4:45pm","seats":"90","open_seats":"0","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Jason Filippou","Iason Filippou"]}
+      ],
+      "Friday": [
+        {"course":"CMSC132","start_time":"9:00am","end_time":"9:50am","seats":"280","open_seats":"5","sections":["0301","0302","0303","0304","0305","0306","0307","0308"],"instructors":["Fawzi Emad"]},
+        {"course":"CMSC351","start_time":"10:00am","end_time":"10:50am","seats":"290","open_seats":"0","sections":["0201"],"instructors":["Mohammad Nayeem Teli"]},
+        {"course":"CMSC132","start_time":"11:00am","end_time":"11:50am","seats":"184","open_seats":"37","sections":["0201","0202","0203","0204","0205","0206","0207"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"12:00pm","end_time":"12:50pm","seats":"69","open_seats":"12","sections":["0101","0102","0103","0104","0105"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC131","start_time":"1:00pm","end_time":"1:50pm","seats":"63","open_seats":"14","sections":["0201","0202","0203","0204","0205"],"instructors":["Pedram Sadeghian"]},
+        {"course":"CMSC132","start_time":"2:00pm","end_time":"2:50pm","seats":"164","open_seats":"22","sections":["0101","0102","0103","0104","0106"],"instructors":["Laurence Herman"]},
+        {"course":"CMSC131","start_time":"3:00pm","end_time":"3:50pm","seats":"211","open_seats":"20","sections":["0301","0302","0303","0304","0305","0306","0307"],"instructors":["Nelson Padua-Perez"]}
+      ]
+    }
+  }
+}
+						
