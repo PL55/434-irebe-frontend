@@ -11,8 +11,7 @@
 
     <!-- Import the React, React-Dom and Babel libraries from unpkg -->
     <script type="application/javascript" src="libraries/react.js"></script>
-    <script type="application/javascript"
-        src="libraries/react-dom.js"></script>
+    <script type="application/javascript" src="libraries/react-dom.js"></script>
     <script src="libraries/babel.js"></script>
 
 </head>
@@ -50,10 +49,122 @@
                         onMouseLeave={() => this.mouseLeave()}
                         onClick={() => this.clicked()}
                         style={{
+                            color: "white",
                             fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
-                            backgroundColor: (this.state.mouseOver ? "#333" : "#212121")
+                            backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                         }}>
                         {this.props.children}
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+
+        class Floor extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    floor_number: 1,
+                };
+            }
+
+            render() {
+                return (
+                    <div style={{ width: "98%", height: "100%" }}>
+                        <div style={{ position: "relative", top: 20, left: 20, fontSize: 40, fontWeight: "bold" }}>Floor {this.state.floor_number}</div>
+                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Map extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div style={{ height: "100%", display: "inline" }}>
+
+                        <div class="side-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {["A101", "B101", "C101", "D101"].map(e => <Button>{e}</Button>)}
+                            </div>
+
+                        </div>
+                        <div class="content-panel">
+                            <Floor />
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class PanelButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <button class="home-panel-button" onClick={() => this.props.setPage(this.props.page)}>
+                        <div class="home-panel-button-picture" style={{ background: 'url("' + this.props.image + '") no-repeat center center', backgroundSize: "cover" }}></div>
+                        <div style={{ fontSize: "1.5vw" }}>{this.props.caption}</div>
+                    </button>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Home extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div class="home-panel" style={{ height: "100%" }}>
+                        <div style={{paddingTop:100}}></div>
+                        <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "5vw" }}>Welcome to Iribe!</div>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "2vw", paddingTop: 10 }}>How may we assist you?</div>
+                        </div>
+
+                        <div style={{ margin: 100,marginBottom:0, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
+
+                            <PanelButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/clipboard.png" caption="Schedules" page="schedule" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/event.png" caption="Events" page="events" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/professor.png" caption="Faculty" page="faculty" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/gallery.png" caption="Gallery" page="gallery" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/question.png" caption="Help" page="help" setPage={this.props.setPage}></PanelButton>
+                        </div>
+
                     </div>
                 );
             }
@@ -64,27 +175,29 @@
         class Index extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = { text: "" };
+                this.state = { page: "home" };
+                this.setPage = this.setPage.bind(this);
             }
 
             componentDidMount() {
-                this.setState({ text: "yoyoyo" })
-                //You can run code here and set state!
+
+            }
+
+            setPage(page) {
+                this.setState({ page: page })
             }
 
             render() {
-                return (
-                    <div style={{ height: "100%", display: "inline" }}>
 
-                        <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center" }}>Iribe Information Kiosk</div>
-                            {[1, 2, 3, 4, 5, "testing", "these", "are", "buttons", "using", "map!"].map(e => <Button>{e}</Button>)}
-                        </div>
-                        <div class="content-panel">
+                if (this.state.page == "home")
+                    return (
+                        <Home setPage={this.setPage} />
+                    );
 
-                        </div>
-                    </div>
-                );
+                else if (this.state.page == "map")
+                    return (
+                        <Map setPage={this.setPage} />
+                    );
             }
         }
     </script>
