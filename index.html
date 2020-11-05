@@ -171,6 +171,38 @@
         }
     </script>
 
+<script type="text/babel">
+    class Events extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {};
+        }
+
+        componentDidMount() {
+
+        }
+
+        render() {
+            return (
+                <div style={{ height: "100%", display: "inline" }}>
+
+                    <div class="side-panel">
+                        <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
+                        <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                            {["A101", "B101", "C101", "D101"].map(e => <Button>{e}</Button>)}
+                        </div>
+
+                    </div>
+                    <div class="content-panel">
+                        <Floor />
+                    </div>
+                    <div class="footer"></div>
+                </div>
+            );
+        }
+    }
+</script>
+
     <script type="text/babel">
         class Index extends React.Component {
             constructor(props) {
@@ -198,6 +230,10 @@
                     return (
                         <Map setPage={this.setPage} />
                     );
+                else if (this.state.page == "events")
+                return (
+                    <Events setPage={this.setPage} />
+                );
             }
         }
     </script>
