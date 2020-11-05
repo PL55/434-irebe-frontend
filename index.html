@@ -27,20 +27,10 @@
                 this.state = {
                     mouseOver: false
                 };
-                this.data =  '\
-                {"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
-                "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], "instructors":["Elias Gonzalez"]}} \
-                ';
-                this.obj = JSON.parse(this.data)
-                this.message = ""
             }
 
             clicked() {
-                
-                this.message += ex.course + ":\ntaught by " + ex.instructors[0] + " section " 
-                + ex.sections[0] + " will be meeting from " + ex.start_time + " to " + ex.end_time;
-                this.message += "\n There are currently " + ex.open_seats + " open seats\n" 
-                alert(message);
+                alert("You clicked " + this.props.children);
             }
 
             mouseEnter() {
@@ -72,40 +62,109 @@
 
     <script type="text/babel">
 
-        class Room extends React.Component {
+        class Floor extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
-                    /* Currently hard coded to show how it would look in the actual app 
-                    will be using actual data from schedule.json in the final project */
-                   data : JSON.parse('{"Room_0318": { "course":"CMSC389N", "start_time":"3:30pm", \
-                   "end_time":"4:45pm", "seats":"95", "open_seats":"0", "sections":["0101"], \
-                   "instructors":["Elias Gonzalez"]}} ')
-
+                    floor_number: 1,
                 };
-                // will fetch and display this data more dynamically after parsing the schedule.json file
-                this.course = this.state.data.Room_0318.course;
-                this.start = this.state.data.Room_0318.start_time;
-                this.end = this.state.data.Room_0318.end_time;
-                this.seats = this.state.data.Room_0318.seats;
-                this.open_seats = this.state.data.Room_0318.open_seats;
-                this.sections = this.state.data.Room_0318.sections
-                this.instructors = this.state.data.Room_0318.instructors
             }
-
-
 
             render() {
                 return (
-                    <div style={{width:"98%",height:"100%"}}>
-                        <div style={{position:"relative",top:20,left:20, fontSize:40, fontWeight:"bold"}}>
-                            {this.course}: <br/>                        </div>
-                        <div style = {{position:"relative",top:20,left:20, fontSize:20}}>
-                            Section: {this.sections} <br/>
-                            Instructor: {this.instructors} <br/>
-                            {this.start} - {this.end} <br/>
-                            {this.open_seats} / {this.seats} seats open     
+                    <div style={{ width: "98%", height: "100%" }}>
+                        <div style={{ position: "relative", top: 20, left: 20, fontSize: 40, fontWeight: "bold" }}>Floor {this.state.floor_number}</div>
+                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Map extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div style={{ height: "100%", display: "inline" }}>
+
+                        <div class="side-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {["A101", "B101", "C101", "D101"].map(e => <Button>{e}</Button>)}
+                            </div>
+
                         </div>
+                        <div class="content-panel">
+                            <Floor />
+                        </div>
+                        <div class="footer"></div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class PanelButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <button class="home-panel-button" onClick={() => this.props.setPage(this.props.page)}>
+                        <div class="home-panel-button-picture" style={{ background: 'url("' + this.props.image + '") no-repeat center center', backgroundSize: "cover" }}></div>
+                        <div style={{ fontSize: "1.5vw" }}>{this.props.caption}</div>
+                    </button>
+                );
+            }
+        }
+    </script>
+
+    <script type="text/babel">
+        class Home extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div class="home-panel" style={{ height: "100%" }}>
+                        <div style={{paddingTop:100}}></div>
+                        <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "5vw" }}>Welcome to Iribe!</div>
+                            <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "2vw", paddingTop: 10 }}>How may we assist you?</div>
+                        </div>
+
+                        <div style={{ margin: 100,marginBottom:0, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
+
+                            <PanelButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/clipboard.png" caption="Schedules" page="schedule" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/event.png" caption="Events" page="events" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/professor.png" caption="Faculty" page="faculty" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/gallery.png" caption="Gallery" page="gallery" setPage={this.props.setPage}></PanelButton>
+                            <PanelButton image="public/question.png" caption="Help" page="help" setPage={this.props.setPage}></PanelButton>
+                        </div>
+
                     </div>
                 );
             }
@@ -116,31 +175,29 @@
         class Index extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = { text: "" };
+                this.state = { page: "home" };
+                this.setPage = this.setPage.bind(this);
             }
 
             componentDidMount() {
-                this.setState({ text: "yoyoyo" })
-                //You can run code here and set state!
+
+            }
+
+            setPage(page) {
+                this.setState({ page: page })
             }
 
             render() {
-                return (
-                    <div style={{ height: "100%", display: "inline" }}>
 
-                        <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Room Selected: </div>
-                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {["Room_0318"].map(e => <Button>{e}</Button>)}
-                            </div>
+                if (this.state.page == "home")
+                    return (
+                        <Home setPage={this.setPage} />
+                    );
 
-                        </div>
-                        <div class="content-panel">
-                            {["Room_0318"].map(e => <Room>{e}</Room>)}
-                        </div>
-                        <div class="footer"></div>
-                    </div>
-                );
+                else if (this.state.page == "map")
+                    return (
+                        <Map setPage={this.setPage} />
+                    );
             }
         }
     </script>
