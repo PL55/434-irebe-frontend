@@ -1,0 +1,1029 @@
+<tr>
+	<td>Daniel Abadi</td>
+	<td>Professor</td>
+	<td>Contact Form</td>
+	<td>(301) 405-9695</td>
+	<td>IRB 5156</td>
+</tr>
+<tr>
+	<td>Ashok Agrawala</td>
+	<td>Professor</td>
+	<td>agrawala@cs.umd.edu</td>
+	<td>(301) 405-2525</td>
+	<td>IRB 5204</td>
+</tr>
+<tr>
+	<td>John Aloimonos</td>
+	<td>Professor</td>
+	<td>yiannis@cs.umd.edu</td>
+	<td>(301) 405-1743</td>
+	<td>IRB 4214</td>
+</tr>
+<tr>
+	<td>Leilani Battle</td>
+	<td>Assistant Professor</td>
+	<td>leilani@cs.umd.edu</td>
+	<td>(301) 405-8412</td>
+	<td>IRB 5148</td>
+</tr>
+<tr>
+	<td>Abhinav Bhatele</td>
+	<td>Assistant Professor</td>
+	<td>bhatele@cs.umd.edu</td>
+	<td>(301) 405-4507</td>
+	<td>IRB 5218</td>
+</tr>
+<tr>
+	<td>Bobby Bhattacharjee</td>
+	<td>Professor</td>
+	<td>bobby@cs.umd.edu</td>
+	<td>(301) 405-1658</td>
+	<td>IRB 5140</td>
+</tr>
+<tr>
+	<td>Jordan Boyd-Graber</td>
+	<td>Associate Professor</td>
+	<td>jbg@cs.umd.edu</td>
+	<td>(301) 405-6766</td>
+	<td>IRB 4146</td>
+</tr>
+<tr>
+	<td>Marine Carpuat</td>
+	<td>Associate Professor</td>
+	<td>marine@cs.umd.edu</td>
+	<td>(301) 405-8801</td>
+	<td>IRB 4130</td>
+</tr>
+<tr>
+	<td>Andrew Childs</td>
+	<td>Professor</td>
+	<td>amchilds@cs.umd.edu</td>
+	<td>(301) 405-2329</td>
+	<td>ATL 3100F, IRB 5256</td>
+</tr>
+<tr>
+	<td>Rance Cleaveland</td>
+	<td>Professor</td>
+	<td>rance@cs.umd.edu</td>
+	<td>AVW (301) 405-8572, FC (301) 405-2065</td>
+	<td>IRB 5160</td>
+</tr>
+<tr>
+	<td>Hector Corrada Bravo</td>
+	<td>Associate Professor</td>
+	<td>hcorrada@umiacs.umd.edu</td>
+	<td>BSB (301) 405-2481, AVW (301) 405-6713</td>
+	<td>IRB 3226</td>
+</tr>
+<tr>
+	<td>Hal Daumé III</td>
+	<td>Professor</td>
+	<td>hal@umiacs.umd.edu</td>
+	<td>(301) 405-1073</td>
+	<td>IRB 4150</td>
+</tr>
+<tr>
+	<td>Larry Davis</td>
+	<td>Professor</td>
+	<td>lsd@cs.umd.edu</td>
+	<td>(301) 405-6718</td>
+	<td>IRB 4248</td>
+</tr>
+<tr>
+	<td>Amol Deshpande</td>
+	<td>Professor</td>
+	<td>amol@cs.umd.edu</td>
+	<td>(301) 405-2703</td>
+	<td>IRB 5154</td>
+</tr>
+<tr>
+	<td>John Dickerson</td>
+	<td>Assistant Professor</td>
+	<td>john@cs.umd.edu</td>
+	<td>(301) 405-2774</td>
+	<td>IRB 4128</td>
+</tr>
+<tr>
+	<td>Ramani Duraiswami</td>
+	<td>Professor</td>
+	<td>ramani@umiacs.umd.edu</td>
+	<td>(301) 405-6710</td>
+	<td>IRB 4244</td>
+</tr>
+<tr>
+	<td>Roger Eastman</td>
+	<td>Professor of the Practice</td>
+	<td>reastman@cs.umd.edu</td>
+	<td>(301) 405-2773</td>
+	<td>IRB 1126</td>
+</tr>
+<tr>
+	<td>Howard Elman</td>
+	<td>Professor</td>
+	<td>elman@cs.umd.edu</td>
+	<td>(301) 405-2694</td>
+	<td>IRB 4210</td>
+</tr>
+<tr>
+	<td>Fawzi Emad</td>
+	<td>Senior Lecturer</td>
+	<td>fpe@cs.umd.edu</td>
+	<td>(301) 405-2709</td>
+	<td>IRB 2212</td>
+</tr>
+<tr>
+	<td>Soheil Feizi</td>
+	<td>Assistant Professor</td>
+	<td>sfeizi@cs.umd.edu</td>
+	<td>(301) 405-8743</td>
+	<td>IRB 4202</td>
+</tr>
+<tr>
+	<td>Jason Filippou</td>
+	<td>Lecturer</td>
+	<td>jasonfil@cs.umd.edu</td>
+	<td>(301) 405-2726</td>
+	<td>IRB 2206</td>
+</tr>
+<tr>
+	<td>William Gasarch</td>
+	<td>Professor</td>
+	<td>gasarch@cs.umd.edu</td>
+	<td>(301) 405-2698</td>
+	<td>IRB 2242</td>
+</tr>
+<tr>
+	<td>Tom Goldstein</td>
+	<td>Associate Professor</td>
+	<td>Contact Form</td>
+	<td>(301) 405-0053</td>
+	<td>IRB 4212</td>
+</tr>
+<tr>
+	<td>Evan Golub</td>
+	<td>Principal Lecturer</td>
+	<td>egolub@cs.umd.edu</td>
+	<td>(301) 405-0180</td>
+	<td>IRB 1210</td>
+</tr>
+<tr>
+	<td>Mohammad Hajiaghayi</td>
+	<td>Professor</td>
+	<td>hajiagha@cs.umd.edu</td>
+	<td>(301) 405-6724</td>
+	<td>IRB 5158</td>
+</tr>
+<tr>
+	<td>Larry Herman</td>
+	<td>Lecturer</td>
+	<td>larry@cs.umd.edu</td>
+	<td>(301) 405-2762</td>
+	<td>IRB 1124</td>
+</tr>
+<tr>
+	<td>Michael Hicks</td>
+	<td>Professor</td>
+	<td>mwh@cs.umd.edu</td>
+	<td>(301) 405-2710</td>
+	<td>IRB 5246</td>
+</tr>
+<tr>
+	<td>Jeffrey K. Hollingsworth</td>
+	<td>Professor</td>
+	<td>hollings@umd.edu</td>
+	<td>(301) 405-7700, (301) 405-2708</td>
+	<td>IRB 5152</td>
+</tr>
+<tr>
+	<td>Furong Huang</td>
+	<td>Assistant Professor</td>
+	<td>furongh@cs.umd.edu</td>
+	<td>(301) 405-8010</td>
+	<td>IRB 4204</td>
+</tr>
+<tr>
+	<td>Michelle Hugue</td>
+	<td>Lecturer</td>
+	<td>meesh@cs.umd.edu</td>
+	<td>(301) 405-3012</td>
+	<td>IRB 1250</td>
+</tr>
+<tr>
+	<td>David Jacobs</td>
+	<td>Professor</td>
+	<td>djacobs@cs.umd.edu</td>
+	<td>(301) 405-0679</td>
+	<td>IRB 4240</td>
+</tr>
+<tr>
+	<td>Jonathan Katz</td>
+	<td>Professor</td>
+	<td>jkatz@cs.umd.edu</td>
+	<td>(301) 405-1226</td>
+	<td>IRB 5226</td>
+</tr>
+<tr>
+	<td>Pete Keleher</td>
+	<td>Associate Professor</td>
+	<td>keleher@cs.umd.edu</td>
+	<td>(301) 405-0345</td>
+	<td>IRB 5146</td>
+</tr>
+<tr>
+	<td>Clyde Kruskal</td>
+	<td>Associate Professor</td>
+	<td>kruskal@cs.umd.edu</td>
+	<td>(301) 405-2683</td>
+	<td>IRB 2240</td>
+</tr>
+<tr>
+	<td>Leonidas Lampropoulos</td>
+	<td>Assistant Professor</td>
+	<td>leonidas@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Iribe 5248</td>
+</tr>
+<tr>
+	<td>Max Leiserson</td>
+	<td>Assistant Professor</td>
+	<td>mdml@cs.umd.edu</td>
+	<td>(301) 405-7395</td>
+	<td>IRB 3244</td>
+</tr>
+<tr>
+	<td>Dave Levin</td>
+	<td>Assistant Professor</td>
+	<td>dml@cs.umd.edu</td>
+	<td>(301) 405-8515</td>
+	<td>IRB 5222</td>
+</tr>
+<tr>
+	<td>Ming Lin</td>
+	<td>Professor</td>
+	<td>lin@cs.umd.edu</td>
+	<td>(301) 405-2662</td>
+	<td>IRB 5202, IRB 2134</td>
+</tr>
+<tr>
+	<td>Zhicheng Liu</td>
+	<td>Assistant Professor</td>
+	<td>leozcliu@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Anwar Mamat</td>
+	<td>Senior Lecturer</td>
+	<td>anwar@cs.umd.edu</td>
+	<td>(301) 405-2696</td>
+	<td>IRB 1212</td>
+</tr>
+<tr>
+	<td>Dinesh Manocha</td>
+	<td>Professor</td>
+	<td>dm@cs.umd.edu</td>
+	<td>(301) 405-2741</td>
+	<td>IRB 5164</td>
+</tr>
+<tr>
+	<td>Michael Marsh</td>
+	<td>Lecturer</td>
+	<td>mmarsh@cs.umd.edu</td>
+	<td>(301) 405-7445, 2402702276</td>
+	<td>IRB 2218</td>
+</tr>
+<tr>
+	<td>Michelle Mazurek</td>
+	<td>Associate Professor</td>
+	<td>mmazurek@cs.umd.edu</td>
+	<td>(301) 405-6463</td>
+	<td>IRB 5236</td>
+</tr>
+<tr>
+	<td>Ian Miers</td>
+	<td>Assistant Professor</td>
+	<td>imiers@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 5242</td>
+</tr>
+<tr>
+	<td>David Mount</td>
+	<td>Professor</td>
+	<td>mount@cs.umd.edu</td>
+	<td>(301) 405-2704</td>
+	<td>IRB 4162</td>
+</tr>
+<tr>
+	<td>Dana Nau</td>
+	<td>Professor</td>
+	<td>nau@cs.umd.edu</td>
+	<td>(301) 405-2684</td>
+	<td>IRB 4158</td>
+</tr>
+<tr>
+	<td>Nelson Padua-Perez</td>
+	<td>Senior Lecturer</td>
+	<td>nelson@cs.umd.edu</td>
+	<td>(301) 405-4539</td>
+	<td>IRB 2210</td>
+</tr>
+<tr>
+	<td>Rob Patro</td>
+	<td>Associate Professor</td>
+	<td>rob@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 3220</td>
+</tr>
+<tr>
+	<td>Huaishu Peng</td>
+	<td>Assistant Professor</td>
+	<td>huaishu@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 4206</td>
+</tr>
+<tr>
+	<td>Don Perlis</td>
+	<td>Professor</td>
+	<td>perlis@cs.umd.edu</td>
+	<td>(301) 405-2685</td>
+	<td>IRB 4156</td>
+</tr>
+<tr>
+	<td>Jandelyn Plane</td>
+	<td>Principal Lecturer</td>
+	<td>Contact Form</td>
+	<td>(301) 405-2754</td>
+	<td>IRB 1254</td>
+</tr>
+<tr>
+	<td>Mihai Pop</td>
+	<td>Professor</td>
+	<td>mpop@umiacs.umd.edu</td>
+	<td>301-405-6722</td>
+	<td>IRB 3222</td>
+</tr>
+<tr>
+	<td>Adam Porter</td>
+	<td>Professor</td>
+	<td>aporter@cs.umd.edu</td>
+	<td>(301) 405-2702</td>
+	<td>IRB 5212</td>
+</tr>
+<tr>
+	<td>James Purtilo</td>
+	<td>Associate Professor</td>
+	<td>purtilo@umd.edu</td>
+	<td>(301) 405-2706</td>
+	<td>IRB 5214</td>
+</tr>
+<tr>
+	<td>James Reggia</td>
+	<td>Professor</td>
+	<td>reggia@cs.umd.edu</td>
+	<td>(301) 405-2686</td>
+	<td>IRB 4124</td>
+</tr>
+<tr>
+	<td>William Regli</td>
+	<td>Professor</td>
+	<td>regli@cs.umd.edu</td>
+	<td>(301) 405-6738</td>
+	<td>IRB 4152</td>
+</tr>
+<tr>
+	<td>Nirupam Roy</td>
+	<td>Assistant Professor</td>
+	<td>nirupam@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 5240</td>
+</tr>
+<tr>
+	<td>Rachel Rudinger</td>
+	<td>Assistant Professor</td>
+	<td>rudinger@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Pedram Sadeghian</td>
+	<td>Lecturer</td>
+	<td>pedram@cs.umd.edu</td>
+	<td>(301) 405-2740</td>
+	<td>IRB 2214</td>
+</tr>
+<tr>
+	<td>Hanan Samet</td>
+	<td>Professor</td>
+	<td>hjs@cs.umd.edu</td>
+	<td>(301) 405-1755</td>
+	<td>IRB 4252</td>
+</tr>
+<tr>
+	<td>A. Udaya Shankar</td>
+	<td>Professor</td>
+	<td>shankar@cs.umd.edu</td>
+	<td>(301) 405-2688</td>
+	<td>IRB 5150</td>
+</tr>
+<tr>
+	<td>Abhinav Shrivastava</td>
+	<td>Assistant Professor</td>
+	<td>abhinav@cs.umd.edu</td>
+	<td>(301) 405-7952</td>
+	<td>IRB 4238</td>
+</tr>
+<tr>
+	<td>Neil Spring</td>
+	<td>Professor</td>
+	<td>nspring@cs.umd.edu</td>
+	<td>(301) 405-2909</td>
+	<td>IRB 5138</td>
+</tr>
+<tr>
+	<td>Aravind Srinivasan</td>
+	<td>Professor</td>
+	<td>srin@cs.umd.edu</td>
+	<td>(301) 405-2695</td>
+	<td>IRB 4164</td>
+</tr>
+<tr>
+	<td>Alan Sussman</td>
+	<td>Professor</td>
+	<td>als@cs.umd.edu</td>
+	<td>(301) 405-3360</td>
+	<td>IRB 5142</td>
+</tr>
+<tr>
+	<td>Mohammad Nayeem Teli</td>
+	<td>Lecturer</td>
+	<td>nayeem@umd.edu</td>
+	<td>301.405.0405</td>
+	<td>IRB 1128</td>
+</tr>
+<tr>
+	<td>Pratap Tokekar</td>
+	<td>Assistant Professor</td>
+	<td>tokekar@umd.edu</td>
+	<td>(301) 405-9902‬</td>
+	<td>Iribe 4222</td>
+</tr>
+<tr>
+	<td>David Van Horn</td>
+	<td>Associate Professor</td>
+	<td>dvanhorn@cs.umd.edu</td>
+	<td>(301) 405-2715</td>
+	<td>IRB 5250</td>
+</tr>
+<tr>
+	<td>Amitabh Varshney</td>
+	<td>Professor</td>
+	<td>varshney@cs.umd.edu</td>
+	<td>(301) 405-6761, (301) 405-2316</td>
+	<td>IRB 3212</td>
+</tr>
+<tr>
+	<td>Xiaodi Wu</td>
+	<td>Assistant Professor</td>
+	<td>xwu@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 5210</td>
+</tr>
+<tr>
+	<td>Ilchul Yoon</td>
+	<td>Lecturer</td>
+	<td>iyoon@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 1248</td>
+</tr>
+<tr>
+	<td>Matthias Zwicker</td>
+	<td>Professor</td>
+	<td>zwicker@cs.umd.edu</td>
+	<td>(301) 405-0319</td>
+	<td>IRB 5244</td>
+</tr>
+<tr>
+	<td>William Arbaugh</td>
+	<td>Associate Professor Emeritus</td>
+	<td>waa@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 2164</td>
+</tr>
+<tr>
+	<td>Victor Basili</td>
+	<td>Professor Emeritus</td>
+	<td>basili@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 2164</td>
+</tr>
+<tr>
+	<td>Ben Bederson</td>
+	<td>Professor Emeritus</td>
+	<td>bederson@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Bonnie Dorr</td>
+	<td>Professor Emerita</td>
+	<td>bonnie@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 4132</td>
+</tr>
+<tr>
+	<td>Laveen Kanal</td>
+	<td>Professor Emeritus</td>
+	<td>kanal@cs.umd.edu</td>
+	<td>(301) 405-2674</td>
+	<td>IRB 2162</td>
+</tr>
+<tr>
+	<td>Samir Khuller</td>
+	<td>Professor Emeritus</td>
+	<td>samir@cs.umd.edu</td>
+	<td>(301) 405-6765</td>
+	<td>IRB 5128</td>
+</tr>
+<tr>
+	<td>Jack Minker</td>
+	<td>Professor Emeritus</td>
+	<td>minker@cs.umd.edu</td>
+	<td>(301) 405-2676</td>
+	<td>IRB 2162</td>
+</tr>
+<tr>
+	<td>Dianne O'Leary</td>
+	<td>Professor Emerita</td>
+	<td>oleary@cs.umd.edu</td>
+	<td>(301) 405-2678</td>
+	<td>IRB 2160</td>
+</tr>
+<tr>
+	<td>William Pugh</td>
+	<td>Professor Emeritus</td>
+	<td>pugh@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 2164</td>
+</tr>
+<tr>
+	<td>Nicholas Roussopoulos</td>
+	<td>Professor Emeritus</td>
+	<td>nick@cs.umd.edu</td>
+	<td>(301) 405-2687</td>
+	<td>IRB 2160</td>
+</tr>
+<tr>
+	<td>Ben Shneiderman</td>
+	<td>Professor Emeritus</td>
+	<td>ben@cs.umd.edu</td>
+	<td>(301) 405-2680</td>
+	<td>IRB 2162</td>
+</tr>
+<tr>
+	<td>G.W. (Pete) Stewart</td>
+	<td>Professor Emeritus</td>
+	<td>stewart@cs.umd.edu</td>
+	<td>(301) 405-2681</td>
+	<td>IRB 2162</td>
+</tr>
+<tr>
+	<td>Marvin Zelkowitz</td>
+	<td>Professor Emeritus</td>
+	<td>mvz@umd.edu</td>
+	<td>(443) 416-4257</td>
+	<td>IRB 2160</td>
+</tr>
+<tr>
+	<td>Dov Gordon</td>
+	<td>Visiting Senior Research Scientist</td>
+	<td>gordon@cs.umd.edu</td>
+	<td>(301) 405-7388</td>
+	<td>AVW 3204</td>
+</tr>
+<tr>
+	<td>Aliakbar Jalali</td>
+	<td>Visiting Professor</td>
+	<td>drjalali@umd.edu</td>
+	<td>(301) 405-2674</td>
+	<td>3261</td>
+</tr>
+<tr>
+	<td>Tae Wook Kwon</td>
+	<td>Visiting Associate Professor</td>
+	<td>kwon@cs.umd.eu</td>
+	<td>(301) 405-2774</td>
+	<td>AVW 3217</td>
+</tr>
+<tr>
+	<td>Namachivayam Thirumazhusai</td>
+	<td>Visiting Assistant Research Scientist</td>
+	<td>sthiruma@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Jose Calderon</td>
+	<td>Adjunct Lecturer</td>
+	<td>jmct@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Carlos Castillo</td>
+	<td>Adjunct Lecturer</td>
+	<td>carlosc@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Matthew Coudron</td>
+	<td>Adjunct Assistant Professor</td>
+	<td>mcoudron@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Rina Dechter</td>
+	<td>Adjunct Professor</td>
+	<td>rdechter@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 2252</td>
+</tr>
+<tr>
+	<td>Peter Druschel</td>
+	<td>Adjunct Professor</td>
+	<td>pdrusche@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Leah Findlater</td>
+	<td>Adjunct Associate Professor</td>
+	<td>leahkf@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Jeffrey Foster</td>
+	<td>Adjunct Professor</td>
+	<td>jfoster@cs.umd.edu</td>
+	<td>(301) 405-2751</td>
+	<td>IRB 2162</td>
+</tr>
+<tr>
+	<td>Jon Froehlich</td>
+	<td>Adjunct Associate Professor</td>
+	<td>jonf@cs.washington.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Lise Getoor</td>
+	<td>Adjunct Professor</td>
+	<td>getoor@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>J. Scott Gilkeson</td>
+	<td>Adjunct Lecturer</td>
+	<td>sgilkeso@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Elias Gonzalez</td>
+	<td>Adjunct Lecturer</td>
+	<td>egonzal5@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>John Grant</td>
+	<td>Adjunct Professor</td>
+	<td>grant@cs.umd.edu</td>
+	<td>(301) 405-0689</td>
+	<td> </td>
+</tr>
+<tr>
+	<td>David Harris</td>
+	<td>Adjunct Lecturer</td>
+	<td>dharris7@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Brad Lackey</td>
+	<td>Adjunct Professor</td>
+	<td>bclackey@umd.edu</td>
+	<td>301-314-1819</td>
+	<td>CSS 3100G</td>
+</tr>
+<tr>
+	<td>Marc Lichtman</td>
+	<td>Adjunct Assistant Professor</td>
+	<td>sdr@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Mikael Lindvall</td>
+	<td>Adjunct Professor</td>
+	<td>mikli@fc-md.umd.edu</td>
+	<td>301-314-6052</td>
+	<td>Fraunhofer USA, Center for Experimental Software Engineering (CESE), 5700 Rivertech Court, Suite 210, Riverdale, MD 20737</td>
+</tr>
+<tr>
+	<td>Yi-Kai Liu</td>
+	<td>Adjunct Associate Professor</td>
+	<td>yikailiu@umd.edu</td>
+	<td>(301) 314-1850</td>
+	<td>3100J Atlantic Building</td>
+</tr>
+<tr>
+	<td>Jennifer Manly</td>
+	<td>Adjunct Lecturer</td>
+	<td>jmanly@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Carl Miller</td>
+	<td>Adjunct Assistant Professor</td>
+	<td>camiller@umd.edu</td>
+	<td>(301) 405-7367</td>
+	<td>3102 Atlantic Bldg.</td>
+</tr>
+<tr>
+	<td>Eytan Ruppin</td>
+	<td>Adjunct Professor</td>
+	<td>ruppin@umiacs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>C. Anton Rytting</td>
+	<td>Adjunct Lecturer</td>
+	<td>crytting@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>S. Cenk Sahinalp</td>
+	<td>Adjunct Professor</td>
+	<td>cenk.sahinalp@nih.gov</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Elaine  Shi</td>
+	<td>Adjunct Associate Professor</td>
+	<td>runting@gmail.com</td>
+	<td>Unavaliable</td>
+	<td>Cornell University</td>
+</tr>
+<tr>
+	<td>Garrett Vanhoy</td>
+	<td>Adjunct Lecturer</td>
+	<td>gvanhoy@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Gorjan Alagic</td>
+	<td>Affiliate Associate Research Scientist</td>
+	<td>galagic@umd.edu</td>
+	<td>(301) 314-1763</td>
+	<td>3100E Atlantic Building</td>
+</tr>
+<tr>
+	<td>John Baras</td>
+	<td>Affiliate Professor</td>
+	<td>baras@irs.umd.edu</td>
+	<td>301-405-6606</td>
+	<td>2247 A.V. Williams Bldg.</td>
+</tr>
+<tr>
+	<td>Alexander Barg</td>
+	<td>Affiliate Professor</td>
+	<td>abarg@umd.edu</td>
+	<td>(301) 405-7135</td>
+	<td>AVW 2361</td>
+</tr>
+<tr>
+	<td>Aniket Bera</td>
+	<td>Affiliate Assistant Research Professor</td>
+	<td>Contact Form</td>
+	<td>301-405-4209</td>
+	<td>IRB 5144</td>
+</tr>
+<tr>
+	<td>Maria Cameron</td>
+	<td>Affiliate Associate Professor</td>
+	<td>mariakc@umd.edu</td>
+	<td>301-405-5068</td>
+	<td>MATH 4410</td>
+</tr>
+<tr>
+	<td>Ramalingam Chellappa</td>
+	<td>Affiliate Professor</td>
+	<td>rama@cfar.umd.edu</td>
+	<td>(301) 405-3656</td>
+	<td>IRB 4246</td>
+</tr>
+<tr>
+	<td>Eun Kyoung Choe</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>choe@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>2117F Hornbake Building, South Wing</td>
+</tr>
+<tr>
+	<td>Michel Cukier</td>
+	<td>Affiliate Associate Professor</td>
+	<td>mcukier@umd.edu</td>
+	<td>(301) 314-2804</td>
+	<td> AVW 3419</td>
+</tr>
+<tr>
+	<td>Michael Cummings</td>
+	<td>Affiliate Professor</td>
+	<td>mike@umiacs.umd.edu</td>
+	<td>(301) 405-9903</td>
+	<td>IRB 3240</td>
+</tr>
+<tr>
+	<td>Dana Dachman-Soled</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>danadach@umd.edu</td>
+	<td>(301) 405-0794</td>
+	<td>IRB 5238</td>
+</tr>
+<tr>
+	<td>Leila De Floriani</td>
+	<td>Affiliate Professor</td>
+	<td>deflo@umiacs.umd.edu</td>
+	<td>(301) 405-4391</td>
+	<td>IRB 4132</td>
+</tr>
+<tr>
+	<td>Tudor Dumitras</td>
+	<td>Affiliate Associate Professor</td>
+	<td>tdumitra@umd.edu</td>
+	<td>(301) 405-7466</td>
+	<td>IRB 5228</td>
+</tr>
+<tr>
+	<td>Niklas Elmqvist</td>
+	<td>Affiliate Professor</td>
+	<td>elm@umd.edu</td>
+	<td>(301) 405-2033</td>
+	<td>2117H Hornbake</td>
+</tr>
+<tr>
+	<td>Naomi Feldman</td>
+	<td>Affiliate Associate Professor</td>
+	<td>nhf@umd.edu</td>
+	<td>(301) 405-5800</td>
+	<td>IRB 4140</td>
+</tr>
+<tr>
+	<td>Vanessa Frias-Martinez</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>vfrias@umd.edu</td>
+	<td>(301) 405-2032</td>
+	<td>IRB 4144</td>
+</tr>
+<tr>
+	<td>Jennifer Golbeck</td>
+	<td>Affiliate Professor</td>
+	<td>jgolbeck@umd.edu</td>
+	<td>(301) 405-7185</td>
+	<td>HBK 2118F</td>
+</tr>
+<tr>
+	<td>Naeemul Hassan</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>nhassan@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>3100J Knight Hall</td>
+</tr>
+<tr>
+	<td>John Horty</td>
+	<td>Affiliate Professor</td>
+	<td>horty@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Hernisa Kacorri</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>hernisa@umd.edu</td>
+	<td>(301) 405-2032</td>
+	<td>2118A Hornbake Building, South Wing</td>
+</tr>
+<tr>
+	<td>Amanda Lazar</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>lazar@umd.edu</td>
+	<td>301-450-2033</td>
+	<td>2117D Hornbake Library, South Wing, 4130 Campus Dr.</td>
+</tr>
+<tr>
+	<td>Richard Marciano</td>
+	<td>Affiliate Professor</td>
+	<td>marciano@umd.edu</td>
+	<td>(301) 314-0281</td>
+	<td>HBK 4113 South</td>
+</tr>
+<tr>
+	<td>Keith Marzullo</td>
+	<td>Affiliate Professor</td>
+	<td>marzullo@umd.edu</td>
+	<td>(301) 405-2033</td>
+	<td>4105 Hornbake Library</td>
+</tr>
+<tr>
+	<td>Doug Oard</td>
+	<td>Affiliate Professor</td>
+	<td>oard@umd.edu</td>
+	<td>(301) 405-5582</td>
+	<td>IRB 4142</td>
+</tr>
+<tr>
+	<td>Michael Otte</td>
+	<td>Affiliate Assistant Professor</td>
+	<td>otte@umd.edu</td>
+	<td>301-405-2723</td>
+	<td>3242 Kim Eng., 4928 Campus Dr., College Park, MD 20740</td>
+</tr>
+<tr>
+	<td>Charalampos (Babis) Papamanthou</td>
+	<td>Affiliate Associate Professor</td>
+	<td>cpap@umd.edu</td>
+	<td>(301) 405-7212</td>
+	<td>IRB 5224</td>
+</tr>
+<tr>
+	<td>Gang Qu</td>
+	<td>Affiliate Professor</td>
+	<td>gangqu@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>AVW 1417</td>
+</tr>
+<tr>
+	<td>Louiqa Raschid</td>
+	<td>Affiliate Professor</td>
+	<td>louiqa@umiacs.cs.umd.edu</td>
+	<td>(301) 405-6747</td>
+	<td>IRB 4154</td>
+</tr>
+<tr>
+	<td>Philip Resnik</td>
+	<td>Affiliate Professor</td>
+	<td>resnik@umd.edu</td>
+	<td>(301) 405-7002</td>
+	<td>Marie Mount Hall 1401C, IRB 4148</td>
+</tr>
+<tr>
+	<td>Ankur Srivastava</td>
+	<td>Affiliate Professor</td>
+	<td>ankurs@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
+<tr>
+	<td>Uzi Vishkin</td>
+	<td>Affiliate Professor</td>
+	<td>vishkin@umiacs.umd.edu</td>
+	<td>(301) 405-6763</td>
+	<td>IRB 5216</td>
+</tr>
+<tr>
+	<td>Donald Yeung</td>
+	<td>Affiliate Professor</td>
+	<td>yeung@glue.umd.edu</td>
+	<td>(301) 405-3649</td>
+	<td>AVW 1327</td>
+</tr>
+<tr>
+	<td>Souvik Bhattacherjee</td>
+	<td>Research Associate</td>
+	<td>bsouvik@cs.umd.edu</td>
+	<td>Unavaliable</td>
+	<td>IRB 2254</td>
+</tr>
+<tr>
+	<td>Ray Chen</td>
+	<td>Faculty Research Assistant</td>
+	<td>rchen@cs.umd.edu</td>
+	<td>(301) 405-2671</td>
+	<td>IRB 5124</td>
+</tr>
+<tr>
+	<td>Michael Coblenz</td>
+	<td>Research Associate</td>
+	<td>mcoblenz@umd.edu</td>
+	<td>Unavaliable</td>
+	<td>Unavaliable</td>
+</tr>
