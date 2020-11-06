@@ -85,10 +85,12 @@
 
 
             render() {
+                var d = this.props.children.pubDate;
+                var date_split = d.split(" ");
                 return (
                     <div>
                         <div class="eventHeader">
-                            Today's Events
+                            {date_split[0]} 
                         </div>
                         <div class="button-hover"
                             onMouseOver={() => this.mouseEnter()}
@@ -100,7 +102,6 @@
                                 backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                             }}>
                             {this.props.children.title} <br></br>
-                            {this.props.children.pubDate} 
                         </div>
                     </div>
                 );
