@@ -160,7 +160,8 @@
         class Events extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = [{
+                this.state = {
+                    events: [{
             "title": "Soheil Feizi Funded by DARPA to Develop Adversarial Counterattack Program",
             "pubDate": "2020-11-04 17:42:40",
             "link": "https://www.cs.umd.edu/article/2020/11/soheil-feizi-funded-darpa-develop-adversarial-counterattack-program",
@@ -182,7 +183,7 @@
             "content": "\n<div class=\"field field-name-post-date field-type-ds field-label-hidden\"><div class=\"field-items\"><div class=\"field-item even\">November 01, 2020</div></div></div>\n<div class=\"field field-name-image-colorbox field-type-ds field-label-hidden\"><div class=\"field-items\"><div class=\"field-item even\">\n<a href=\"https://www.cs.umd.edu/sites/default/files/images/article/2020/Peng%2C%20Huaishu%20cropped_0.jpeg\" title=\"&amp;nbsp;Huaishu Peng Receives Award to Develop Assistive Technology for Visually Impaired Coders&amp;nbsp;\" alt=\"Descriptive image for Huaishu Peng Receives Award to Develop Assistive Technology for Visually Impaired Coders\" class=\"colorbox-load\"><img class=\"img-responsive\" typeof=\"foaf:Image\" src=\"https://www.cs.umd.edu/sites/default/files/styles/article/public/images/article/2020/Peng%2C%20Huaishu%20cropped_0.jpeg?itok=YuMWP7sM\" alt=\"Descriptive image for Huaishu Peng Receives Award to Develop Assistive Technology for Visually Impaired Coders\" title=\"Image for Huaishu Peng Receives Award to Develop Assistive Technology for Visually Impaired Coders\"></a><a href=\"https://www.cs.umd.edu/sites/default/files/images/article/2020/Peng%2C%20Huaishu%20cropped_0.jpeg\" title=\"Huaishu Peng Receives Award to Develop Assistive Technology for Visually Impaired Coders\" class=\"colorbox-load image-caption\"><p class=\"image-caption\"></p></a>\n</div></div></div>\n<div class=\"field field-name-body field-type-text-with-summary field-label-hidden\"><div class=\"field-items\"><div class=\"field-item even\" property=\"content:encoded\">\n<p>A University of Maryland expert in the technical aspects of human-computer interaction has been funded to develop new tools that enable blind and visually impaired (BVI) coders to create visual layout and frontend programs independently.</p>\n<p><a href=\"https://www.cs.umd.edu/people/huaishu\">Huaishu Peng</a>, an assistant professor of computer science with an appointment in the <a href=\"https://www.umiacs.umd.edu/\">University of Maryland Institute for Advanced Computer Studies</a> (UMIACS), was awarded $25K from the Division of Research’s <a href=\"https://research.umd.edu/development/MarylandCatalystFund/Awardees#peng\">New Directions Fund</a>, which aims to enable new lines of research and creative work with high potential for impact.</p>\n<p>Peng notes that there has been an increase in employment opportunities for people who are blind or visually impaired. According to Stack Overflow, 1.5 percent of developers reported being BVI in 2019, an increase of nearly 111 percent compared to 2017.</p>\n<p>Although many BVI developers already write code to express logic and algorithms, these codes are limited to the backend of a computer program. Frontend programs—programs that require not only logic but also the understanding of the design and visual layout—remain a challenge for BVI developers.</p>\n<p>With this award, Peng aims to understand how visually impaired people currently create and edit visual layouts, and the social-technical challenges that they face during that process. He also plans to develop an initial prototype for the accessible visual layout programming tool.</p>\n<p><em>Written by Melissa Brachfeld (UMIACS)</em></p>\n</div></div></div>\n",
             "enclosure": {},
             "categories": []
-        }];
+        }]}
             }
 
             componentDidMount() {
@@ -191,95 +192,9 @@
 
             render() {
                 return (
-                <div class="container">
-                    <div class="calendar light">
-                    <div class="calendar_header">
-                    <h1 class = "header_title">Welcome Back</h1>
-                    <p class="header_copy"> Calendar Plan</p>
+                    <div>
+                        {this.state.events}
                     </div>
-                    <div class="calendar_plan">
-                    <div class="cl_plan">
-                        <div class="cl_title">Today</div>
-                        <div class="cl_copy">22nd  April  2018</div>
-                        <div class="cl_add">
-                        <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="calendar_events">
-                    <p class="ce_title">Upcoming Events</p>
-                    <div class="event_item">
-                        <div class="ei_Dot dot_active"></div>
-                        <div class="ei_Title">10:30 am</div>
-                        <div class="ei_Copy">Monday briefing with the team</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">12:00 pm</div>
-                        <div class="ei_Copy">Lunch for with the besties</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">13:00 pm</div>
-                        <div class="ei_Copy">Meet with the client for final design <br> @foofinder </br> </div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">14:30 am</div>
-                        <div class="ei_Copy">Plan event night to inspire students</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">15:30 am</div>
-                        <div class="ei_Copy">Add some more events to the calendar</div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="calendar dark">
-                    <div class="calendar_header">
-                    <h1 class = "header_title">Welcome Back</h1>
-                    <p class="header_copy"> Calendar Plan</p>
-                    </div>
-                    <div class="calendar_plan">
-                    <div class="cl_plan">
-                        <div class="cl_title">Today</div>
-                        <div class="cl_copy">22nd  April  2018</div>
-                        <div class="cl_add">
-                        <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="calendar_events">
-                    <p class="ce_title">Upcoming Events</p>
-                    <div class="event_item">
-                        <div class="ei_Dot dot_active"></div>
-                        <div class="ei_Title">10:30 am</div>
-                        <div class="ei_Copy">Monday briefing with the team</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">12:00 pm</div>
-                        <div class="ei_Copy">Lunch for with the besties</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">13:00 pm</div>
-                        <div class="ei_Copy">Meet with the client for final design <br> @foofinder </br> </div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">14:30 am</div>
-                        <div class="ei_Copy">Plan event night to inspire students</div>
-                    </div>
-                    <div class="event_item">
-                        <div class="ei_Dot"></div>
-                        <div class="ei_Title">15:30 am</div>
-                        <div class="ei_Copy">Add some more events to the calendar</div>
-                    </div>
-                    </div>
-                </div>
-                </div>
                 );
             }
         }
