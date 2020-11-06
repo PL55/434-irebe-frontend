@@ -17,7 +17,7 @@ body {
 .side-panel {
   background-color: #f6f6f6;
   width: 400px;
-  height:calc(100% - 100px);
+  height:calc(100% - 120px);
   float:left;
   margin:0px;
 }
@@ -26,9 +26,10 @@ body {
   background-color: #999;
   float:right;
   width: calc(100% - 400px);
-  height:calc(100% - 100px);
+  height:calc(100% - 120px);
   overflow-y: auto;
-  box-shadow: inset 0 0 10px #000000;
+  overflow-x: auto;
+  box-shadow: inset 0 0 20px #000000;
 }
 
 .footer {
@@ -39,6 +40,7 @@ left:0;
 z-index: 10;
 height: 100px;
 width: 100%;
+padding:10px;
 }
 
 .home-panel {
@@ -54,9 +56,17 @@ margin-right: 2vw;
 filter: drop-shadow(0 0 0.75rem black);
 }
 
+.footer-panel-button {
+  width:90px;
+  height:90px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  filter: drop-shadow(0 0 0.25rem black);
+  }
+
 .home-panel-button-picture {
-width: 5vw;
-height: 5vw;
+width: 50px;
+height: 50px;
 margin: auto;
 background-color: #f6f6f6;
 
@@ -220,6 +230,40 @@ margin: auto;
 background-color: #f6f6f6;
 
 }
+
+
+
+
+/* Faculty stuff */
+
+.faculty-content-panel {
+  background-color: #ccc;
+  float:right;
+  height:calc(100% - 100px);
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+
+.faculty-table {
+  width: 98%;
+  margin-left: 10px;
+  border-collapse: collapse;
+  border: 2px solid rgba(40,40,40,0.5);
+  table-layout: fixed;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.faculty-table td, th{
+  color:black;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid rgba(40,40,40,0.5);
+  }
+
+
+/* End Faculty stuff */
 
 /* Scrollbar stuff */
 ::-webkit-scrollbar {
