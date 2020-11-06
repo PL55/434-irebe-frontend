@@ -85,17 +85,21 @@
 
             render() {
                 return (
-                    <div class="button-hover"
-                        onMouseOver={() => this.mouseEnter()}
-                        onMouseLeave={() => this.mouseLeave()}
-                        onClick={() => this.clicked()}
-                        style={{
-                            color: "white",
-                            fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
-                            backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
-                        }}>
-                        {this.props.children.title} <br></br>
-                        {this.props.children.pubDate} 
+                    <div class="header">
+                        <div class="title">
+                        </div>
+                        <div class="button-hover"
+                            onMouseOver={() => this.mouseEnter()}
+                            onMouseLeave={() => this.mouseLeave()}
+                            onClick={() => this.clicked()}
+                            style={{
+                                color: "white",
+                                fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
+                                backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
+                            }}>
+                            {this.props.children.title} <br></br>
+                            {this.props.children.pubDate} 
+                        </div>
                     </div>
                 );
             }
@@ -291,7 +295,7 @@
             render() {
                 return (
                     <div>
-                    {this.state.events.map(e => <Event>{e}</Event>)}
+                    {this.state.events.slice(0).reverse.map(e => <Event>{e}</Event>)}
                     </div>
                 );
             }
