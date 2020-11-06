@@ -290,7 +290,9 @@
             render() {
                 return (
                     <div>
-                    {this.state.events.map(e => { <Event>{e.title}</Event>})}
+                    {this.state.events.forEach(e =>  {
+                        <Event>{e.title}</Event>
+                        })}
                     </div>
                 );
             }
