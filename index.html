@@ -89,16 +89,16 @@
                 var date_split = d.split(" ");
                 return (
                     <div>
-                        <div class="eventHeader">
+                        
+                        <div class="event-header">
                             {date_split[0]} 
                         </div>
-                        <div class="button-hover"
+                        <div class="event-hover"
                             onMouseOver={() => this.mouseEnter()}
                             onMouseLeave={() => this.mouseLeave()}
                             onClick={() => this.clicked()}
                             style={{
-                                color: "white",
-                                fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
+                                fontSize: (this.state.mouseOver ? 30 : 20),  
                                 backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                             }}>
                             {this.props.children.title} <br></br>
@@ -297,7 +297,8 @@
 
             render() {
                 return (
-                    <div>
+                    <div class="event-style">
+                        Brendan Iribe Center Events
                     {this.state.events.map(e => <Event>{e}</Event>)}
                     </div>
                 );

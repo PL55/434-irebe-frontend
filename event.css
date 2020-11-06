@@ -1,5 +1,22 @@
-.eventHeader {
-    font-size: 50px;
-    font-style: oblique;
+.event-style {
+    background-color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+.event-header {
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.event-hover {
+    color: "white";   
+    margin: 10; 
+    padding: 10; 
+    cursor: "pointer";
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
