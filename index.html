@@ -360,6 +360,8 @@
     </script>
 
 
+
+
     <script type="text/babel">
 
         class Faculty extends React.Component {
@@ -368,26 +370,26 @@
                 this.state = {
                     page: "schedule",
                     currentRoom: "0324",
-                    room0318: {
-                        Monday: [
-                            {course:"CMSC 389N", start_time:"3:30pm", end_time:"4:45pm", seats:"95", open_seats:"0", sections:["0101"], instructors:["Elias Gonzalez"]}
-                        ],
-                        Tuesday: [
-                            {course:"CMSC 423", start_time:"11:00am", end_time:"12:15pm", seats:"95", open_seats:"1", sections:["0101"], instructors:["Robert Patro"]},
-                            {course:"CMSC 456", start_time:"2:00pm",  end_time:"3:15pm",  seats:"60", open_seats:"2", sections:["0201"], instructors:["Gorjan Alagic"]},
-                            {course:"CMSC 414", start_time:"3:30pm",  end_time:"4:45pm",  seats:"97", open_seats:"0", sections:["0201"], instructors:["David Levin"]}
+                    // room0318: {
+                    //     Monday: [
+                    //         {course:"CMSC 389N", start_time:"3:30pm", end_time:"4:45pm", seats:"95", open_seats:"0", sections:["0101"], instructors:["Elias Gonzalez"]}
+                    //     ],
+                    //     Tuesday: [
+                    //         {course:"CMSC 423", start_time:"11:00am", end_time:"12:15pm", seats:"95", open_seats:"1", sections:["0101"], instructors:["Robert Patro"]},
+                    //         {course:"CMSC 456", start_time:"2:00pm",  end_time:"3:15pm",  seats:"60", open_seats:"2", sections:["0201"], instructors:["Gorjan Alagic"]},
+                    //         {course:"CMSC 414", start_time:"3:30pm",  end_time:"4:45pm",  seats:"97", open_seats:"0", sections:["0201"], instructors:["David Levin"]}
 
-                        ],
-                        Wednesday: [
-                            {course:"CMSC 389N", start_time:"3:30pm", end_time:"4:45pm", seats:"95", open_seats:"0", sections: ["0101"], instructors:["Elias Gonzalez"]}
-                        ],
-                        Thursday: [
-                            {course:"CMSC 423", start_time:"11:00am", end_time:"12:15pm", seats:"95", open_seats:"1", sections:["0101"], instructors:["Robert Patro"]},
-                            {course:"CMSC 456", start_time:"2:00pm",  end_time:"3:15pm",  seats:"60", open_seats:"2", sections:["0201"], instructors:["Gorjan Alagic"]},
-                            {course:"CMSC 414", start_time:"3:30pm",  end_time:"4:45pm",  seats:"97", open_seats:"0", sections:["0201"], instructors:["David Levin"]}
-                        ],
-                        Friday: []
-                    },
+                    //     ],
+                    //     Wednesday: [
+                    //         {course:"CMSC 389N", start_time:"3:30pm", end_time:"4:45pm", seats:"95", open_seats:"0", sections: ["0101"], instructors:["Elias Gonzalez"]}
+                    //     ],
+                    //     Thursday: [
+                    //         {course:"CMSC 423", start_time:"11:00am", end_time:"12:15pm", seats:"95", open_seats:"1", sections:["0101"], instructors:["Robert Patro"]},
+                    //         {course:"CMSC 456", start_time:"2:00pm",  end_time:"3:15pm",  seats:"60", open_seats:"2", sections:["0201"], instructors:["Gorjan Alagic"]},
+                    //         {course:"CMSC 414", start_time:"3:30pm",  end_time:"4:45pm",  seats:"97", open_seats:"0", sections:["0201"], instructors:["David Levin"]}
+                    //     ],
+                    //     Friday: []
+                    // },
                     room0324: {
                         Monday: [
                             {course:"CMSC 132",start_time:"9:00am",end_time:"9:50am",seats:"280",open_seats:"5",sections:["0301","0302","0303","0304","0305","0306","0307","0308"],instructors:["Fawzi Emad"]},
@@ -462,11 +464,9 @@
                             <div style={{ height: "100%", display: "inline" }}>
                                 
                                 <div class="schedule-content-panel">
-                                    <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
+                                    <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Faculty Info</div>
                                     
-                                    <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
-                                    <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
-                                    <div id="room-viewing-title">Viewing Room 0324</div>
+        
 
                                     <div id="course-popup-id" class="course-popup">
                                         <div class="course-popup-info">
@@ -1527,7 +1527,7 @@
                     }
                     return (
                         <div class="schedule-content-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Faculty Info</div>
                             
                             <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
                             <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
