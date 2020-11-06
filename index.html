@@ -19,6 +19,10 @@
 <body>
     <div id="root"></div>
 
+    <!-- ==================== Components ====================  -->
+
+
+    <!-- Map side panel button class -->
     <script type="text/babel">
 
         class Button extends React.Component {
@@ -30,7 +34,7 @@
             }
 
             clicked() {
-                alert("You clicked " + this.props.children);
+                this.props.setFloor(this.props.floor)
             }
 
             mouseEnter() {
@@ -49,43 +53,71 @@
                         onMouseLeave={() => this.mouseLeave()}
                         onClick={() => this.clicked()}
                         style={{
-                            color: "white",
-                            fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
-                            backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
+                            margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
+                            color: (this.state.mouseOver ? "white" : (this.props.floor == this.props.selectedFloor ? "white" : "#aa0000")),
+                            fontSize: (this.state.mouseOver ? 50 : (this.props.floor == this.props.selectedFloor ? 40 : 25)),
+                            backgroundColor: (this.state.mouseOver ? "#cc0000" : (this.props.floor == this.props.selectedFloor ? "#aa0000" : "#00000000")),
+                            boxShadow: "inset 0px 0px 0px 5px #aa0000"
                         }}>
-                        {this.props.children}
+                        {this.props.floor}
                     </div>
                 );
             }
         }
     </script>
 
+    <!-- Gallery side panel button class -->
+    <script type="text/babel">
+
+        class GalleryButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    mouseOver: false
+                };
+            }
+
+            clicked() {
+                this.props.setImage(this.props.image)
+            }
+
+            mouseEnter() {
+                this.setState({ mouseOver: true })
+            }
+
+            mouseLeave() {
+                this.setState({ mouseOver: false })
+            }
+
+
+            render() {
+                return (
+                    <div
+                        onMouseOver={() => this.mouseEnter()}
+                        onMouseLeave={() => this.mouseLeave()}
+                        onClick={() => this.clicked()}
+                        style={{
+                            margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, height: 100, textAlign: "center", cursor: "pointer",
+                            color: (this.state.mouseOver ? "white" : (this.props.floor == this.props.selectedFloor ? "white" : "#aa0000")),
+                            fontSize: (this.state.mouseOver ? 50 : (this.props.floor == this.props.selectedFloor ? 40 : 25)),
+                            background: "url('public/gallery/" + this.props.image + "') no-repeat center center",
+                            backgroundSize: "cover",
+                            boxShadow: (this.state.mouseOver ? "inset 0px 0px 0px 5px #aa0000" : (this.props.image == this.props.selectedImage ? "inset 0px 0px 0px 5px #aa0000" : "none"))
+                        }}>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <!-- Floor class -->
     <script type="text/babel">
 
         class Floor extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
-                    floor_number: 1,
                 };
-            }
-
-            render() {
-                return (
-                    <div style={{ width: "98%", height: "100%" }}>
-                        <div style={{ position: "relative", top: 20, left: 20, fontSize: 40, fontWeight: "bold" }}>Floor {this.state.floor_number}</div>
-                        {/* MAP OBJECT WILL GO HERE! FOR THIS FLOOR (PASS THE FLOOR NUMBER) */}
-                    </div>
-                );
-            }
-        }
-    </script>
-
-    <script type="text/babel">
-        class Map extends React.Component {
-            constructor(props) {
-                super(props);
-                this.state = {};
             }
 
             componentDidMount() {
@@ -94,25 +126,44 @@
 
             render() {
                 return (
-                    <div style={{ height: "100%", display: "inline" }}>
-
-                        <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
-                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {["A101", "B101", "C101", "D101"].map(e => <Button>{e}</Button>)}
-                            </div>
-
-                        </div>
-                        <div class="content-panel">
-                            <Floor />
-                        </div>
-                        <div class="footer"></div>
+                    <div style={{ width: "98%", height: "100%" }}>
+                        <div style={{ position: "fixed", top: 20, left: 450, fontSize: 40, fontWeight: "bold", backgroundColor: "#000000aa", color: "white", padding: 10 }}>{this.props.floor}</div>
+                        <img src={"public/floors/" + this.props.floor + ".png"}></img>
                     </div>
                 );
             }
         }
     </script>
 
+    <!-- Footer class -->
+    <script type="text/babel">
+
+        class Footer extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                };
+            }
+
+            render() {
+                return (
+                    <div>
+                        <FooterButton image="public/home.png" caption="Home" page="home" setPage={this.props.setPage}></FooterButton>
+                        <div style={{ float: "right" }}>
+                            <FooterButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></FooterButton>
+                            <FooterButton image="public/clipboard.png" caption="Schedules" page="schedule" setPage={this.props.setPage}></FooterButton>
+                            <FooterButton image="public/event.png" caption="Events" page="events" setPage={this.props.setPage}></FooterButton>
+                            <FooterButton image="public/professor.png" caption="Faculty" page="faculty" setPage={this.props.setPage}></FooterButton>
+                            <FooterButton image="public/gallery.png" caption="Gallery" page="gallery" setPage={this.props.setPage}></FooterButton>
+                            <FooterButton image="public/question.png" caption="Help" page="help" setPage={this.props.setPage}></FooterButton>
+                        </div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <!-- Home page nav buttons -->
     <script type="text/babel">
         class PanelButton extends React.Component {
             constructor(props) {
@@ -135,6 +186,89 @@
         }
     </script>
 
+    <!-- Footer nav buttons -->
+    <script type="text/babel">
+        class FooterButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {};
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <button class="footer-panel-button" onClick={() => this.props.setPage(this.props.page)}>
+                        <div class="home-panel-button-picture" style={{ background: 'url("' + this.props.image + '") no-repeat center center', backgroundSize: "cover" }}></div>
+                        <div style={{ fontSize: 16, fontWeight: "bold" }}>{this.props.caption}</div>
+                    </button>
+                );
+            }
+        }
+    </script>
+
+    <!-- Class for the schedule course button -->
+    <script type="text/babel">
+        class ScheduleCourseButton extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    rowSpan: props.rowSpan,
+                    color: props.color,
+                    courseInfo: props.courseInfo
+                }
+            }
+
+            clickClass() {
+                const text = document.getElementById("schedule-course-description");
+                const info = this.state.courseInfo;
+                let sections = "";
+                let instructors = "";
+                info.sections.forEach(section => sections += section + ", ")
+                info.instructors.forEach(instructor => instructors += instructor + ", ")
+                sections = sections.slice(0, -2)
+                instructors = instructors.slice(0, -2)
+
+                text.innerHTML = "Course: " + info.course + "<br/>"
+                    + "Time: " + info.start_time + " - " + info.end_time + "<br/>"
+                    + "Seats: " + info.seats + "<br/>"
+                    + "Open Seats: " + info.open_seats + "<br/>"
+                    + "Sections: " + sections + "<br/>"
+                    + "Instructors: " + instructors
+
+                document.getElementById("course-popup-id").style.display = "block";
+            }
+
+            render() {
+                if (this.props.rowSpan == "4") {
+                    return <td
+                        class="class-cell"
+                        style={{ backgroundColor: this.state.color }}
+                        rowspan={this.state.rowSpan}>
+                        <button
+                            style={{ width: "100%", height: "150px", backgroundColor: this.state.color, border: "none", outline: "none", cursor: "pointer", zIndex: 10 }}
+                            onClick={this.clickClass.bind(this)}>{this.state.courseInfo.course}
+                        </button></td>
+                }
+                return <td
+                    class="class-cell"
+                    style={{ backgroundColor: this.state.color }}
+                    rowspan={this.state.rowSpan}>
+                    <button
+                        style={{ width: "100%", height: "250px", backgroundColor: this.state.color, border: "none", outline: "none", cursor: "pointer", zIndex: 10 }}
+                        onClick={this.clickClass.bind(this)}>{this.state.courseInfo.course}
+                    </button></td>
+            }
+        }
+    </script>
+
+
+
+    <!-- ==================== Pages ==================== -->
+
+    <!-- The Home page -->
     <script type="text/babel">
         class Home extends React.Component {
             constructor(props) {
@@ -149,13 +283,13 @@
             render() {
                 return (
                     <div class="home-panel" style={{ height: "100%" }}>
-                        <div style={{paddingTop:100}}></div>
-                        <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                        <div style={{ paddingTop: 100 }}></div>
+                        <div style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color: "white", paddingTop: 20, paddingBottom: 20 }}>
                             <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "5vw" }}>Welcome to Iribe!</div>
                             <div style={{ textAlign: "center", fontWeight: "bold", fontSize: "2vw", paddingTop: 10 }}>How may we assist you?</div>
                         </div>
 
-                        <div style={{ margin: 100,marginBottom:0, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
+                        <div style={{ margin: 100, marginBottom: 0, backgroundColor: "#990000", padding: 50, filter: "drop-shadow(0 0 0.75rem black)" }}>
 
                             <PanelButton image="public/map.png" caption="Map" page="map" setPage={this.props.setPage}></PanelButton>
                             <PanelButton image="public/clipboard.png" caption="Schedules" page="schedule" setPage={this.props.setPage}></PanelButton>
@@ -171,6 +305,527 @@
         }
     </script>
 
+    <!-- Map page -->
+    <script type="text/babel">
+        class Map extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    floor: "Ground Floor"
+                };
+                this.setFloor = this.setFloor.bind(this);
+            }
+
+            componentDidMount() {
+                document.getElementById("map-disp").scrollTop = 100;
+            }
+
+            setFloor(floor) {
+                this.setState({ floor: floor });
+            }
+
+            render() {
+                return (
+                    <div style={{ height: "100%", display: "inline" }}>
+
+                        <div class="side-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Floors</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {["Basement", "Ground Floor", "Floor 1", "Floor 2", "Floor 3", "Floor 4", "Floor 5", "Roof"].map(e =>
+                                    <Button floor={e} setFloor={this.setFloor} selectedFloor={this.state.floor}></Button>)}
+                            </div>
+
+                        </div>
+                        <div class="content-panel">
+                            <Floor floor={this.state.floor} />
+                        </div>
+                        <div class="footer">
+                            <Footer setPage={this.props.setPage}></Footer>
+                        </div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <!-- Schedule page -->
+    <script type="text/babel">
+
+        class Schedule extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    page: "schedule",
+                    currentRoom: "0324",
+                    room0318: {
+                        Monday: [
+                            { course: "CMSC 389N", start_time: "3:30pm", end_time: "4:45pm", seats: "95", open_seats: "0", sections: ["0101"], instructors: ["Elias Gonzalez"] }
+                        ],
+                        Tuesday: [
+                            { course: "CMSC 423", start_time: "11:00am", end_time: "12:15pm", seats: "95", open_seats: "1", sections: ["0101"], instructors: ["Robert Patro"] },
+                            { course: "CMSC 456", start_time: "2:00pm", end_time: "3:15pm", seats: "60", open_seats: "2", sections: ["0201"], instructors: ["Gorjan Alagic"] },
+                            { course: "CMSC 414", start_time: "3:30pm", end_time: "4:45pm", seats: "97", open_seats: "0", sections: ["0201"], instructors: ["David Levin"] }
+
+                        ],
+                        Wednesday: [
+                            { course: "CMSC 389N", start_time: "3:30pm", end_time: "4:45pm", seats: "95", open_seats: "0", sections: ["0101"], instructors: ["Elias Gonzalez"] }
+                        ],
+                        Thursday: [
+                            { course: "CMSC 423", start_time: "11:00am", end_time: "12:15pm", seats: "95", open_seats: "1", sections: ["0101"], instructors: ["Robert Patro"] },
+                            { course: "CMSC 456", start_time: "2:00pm", end_time: "3:15pm", seats: "60", open_seats: "2", sections: ["0201"], instructors: ["Gorjan Alagic"] },
+                            { course: "CMSC 414", start_time: "3:30pm", end_time: "4:45pm", seats: "97", open_seats: "0", sections: ["0201"], instructors: ["David Levin"] }
+                        ],
+                        Friday: []
+                    },
+                    room0324: {
+                        Monday: [
+                            { course: "CMSC 132", start_time: "9:00am", end_time: "9:50am", seats: "280", open_seats: "5", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307", "0308"], instructors: ["Fawzi Emad"] },
+                            { course: "CMSC 351", start_time: "10:00am", end_time: "10:50am", seats: "290", open_seats: "0", sections: ["0201"], instructors: ["Mohammad Nayeem Teli"] },
+                            { course: "CMSC 132", start_time: "11:00am", end_time: "11:50am", seats: "184", open_seats: "37", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "12:00pm", end_time: "12:50pm", seats: "69", open_seats: "12", sections: ["0101", "0102", "0103", "0104", "0105"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 131", start_time: "1:00pm", end_time: "1:50pm", seats: "63", open_seats: "14", sections: ["0201", "0202", "0203", "0204", "0205"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 132", start_time: "2:00pm", end_time: "2:50pm", seats: "164", open_seats: "22", sections: ["0101", "0102", "0103", "0104", "0106"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "3:00pm", end_time: "3:50pm", seats: "211", open_seats: "20", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307"], instructors: ["Nelson Padua-Perez"] },
+                            { course: "CMSC 320", start_time: "5:00pm", end_time: "6:15pm", seats: "291", open_seats: "0", sections: ["0101"], instructors: ["Hector Corrada Bravo"] }
+                        ],
+                        Tuesday: [
+                            { course: "CMSC 330", start_time: "9:30am", end_time: "10:45am", seats: "298", open_seats: "2", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207", "0208", "0209"], instructors: ["Roger Eastman"] },
+                            { course: "CMSC 216", start_time: "11:00am", end_time: "12:15pm", seats: "277", open_seats: "102", sections: ["0101", "0102", "0103", "0104", "0105", "0106", "0107", "0108"], instructors: ["A Shankar"] },
+                            { course: "CMSC 216", start_time: "12:30pm", end_time: "1:45pm", seats: "280", open_seats: "2", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207", "0208"], instructors: ["Ilchul Yoon"] },
+                            { course: "CMSC 250", start_time: "2:00pm", end_time: "3:15pm", seats: "237", open_seats: "1", sections: ["0101", "0102", "0103", "0104", "0105", "0106", "0107", "0108"], instructors: ["Jason Filippou", "Iason Filippou"] },
+                            { course: "CMSC 250", start_time: "3:30pm", end_time: "4:45pm", seats: "90", open_seats: "0", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307"], instructors: ["Jason Filippou", "Iason Filippou"] }
+                        ],
+                        Wednesday: [
+                            { course: "CMSC 132", start_time: "9:00am", end_time: "9:50am", seats: "280", open_seats: "5", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307", "0308"], instructors: ["Fawzi Emad"] },
+                            { course: "CMSC 351", start_time: "10:00am", end_time: "10:50am", seats: "290", open_seats: "0", sections: ["0201"], instructors: ["Mohammad Nayeem Teli"] },
+                            { course: "CMSC 132", start_time: "11:00am", end_time: "11:50am", seats: "184", open_seats: "37", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "12:00pm", end_time: "12:50pm", seats: "69", open_seats: "12", sections: ["0101", "0102", "0103", "0104", "0105"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 131", start_time: "1:00pm", end_time: "1:50pm", seats: "63", open_seats: "14", sections: ["0201", "0202", "0203", "0204", "0205"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 132", start_time: "2:00pm", end_time: "2:50pm", seats: "164", open_seats: "22", sections: ["0101", "0102", "0103", "0104", "0106"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "3:00pm", end_time: "3:50pm", seats: "211", open_seats: "20", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307"], instructors: ["Nelson Padua-Perez"] },
+                            { course: "CMSC 320", start_time: "5:00pm", end_time: "6:15pm", seats: "291", open_seats: "0", sections: ["0101"], instructors: ["Hector Corrada Bravo"] }
+                        ],
+                        Thursday: [
+                            { course: "CMSC 330", start_time: "9:30am", end_time: "10:45am", seats: "298", open_seats: "2", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207", "0208", "0209"], instructors: ["Roger Eastman"] },
+                            { course: "CMSC 216", start_time: "11:00am", end_time: "12:15pm", seats: "277", open_seats: "102", sections: ["0101", "0102", "0103", "0104", "0105", "0106", "0107", "0108"], instructors: ["A Shankar"] },
+                            { course: "CMSC 216", start_time: "12:30pm", end_time: "1:45pm", seats: "280", open_seats: "2", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207", "0208"], instructors: ["Ilchul Yoon"] },
+                            { course: "CMSC 250", start_time: "2:00pm", end_time: "3:15pm", seats: "237", open_seats: "1", sections: ["0101", "0102", "0103", "0104", "0105", "0106", "0107", "0108"], instructors: ["Jason Filippou", "Iason Filippou"] },
+                            { course: "CMSC 250", start_time: "3:30pm", end_time: "4:45pm", seats: "90", open_seats: "0", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307"], instructors: ["Jason Filippou", "Iason Filippou"] }
+                        ],
+                        Friday: [
+                            { course: "CMSC 132", start_time: "9:00am", end_time: "9:50am", seats: "280", open_seats: "5", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307", "0308"], instructors: ["Fawzi Emad"] },
+                            { course: "CMSC 351", start_time: "10:00am", end_time: "10:50am", seats: "290", open_seats: "0", sections: ["0201"], instructors: ["Mohammad Nayeem Teli"] },
+                            { course: "CMSC 132", start_time: "11:00am", end_time: "11:50am", seats: "184", open_seats: "37", sections: ["0201", "0202", "0203", "0204", "0205", "0206", "0207"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "12:00pm", end_time: "12:50pm", seats: "69", open_seats: "12", sections: ["0101", "0102", "0103", "0104", "0105"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 131", start_time: "1:00pm", end_time: "1:50pm", seats: "63", open_seats: "14", sections: ["0201", "0202", "0203", "0204", "0205"], instructors: ["Pedram Sadeghian"] },
+                            { course: "CMSC 132", start_time: "2:00pm", end_time: "2:50pm", seats: "164", open_seats: "22", sections: ["0101", "0102", "0103", "0104", "0106"], instructors: ["Laurence Herman"] },
+                            { course: "CMSC 131", start_time: "3:00pm", end_time: "3:50pm", seats: "211", open_seats: "20", sections: ["0301", "0302", "0303", "0304", "0305", "0306", "0307"], instructors: ["Nelson Padua-Perez"] }
+                        ]
+                    }
+                }
+            }
+
+            selectRoom0318() {
+                this.setState({ currentRoom: "0318" })
+            }
+
+            selectRoom0324() {
+                this.setState({ currentRoom: "0324" })
+            }
+
+            clickClosePopup() {
+                document.getElementById("course-popup-id").style.display = "none";
+            }
+
+            render() {
+
+                if (this.state.currentRoom === "0324") {
+                    return (
+                        <div style={{ height: "100%", display: "inline" }}>
+
+                            <div class="schedule-content-panel">
+                                <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
+
+                                <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
+                                <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
+                                <div id="room-viewing-title">Viewing Room 0324</div>
+
+                                <div id="course-popup-id" class="course-popup">
+                                    <div class="course-popup-info">
+                                        <span class="close-course-popup" onClick={this.clickClosePopup.bind(this)}>&times;</span>
+                                        <p id="schedule-course-description"></p>
+                                    </div>
+                                </div>
+
+                                <table class="schedule-table">
+                                    <tr>
+                                        <td class="time-column">&nbsp;</td>
+                                        <th class="day-name">Mon</th>
+                                        <th class="day-name">Tues</th>
+                                        <th class="day-name">Wed</th>
+                                        <th class="day-name">Thurs</th>
+                                        <th class="day-name">Fri</th>
+                                    </tr>
+
+                                    <tr><td class="main-hour">8:00 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">8:15 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">8:30 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">8:45 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">8:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">9:00 am</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Monday[0]} />
+                                        <td></td>
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Wednesday[0]} />
+                                        <td></td>
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Friday[0]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">9:15 am</td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">9:30 am</td>
+                                        <ScheduleCourseButton rowSpan="6" color="#FFE4B5" courseInfo={this.state.room0324.Tuesday[0]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#FFE4B5" courseInfo={this.state.room0324.Thursday[0]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">9:45 am</td></tr>
+                                    <tr><td class="sub-hour">9:50 am</td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">10:00 am</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#DDA0DD" courseInfo={this.state.room0324.Monday[1]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#DDA0DD" courseInfo={this.state.room0324.Wednesday[1]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#DDA0DD" courseInfo={this.state.room0324.Friday[1]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">10:15 am</td></tr>
+                                    <tr><td class="main-hour">10:30 am</td></tr>
+                                    <tr><td class="sub-hour">10:45 am</td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">10:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">11:00 am</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Monday[2]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0324.Tuesday[1]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Wednesday[2]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0324.Thursday[1]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Friday[2]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">11:15 am</td></tr>
+                                    <tr><td class="main-hour">11:30 am</td></tr>
+                                    <tr><td class="sub-hour">11:45 am</td></tr>
+                                    <tr><td class="sub-hour">11:50 am</td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">12:00 pm</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Monday[3]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Wednesday[3]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Friday[3]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">12:15 pm</td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">12:30 pm</td>
+                                        <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0324.Tuesday[2]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0324.Thursday[2]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">12:45 pm</td></tr>
+                                    <tr><td class="sub-hour">12:50 pm</td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">1:00 pm</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Monday[4]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Wednesday[4]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Friday[4]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">1:15 pm</td></tr>
+                                    <tr><td class="main-hour">1:30 pm</td></tr>
+                                    <tr><td class="sub-hour">1:45 pm</td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">1:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">2:00 pm</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Monday[5]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#DB7093" courseInfo={this.state.room0324.Tuesday[3]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Wednesday[5]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#DB7093" courseInfo={this.state.room0324.Thursday[3]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#48D1CC" courseInfo={this.state.room0324.Friday[5]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">2:15 pm</td></tr>
+                                    <tr><td class="main-hour">2:30 pm</td></tr>
+                                    <tr><td class="sub-hour">2:45 pm</td></tr>
+                                    <tr><td class="sub-hour">2:50 pm</td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">3:00 pm</td>
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Monday[6]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Wednesday[6]} />
+                                        <ScheduleCourseButton rowSpan="4" color="#87CEFA" courseInfo={this.state.room0324.Friday[6]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">3:15 pm</td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">3:30 pm</td>
+                                        <ScheduleCourseButton rowSpan="6" color="#DB7093" courseInfo={this.state.room0324.Tuesday[4]} />
+                                        <ScheduleCourseButton rowSpan="6" color="#DB7093" courseInfo={this.state.room0324.Thursday[4]} />
+                                    </tr>
+
+                                    <tr><td class="sub-hour">3:45 pm</td></tr>
+                                    <tr><td class="sub-hour">3:50 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">4:00 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">4:15 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">4:30 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">4:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">4:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                                    <tr>
+                                        <td class="main-hour">5:00 pm</td>
+                                        <ScheduleCourseButton rowSpan="6" color="#F4A460" courseInfo={this.state.room0324.Monday[7]} />
+                                        <td></td>
+                                        <ScheduleCourseButton rowSpan="6" color="#F4A460" courseInfo={this.state.room0324.Wednesday[7]} />
+                                        <td></td><td></td>
+                                    </tr>
+
+                                    <tr><td class="sub-hour">5:15 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">5:30 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">5:45 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">5:50 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">6:00 pm</td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">6:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="main-hour">6:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">6:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="sub-hour">6:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                                </table>
+                            </div>
+                            <div class="footer">
+                                <Footer setPage={this.props.setPage}></Footer>
+                            </div>
+                        </div>
+                    );
+                }
+                return (
+                    <div class="schedule-content-panel">
+                        <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
+
+                        <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
+                        <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
+                        <div id="room-viewing-title">Viewing Room 0318</div>
+
+                        <div id="course-popup-id" class="course-popup">
+                            <div class="course-popup-info">
+                                <span class="close-course-popup" onClick={this.clickClosePopup.bind(this)}>&times;</span>
+                                <p id="schedule-course-description"></p>
+                            </div>
+                        </div>
+
+                        <table class="schedule-table">
+                            <tr>
+                                <td class="time-column">&nbsp;</td>
+                                <th class="day-name">Mon</th>
+                                <th class="day-name">Tues</th>
+                                <th class="day-name">Wed</th>
+                                <th class="day-name">Thurs</th>
+                                <th class="day-name">Fri</th>
+                            </tr>
+
+                            <tr><td class="main-hour">8:00 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">8:15 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">8:30 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">8:45 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">8:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">9:00 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">9:15 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">9:30 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">9:45 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">9:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">10:00 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">10:15 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">10:30 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">10:45 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">10:50 am</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">11:00 am</td>
+                                <td></td>
+                                <ScheduleCourseButton rowSpan="6" color="#48D1CC" courseInfo={this.state.room0318.Tuesday[0]} />
+                                <td></td>
+                                <ScheduleCourseButton rowSpan="6" color="#48D1CC" courseInfo={this.state.room0318.Thursday[0]} />
+                                <td></td>
+                            </tr>
+
+                            <tr><td class="sub-hour">11:15 am</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">11:30 am</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">11:45 am</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">11:50 am</td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">12:00 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">12:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">12:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">12:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">12:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">1:00 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">1:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">1:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">1:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">1:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">2:00 pm</td>
+                                <td></td>
+                                <ScheduleCourseButton rowSpan="6" color="#FFE4B5" courseInfo={this.state.room0318.Tuesday[1]} />
+                                <td></td>
+                                <ScheduleCourseButton rowSpan="6" color="#FFE4B5" courseInfo={this.state.room0318.Thursday[1]} />
+                                <td></td>
+                            </tr>
+
+                            <tr><td class="sub-hour">2:15 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">2:30 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">2:45 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">2:50 pm</td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">3:00 pm</td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">3:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr>
+                                <td class="main-hour">3:30 pm</td>
+                                <ScheduleCourseButton rowSpan="6" color="#DDA0DD" courseInfo={this.state.room0318.Monday[0]} />
+                                <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0318.Tuesday[2]} />
+                                <ScheduleCourseButton rowSpan="6" color="#DDA0DD" courseInfo={this.state.room0318.Wednesday[0]} />
+                                <ScheduleCourseButton rowSpan="6" color="#3CB371" courseInfo={this.state.room0318.Thursday[2]} />
+                                <td></td>
+                            </tr>
+
+                            <tr><td class="sub-hour">3:45 pm</td><td></td></tr>
+                            <tr><td class="sub-hour">3:50 pm</td><td></td></tr>
+                            <tr><td class="main-hour">4:00 pm</td><td></td></tr>
+                            <tr><td class="sub-hour">4:15 pm</td><td></td></tr>
+                            <tr><td class="main-hour">4:30 pm</td><td></td></tr>
+                            <tr><td class="sub-hour">4:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">4:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                            <tr><td class="main-hour">5:00 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">5:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">5:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">5:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">5:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">6:00 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:15 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="main-hour">6:30 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:45 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td class="sub-hour">6:50 pm</td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                        </table>
+                        <div class="footer">
+                            <Footer setPage={this.props.setPage}></Footer>
+                        </div>
+                    </div>
+                );
+
+            }
+        }
+    </script>
+
+    <!-- Gallery -->
+    <script type="text/babel">
+        class Gallery extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    image: "iribe.jpg"
+                };
+                this.setImage = this.setImage.bind(this);
+            }
+
+
+            setImage(img) {
+                this.setState({ image: img });
+            }
+
+            render() {
+                return (
+                    <div style={{ height: "100%", display: "inline" }}>
+
+                        <div class="side-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Gallery</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {["iribe.jpg", "lecture.jpg", "inside.jpg", "roof.jpg", "inside.jpg"].map(e =>
+                                    <GalleryButton image={e} setImage={this.setImage} selectedImage={this.state.image}></GalleryButton>)}
+                            </div>
+
+                        </div>
+                        <div class="content-panel">
+                            <div style={{
+                                backgroundColor: "red", position: "relative", width: "80%", height: "80%", margin: "auto", marginTop: "10vh",
+                                filter: "drop-shadow(0 0 0.75rem black)",
+                                background: "url('public/gallery/" + this.state.image + "') no-repeat center center",
+                                backgroundSize: "cover",
+                            }}></div>
+                        </div>
+                        <div class="footer">
+                            <Footer setPage={this.props.setPage}></Footer>
+                        </div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+    <!-- Help -->
+    <script type="text/babel">
+        class Help extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    faq: []
+                };
+                this.setImage = this.setImage.bind(this);
+            }
+
+
+            setImage(img) {
+                this.setState({ image: img });
+            }
+
+            render() {
+                return (
+                    <div style={{ height: "100%", display: "inline" }}>
+
+                        <div class="side-panel">
+                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>FAQ</div>
+                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
+                                {this.state.faq.map(e =>
+                                    <div></div>)}
+                            </div>
+
+                        </div>
+                        <div class="content-panel">
+
+                        </div>
+                        <div class="footer">
+                            <Footer setPage={this.props.setPage}></Footer>
+                        </div>
+                    </div>
+                );
+            }
+        }
+    </script>
+
+
+
+    <!-- ==================== Manage scripts ==================== -->
+
+    <!-- The page manager that routes each page to render -->
     <script type="text/babel">
         class Index extends React.Component {
             constructor(props) {
@@ -198,10 +853,32 @@
                     return (
                         <Map setPage={this.setPage} />
                     );
+
+                else if (this.state.page == "schedule")
+                    return (
+                        <Schedule setPage={this.setPage} />
+                    );
+
+                else if (this.state.page == "gallery")
+                    return (
+                        <Gallery setPage={this.setPage} />
+                    );
+
+                else if (this.state.page == "help")
+                    return (
+                        <Help setPage={this.setPage} />
+                    );
+
+
+                else // We tried to set to  a page that doesn't exist
+                    return (
+                        <Home setPage={this.setPage} />
+                    );
             }
         }
     </script>
 
+    <!-- Root -->
     <script type="text/babel">
 
         const rootElement = document.getElementById('root')
@@ -219,6 +896,9 @@
             rootElement
         )
     </script>
+
+
+
 
 </body>
 
