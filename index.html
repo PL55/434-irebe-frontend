@@ -70,10 +70,6 @@
                 };
             }
 
-            clicked() {
-                alert("You clicked " + this.props.children);
-            }
-
             mouseEnter() {
                 this.setState({ mouseOver: true })
             }
@@ -94,7 +90,8 @@
                             fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
                             backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                         }}>
-                        {this.props.children}
+                        {this.props.children.title} <br></br>
+                        {this.props.children.pubDate} 
                     </div>
                 );
             }
@@ -290,9 +287,7 @@
             render() {
                 return (
                     <div>
-                    {this.state.events.forEach(e =>  {
-                        <Event>{e.title}</Event>
-                        })}
+                    {this.state.events.map(e => <Event>{e}</Event>)}
                     </div>
                 );
             }
