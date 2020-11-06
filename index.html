@@ -290,11 +290,7 @@
             render() {
                 return (
                     <div>
-                    {this.state.events.forEach(e => {
-                        if (e.title == "Soheil Feizi Funded by DARPA to Develop Adversarial Counterattack Program") {
-                            <Event>{e.title}</Event>
-                        }
-                    })}
+                    {this.state.events.forEach(e => { <Event>{e.title}</Event>})}
                     </div>
                 );
             }
