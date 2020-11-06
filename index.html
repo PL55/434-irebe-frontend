@@ -70,6 +70,10 @@
                 };
             }
 
+            clicked() {
+                alert("Link to event: \n" + this.props.children.link);
+            }
+
             mouseEnter() {
                 this.setState({ mouseOver: true })
             }
