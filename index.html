@@ -196,7 +196,7 @@
                         <div class="side-panel">
                             <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {this.state.map(e => <Button>{e.title}</Button>)}
+                                {this.state.map(e => <Button>{e.title, e.description}</Button>)}
                             </div>
 
                         </div>
