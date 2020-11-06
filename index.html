@@ -791,7 +791,8 @@
             constructor(props) {
                 super(props);
                 this.state = {
-                    events: [        {
+                    events: [
+        {
             "title": "Soheil Feizi Funded by DARPA to Develop Adversarial Counterattack Program",
             "pubDate": "2020-11-04 17:42:40",
             "link": "https://www.cs.umd.edu/article/2020/11/soheil-feizi-funded-darpa-develop-adversarial-counterattack-program",
@@ -921,7 +922,10 @@
                 return (
                     <div class="event-style">
                         Brendan Iribe Center Events
-                    {this.state.events.map(e => <Event>{e}</Event>)}
+                        {this.state.events.map(e => <Event>{e}</Event>)}
+                        <div class="footer">
+                            <Footer setPage={this.props.setPage}></Footer>
+                        </div>
                     </div>
                 );
             }
@@ -933,15 +937,7 @@
         class Faculty extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = {
-                    faq: []
-                };
-                this.setImage = this.setImage.bind(this);
-            }
-
-
-            setImage(img) {
-                this.setState({ image: img });
+                this.state = {};
             }
 
             render() {
@@ -2130,10 +2126,10 @@
                         <Schedule setPage={this.setPage} />
                     );
 
-                /*else if (this.stage.page == "events")
+                else if (this.state.page == "events")
                     return (
-                        <Event setPage={this.setPage} />
-                    );*/
+                        <Events setPage={this.setPage} />
+                    );
 
                 else if (this.state.page == "faculty")
                     return (
