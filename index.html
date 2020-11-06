@@ -290,7 +290,11 @@
             render() {
                 return (
                     <div>
-                        {this.state.events.map(e => <Event>{e.title}</Event>)}
+                    {this.state.events.forEach(e => {
+                        if (e.pubDate == "2020-11-04 17:42:40") {
+                            <Event>{e.title}</Event>
+                        }
+                    })}
                     </div>
                 );
             }
