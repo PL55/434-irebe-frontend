@@ -94,7 +94,7 @@
                             fontSize: (this.state.mouseOver ? 30 : 20), margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
                             backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
                         }}>
-                        {this.props.children[0]}
+                        {this.props.children}
                     </div>
                 );
             }
@@ -191,20 +191,95 @@
 
             render() {
                 return (
-                    <div style={{ height: "100%", display: "inline" }}>
-
-                        <div class="side-panel">
-                            <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Rooms</div>
-                            <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {this.state.map(e => <Event>{e.title, e.description}</Event>)}
-                            </div>
-
-                        </div>
-                        <div class="content-panel">
-                            <Floor />
-                        </div>
-                        <div class="footer"></div>
+                <div class="container">
+                    <div class="calendar light">
+                    <div class="calendar_header">
+                    <h1 class = "header_title">Welcome Back</h1>
+                    <p class="header_copy"> Calendar Plan</p>
                     </div>
+                    <div class="calendar_plan">
+                    <div class="cl_plan">
+                        <div class="cl_title">Today</div>
+                        <div class="cl_copy">22nd  April  2018</div>
+                        <div class="cl_add">
+                        <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="calendar_events">
+                    <p class="ce_title">Upcoming Events</p>
+                    <div class="event_item">
+                        <div class="ei_Dot dot_active"></div>
+                        <div class="ei_Title">10:30 am</div>
+                        <div class="ei_Copy">Monday briefing with the team</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">12:00 pm</div>
+                        <div class="ei_Copy">Lunch for with the besties</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">13:00 pm</div>
+                        <div class="ei_Copy">Meet with the client for final design <br> @foofinder </br> </div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">14:30 am</div>
+                        <div class="ei_Copy">Plan event night to inspire students</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">15:30 am</div>
+                        <div class="ei_Copy">Add some more events to the calendar</div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="calendar dark">
+                    <div class="calendar_header">
+                    <h1 class = "header_title">Welcome Back</h1>
+                    <p class="header_copy"> Calendar Plan</p>
+                    </div>
+                    <div class="calendar_plan">
+                    <div class="cl_plan">
+                        <div class="cl_title">Today</div>
+                        <div class="cl_copy">22nd  April  2018</div>
+                        <div class="cl_add">
+                        <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="calendar_events">
+                    <p class="ce_title">Upcoming Events</p>
+                    <div class="event_item">
+                        <div class="ei_Dot dot_active"></div>
+                        <div class="ei_Title">10:30 am</div>
+                        <div class="ei_Copy">Monday briefing with the team</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">12:00 pm</div>
+                        <div class="ei_Copy">Lunch for with the besties</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">13:00 pm</div>
+                        <div class="ei_Copy">Meet with the client for final design <br> @foofinder </br> </div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">14:30 am</div>
+                        <div class="ei_Copy">Plan event night to inspire students</div>
+                    </div>
+                    <div class="event_item">
+                        <div class="ei_Dot"></div>
+                        <div class="ei_Title">15:30 am</div>
+                        <div class="ei_Copy">Add some more events to the calendar</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
                 );
             }
         }
