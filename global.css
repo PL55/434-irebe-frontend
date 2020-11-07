@@ -1,9 +1,10 @@
 html {
-  height:100%;
+  width: 1024px;
+  height: 768px;
 }
 
 #root {
-  height:100%
+  height: 100%
 }
 
 body {  
@@ -17,7 +18,7 @@ body {
 .side-panel {
   background-color: #f6f6f6;
   width: 400px;
-  height:calc(100% - 100px);
+  height:calc(100% - 120px);
   float:left;
   margin:0px;
 }
@@ -26,37 +27,47 @@ body {
   background-color: #999;
   float:right;
   width: calc(100% - 400px);
-  height:calc(100% - 100px);
+  height:calc(100% - 120px);
   overflow-y: auto;
-  box-shadow: inset 0 0 10px #000000;
+  overflow-x: auto;
+  box-shadow: inset 0 0 20px #000000;
 }
 
 .footer {
-background-color: #990000;
-position: fixed;
-bottom:0;
-left:0;
-z-index: 10;
-height: 100px;
-width: 100%;
+  background-color: #990000;
+  position: fixed;
+  bottom:0;
+  left:0;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  padding:10px;
 }
 
 .home-panel {
-background-color: #999;
-background: url("public/iribe.jpg") no-repeat center center;
+  background-color: #999;
+  background: url("public/iribe.jpg") no-repeat center center;
 }
 
 .home-panel-button {
-width:10vw;
-height:10vw;
-margin-left: 2vw;
-margin-right: 2vw;
-filter: drop-shadow(0 0 0.75rem black);
+  width:10vw;
+  height:10vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
+.footer-panel-button {
+  width:90px;
+  height:90px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  filter: drop-shadow(0 0 0.25rem black);
+  }
+
 .home-panel-button-picture {
-width: 5vw;
-height: 5vw;
+width: 50px;
+height: 50px;
 margin: auto;
 background-color: #f6f6f6;
 
@@ -65,22 +76,22 @@ background-color: #f6f6f6;
 /* Start Schedule */
 
 .schedule-content-panel {
-background-color: #ccc;
-float:right;
-height:calc(100% - 100px);
-overflow-y: auto;
-box-shadow: inset 0 0 10px #000000;
+  background-color: #ccc;
+  float:right;
+  height:calc(100% - 100px);
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px #000000;
 }
 
 
 .schedule-table {
-width: 98%;
-margin-left: 10px;
-border-collapse: collapse;
-border: 2px solid rgba(40,40,40,0.5);
-table-layout: fixed;
-letter-spacing: 1px;
-font-size: 0.8rem;
+  width: 98%;
+  margin-left: 10px;
+  border-collapse: collapse;
+  border: 2px solid rgba(40,40,40,0.5);
+  table-layout: fixed;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 
 #left-schedule-button {
@@ -92,132 +103,199 @@ width: 140px;
 }
 
 #left-schedule-button:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 #right-schedule-button {
-padding-top: 5px;
-padding-bottom: 5px;
-margin-top: 5px;
-margin-left: 33%;
-width: 140px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 33%;
+  width: 140px;
 }
 
 #right-schedule-button:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 #room-viewing-title {
-font-size: large;
-border: 2px solid rgba(40,40,40,0.5);
-margin-left: 42%;
-padding-top: 5px;
-padding-bottom: 5px;
-padding-left: 2%;
-width: 185px;
+  font-size: large;
+  border: 2px solid rgba(40,40,40,0.5);
+  margin-left: 42%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  width: 185px;
 }
 
 .schedule-table td, th{
-color:black;
-padding: 10px 20px;
-text-align: center;
-border: 2px solid rgba(40,40,40,0.5);
+  color:black;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid rgba(40,40,40,0.5);
 }
 
 .schedule-table button:hover {
-color:  #990000;
+  color:  #990000;
 }
 
 .schedule-table .day-name {
-border-collapse: collapse;
-border: 2px solid rgba(40,40,40,0.5);
-background-color: #bf4040;
+  border-collapse: collapse;
+  border: 2px solid rgba(40,40,40,0.5);
+  background-color: #bf4040;
 }
 
 .schedule-table .time-column {
-width: 80px;
-border: 2px solid rgba(40,40,40,0.5);
+  width: 80px;
+  border: 2px solid rgba(40,40,40,0.5);
 }
 
 .schedule-table .main-hour {
-height: 30px;
-font-size: medium;
-background-color: #bf4040;
+  height: 30px;
+  font-size: medium;
+  background-color: #bf4040;
 }
 
 .schedule-table .sub-hour {
-font-size: smaller;
-background-color: #a65959;
+  font-size: smaller;
+  background-color: #a65959;
 }
 
 .schedule-table .class-cell {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .course-popup {
-display: none;
-position: fixed;
-z-index: 1;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0,0,0,0.5);
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .course-popup-info {
-background-color: #fefefe;
-height: 30%;
-width: 50%;
-margin: 25% auto;
-padding: 10px;
-border: 1px solid #888;  
-line-height: 2.2;
+  background-color: #fefefe;
+  height: 30%;
+  width: 50%;
+  margin: 25% auto;
+  padding: 10px;
+  border: 1px solid #888;  
+  line-height: 2.2;
 }
 
 .close-course-popup {
-color: #aaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close-course-popup:hover,
 .close-course-popup:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .schedule-footer {
-position: fixed;
-padding-bottom: 30px;
-bottom:0;
-left:0;
-z-index: 10;
-height: 100px;
-width: 100%;
-font-size: smaller;
-justify-content: space-between;
+  position: fixed;
+  padding-bottom: 30px;
+  bottom:0;
+  left:0;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  font-size: smaller;
+  justify-content: space-between;
 }
 
 /* End Schedule */
 
+
+/* Start Faculty */
+
+.faculty-content-panel {
+  background-color: #ccc;
+  float:right;
+  height:calc(100% - 100px);
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px #000000;
+  margin-bottom: 5%;
+  padding-bottom: 8%;
+}
+
+#left-schedule-button {
+padding-top: 5px;
+padding-bottom: 5px;
+margin-top: 5px;
+margin-left: 23%;
+width: 140px;
+}
+
+.faculty-table {
+  width: 98%;
+  margin-left: 10px;
+  border-collapse: collapse;
+  border: 2px solid rgba(40,40,40,0.5);
+  table-layout: fixed;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.faculty-table td, th{
+  color:black;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid rgba(40,40,40,0.5);
+  }
+
+/* End Faculty */
+
+/* Start Events */
+
+.event-style {
+  background-color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.event-header {
+  font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.event-hover {
+  color: "white";   
+  margin: 10; 
+  padding: 10; 
+  cursor: "pointer";
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* End Events */
+
 /* Navigation footer */
 .nav-panel-button {
-width:8vw;
-height: 7vw;
-margin-left: 5vw;
-margin-right: 2vw;
-filter: drop-shadow(0 0 0.75rem black);
+  width:8vw;
+  height: 7vw;
+  margin-left: 5vw;
+  margin-right: 2vw;
+  filter: drop-shadow(0 0 0.75rem black);
 }
 
 .nav-panel-button-picture {
-width: 4vw;
-height: 4vw;
-margin: auto;
-background-color: #f6f6f6;
+  width: 4vw;
+  height: 4vw;
+  margin: auto;
+  background-color: #f6f6f6;
 
 }
 
