@@ -105,10 +105,11 @@
             //             </div>
             //         </div>
             //     );
+            var things = this.props.children;
                 return (
                     <div class="day">
                         <h3 class="day-label">1</h3>
-                        <div class="event event-start event-end" data-span="2">Class</div>
+                        <div class="event event-start event-end" data-span="2">{things}</div>
                         <div class="event event-end">Interview</div>
                     </div>
                 )
