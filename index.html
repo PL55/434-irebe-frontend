@@ -105,7 +105,10 @@
             //             </div>
             //         </div>
             //     );
-            var things = this.props.children;
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode("Water");
+            node.appendChild(textnode);
+            document.getElementById("content").appendChild(node);
                 return (
                     <p></p>
                 )
@@ -199,6 +202,7 @@
                         <h3 class="day-label">1</h3>
                         <div class="event event-start event-end" data-span="2">Class</div>
                         <div class="event event-end">Interview</div>
+                        
                     </div>
                     <div class="day">
                         <h3 class="day-label">2</h3>
@@ -211,9 +215,11 @@
                     <div class="day">
                         <h3 class="day-label">4</h3>
                         <div class="event event-start" data-span="4">Meeting</div>
+
                     </div>
                     <div class="day">
                         <h3 class="day-label">5</h3>
+                        <div id="content"></div>
                     </div>
                     <div class="day">
                         <h3 class="day-label">6</h3>
@@ -221,8 +227,10 @@
                     <div class="day">
                         <h3 class="day-label">7</h3>
                     </div>
+                    <div>
+                        {this.state.events.map(e => <Event>e</Event>)}
                     </div>
-                    
+                    </div>
                     </div>
                 );
             }
