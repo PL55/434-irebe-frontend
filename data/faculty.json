@@ -1,1031 +1,1031 @@
 [
-    {
-       "Name":"Daniel Abadi  ",
-       "Title":"Professor",
-       "Email":"Contact Form",
-       "Phone":"(301) 405-9695",
-       "Office":"IRB 5156"
-    },
-    {
-       "Name":"Ashok Agrawala  ",
-       "Title":"Professor",
-       "Email":"agrawala@cs.umd.edu",
-       "Phone":"(301) 405-2525",
-       "Office":"IRB 5204"
-    },
-    {
-       "Name":"John Aloimonos  ",
-       "Title":"Professor",
-       "Email":"yiannis@cs.umd.edu",
-       "Phone":"(301) 405-1743",
-       "Office":"IRB 4214"
-    },
-    {
-       "Name":"Leilani Battle  ",
-       "Title":"Assistant Professor",
-       "Email":"leilani@cs.umd.edu",
-       "Phone":"(301) 405-8412",
-       "Office":"IRB 5148"
-    },
-    {
-       "Name":"Abhinav Bhatele  ",
-       "Title":"Assistant Professor",
-       "Email":"bhatele@cs.umd.edu",
-       "Phone":"(301) 405-4507",
-       "Office":"IRB 5218"
-    },
-    {
-       "Name":"Bobby Bhattacharjee  ",
-       "Title":"Professor",
-       "Email":"bobby@cs.umd.edu",
-       "Phone":"(301) 405-1658",
-       "Office":"IRB 5140"
-    },
-    {
-       "Name":"Jordan Boyd-Graber  ",
-       "Title":"Associate Professor",
-       "Email":"jbg@cs.umd.edu",
-       "Phone":"(301) 405-6766",
-       "Office":"IRB 4146"
-    },
-    {
-       "Name":"Marine Carpuat  ",
-       "Title":"Associate Professor",
-       "Email":"marine@cs.umd.edu",
-       "Phone":"(301) 405-8801",
-       "Office":"IRB 4130"
-    },
-    {
-       "Name":"Andrew Childs  ",
-       "Title":"Professor",
-       "Email":"amchilds@cs.umd.edu",
-       "Phone":"(301) 405-2329",
-       "Office":"ATL 3100F, IRB 5256"
-    },
-    {
-       "Name":"Rance Cleaveland  ",
-       "Title":"Professor",
-       "Email":"rance@cs.umd.edu",
-       "Phone":"AVW (301) 405-8572, FC (301) 405-2065",
-       "Office":"IRB 5160"
-    },
-    {
-       "Name":"Hector Corrada Bravo  ",
-       "Title":"Associate Professor",
-       "Email":"hcorrada@umiacs.umd.edu",
-       "Phone":"BSB (301) 405-2481, AVW (301) 405-6713",
-       "Office":"IRB 3226"
-    },
-    {
-       "Name":"Hal Daum\u00e9 III  ",
-       "Title":"Professor",
-       "Email":"hal@umiacs.umd.edu",
-       "Phone":"(301) 405-1073",
-       "Office":"IRB 4150"
-    },
-    {
-       "Name":"Larry Davis  ",
-       "Title":"Professor",
-       "Email":"lsd@cs.umd.edu",
-       "Phone":"(301) 405-6718",
-       "Office":"IRB 4248"
-    },
-    {
-       "Name":"Amol Deshpande  ",
-       "Title":"Professor",
-       "Email":"amol@cs.umd.edu",
-       "Phone":"(301) 405-2703",
-       "Office":"IRB 5154"
-    },
-    {
-       "Name":"John Dickerson  ",
-       "Title":"Assistant Professor",
-       "Email":"john@cs.umd.edu",
-       "Phone":"(301) 405-2774",
-       "Office":"IRB 4128"
-    },
-    {
-       "Name":"Ramani Duraiswami  ",
-       "Title":"Professor",
-       "Email":"ramani@umiacs.umd.edu",
-       "Phone":"(301) 405-6710",
-       "Office":"IRB 4244"
-    },
-    {
-       "Name":"Roger Eastman  ",
-       "Title":"Professor of the Practice",
-       "Email":"reastman@cs.umd.edu",
-       "Phone":"(301) 405-2773",
-       "Office":"IRB 1126"
-    },
-    {
-       "Name":"Howard Elman  ",
-       "Title":"Professor",
-       "Email":"elman@cs.umd.edu",
-       "Phone":"(301) 405-2694",
-       "Office":"IRB 4210"
-    },
-    {
-       "Name":"Fawzi Emad  ",
-       "Title":"Senior Lecturer",
-       "Email":"fpe@cs.umd.edu",
-       "Phone":"(301) 405-2709",
-       "Office":"IRB 2212"
-    },
-    {
-       "Name":"Soheil Feizi  ",
-       "Title":"Assistant Professor",
-       "Email":"sfeizi@cs.umd.edu",
-       "Phone":"(301) 405-8743",
-       "Office":"IRB 4202"
-    },
-    {
-       "Name":"Jason Filippou  ",
-       "Title":"Lecturer",
-       "Email":"jasonfil@cs.umd.edu",
-       "Phone":"(301) 405-2726",
-       "Office":"IRB 2206"
-    },
-    {
-       "Name":"William Gasarch  ",
-       "Title":"Professor",
-       "Email":"gasarch@cs.umd.edu",
-       "Phone":"(301) 405-2698",
-       "Office":"IRB 2242"
-    },
-    {
-       "Name":"Tom Goldstein  ",
-       "Title":"Associate Professor",
-       "Email":"Contact Form",
-       "Phone":"(301) 405-0053",
-       "Office":"IRB 4212"
-    },
-    {
-       "Name":"Evan Golub  ",
-       "Title":"Principal Lecturer",
-       "Email":"egolub@cs.umd.edu",
-       "Phone":"(301) 405-0180",
-       "Office":"IRB 1210"
-    },
-    {
-       "Name":"Mohammad Hajiaghayi  ",
-       "Title":"Professor",
-       "Email":"hajiagha@cs.umd.edu",
-       "Phone":"(301) 405-6724",
-       "Office":"IRB 5158"
-    },
-    {
-       "Name":"Larry Herman  ",
-       "Title":"Lecturer",
-       "Email":"larry@cs.umd.edu",
-       "Phone":"(301) 405-2762",
-       "Office":"IRB 1124"
-    },
-    {
-       "Name":"Michael Hicks  ",
-       "Title":"Professor",
-       "Email":"mwh@cs.umd.edu",
-       "Phone":"(301) 405-2710",
-       "Office":"IRB 5246"
-    },
-    {
-       "Name":"Jeffrey K. Hollingsworth  ",
-       "Title":"Professor",
-       "Email":"hollings@umd.edu",
-       "Phone":"(301) 405-7700, (301) 405-2708",
-       "Office":"IRB 5152"
-    },
-    {
-       "Name":"Furong Huang  ",
-       "Title":"Assistant Professor",
-       "Email":"furongh@cs.umd.edu",
-       "Phone":"(301) 405-8010",
-       "Office":"IRB 4204"
-    },
-    {
-       "Name":"Michelle Hugue  ",
-       "Title":"Lecturer",
-       "Email":"meesh@cs.umd.edu",
-       "Phone":"(301) 405-3012",
-       "Office":"IRB 1250"
-    },
-    {
-       "Name":"David Jacobs  ",
-       "Title":"Professor",
-       "Email":"djacobs@cs.umd.edu",
-       "Phone":"(301) 405-0679",
-       "Office":"IRB 4240"
-    },
-    {
-       "Name":"Jonathan Katz  ",
-       "Title":"Professor",
-       "Email":"jkatz@cs.umd.edu",
-       "Phone":"(301) 405-1226",
-       "Office":"IRB 5226"
-    },
-    {
-       "Name":"Pete Keleher  ",
-       "Title":"Associate Professor",
-       "Email":"keleher@cs.umd.edu",
-       "Phone":"(301) 405-0345",
-       "Office":"IRB 5146"
-    },
-    {
-       "Name":"Clyde Kruskal  ",
-       "Title":"Associate Professor",
-       "Email":"kruskal@cs.umd.edu",
-       "Phone":"(301) 405-2683",
-       "Office":"IRB 2240"
-    },
-    {
-       "Name":"Leonidas Lampropoulos  ",
-       "Title":"Assistant Professor",
-       "Email":"leonidas@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Iribe 5248"
-    },
-    {
-       "Name":"Max Leiserson  ",
-       "Title":"Assistant Professor",
-       "Email":"mdml@cs.umd.edu",
-       "Phone":"(301) 405-7395",
-       "Office":"IRB 3244"
-    },
-    {
-       "Name":"Dave Levin  ",
-       "Title":"Assistant Professor",
-       "Email":"dml@cs.umd.edu",
-       "Phone":"(301) 405-8515",
-       "Office":"IRB 5222"
-    },
-    {
-       "Name":"Ming Lin  ",
-       "Title":"Professor",
-       "Email":"lin@cs.umd.edu",
-       "Phone":"(301) 405-2662",
-       "Office":"IRB 5202, IRB 2134"
-    },
-    {
-       "Name":"Zhicheng Liu  ",
-       "Title":"Assistant Professor",
-       "Email":"leozcliu@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Anwar Mamat  ",
-       "Title":"Senior Lecturer",
-       "Email":"anwar@cs.umd.edu",
-       "Phone":"(301) 405-2696",
-       "Office":"IRB 1212"
-    },
-    {
-       "Name":"Dinesh Manocha  ",
-       "Title":"Professor",
-       "Email":"dm@cs.umd.edu",
-       "Phone":"(301) 405-2741",
-       "Office":"IRB 5164"
-    },
-    {
-       "Name":"Michael Marsh  ",
-       "Title":"Lecturer",
-       "Email":"mmarsh@cs.umd.edu",
-       "Phone":"(301) 405-7445, 2402702276",
-       "Office":"IRB 2218"
-    },
-    {
-       "Name":"Michelle Mazurek  ",
-       "Title":"Associate Professor",
-       "Email":"mmazurek@cs.umd.edu",
-       "Phone":"(301) 405-6463",
-       "Office":"IRB 5236"
-    },
-    {
-       "Name":"Ian Miers  ",
-       "Title":"Assistant Professor",
-       "Email":"imiers@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 5242"
-    },
-    {
-       "Name":"David Mount  ",
-       "Title":"Professor",
-       "Email":"mount@cs.umd.edu",
-       "Phone":"(301) 405-2704",
-       "Office":"IRB 4162"
-    },
-    {
-       "Name":"Dana Nau  ",
-       "Title":"Professor",
-       "Email":"nau@cs.umd.edu",
-       "Phone":"(301) 405-2684",
-       "Office":"IRB 4158"
-    },
-    {
-       "Name":"Nelson Padua-Perez  ",
-       "Title":"Senior Lecturer",
-       "Email":"nelson@cs.umd.edu",
-       "Phone":"(301) 405-4539",
-       "Office":"IRB 2210"
-    },
-    {
-       "Name":"Rob Patro  ",
-       "Title":"Associate Professor",
-       "Email":"rob@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 3220"
-    },
-    {
-       "Name":"Huaishu Peng  ",
-       "Title":"Assistant Professor",
-       "Email":"huaishu@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 4206"
-    },
-    {
-       "Name":"Don Perlis  ",
-       "Title":"Professor",
-       "Email":"perlis@cs.umd.edu",
-       "Phone":"(301) 405-2685",
-       "Office":"IRB 4156"
-    },
-    {
-       "Name":"Jandelyn Plane  ",
-       "Title":"Principal Lecturer",
-       "Email":"Contact Form",
-       "Phone":"(301) 405-2754",
-       "Office":"IRB 1254"
-    },
-    {
-       "Name":"Mihai Pop  ",
-       "Title":"Professor",
-       "Email":"mpop@umiacs.umd.edu",
-       "Phone":"301-405-6722",
-       "Office":"IRB 3222"
-    },
-    {
-       "Name":"Adam Porter  ",
-       "Title":"Professor",
-       "Email":"aporter@cs.umd.edu",
-       "Phone":"(301) 405-2702",
-       "Office":"IRB 5212"
-    },
-    {
-       "Name":"James Purtilo  ",
-       "Title":"Associate Professor",
-       "Email":"purtilo@umd.edu",
-       "Phone":"(301) 405-2706",
-       "Office":"IRB 5214"
-    },
-    {
-       "Name":"James Reggia  ",
-       "Title":"Professor",
-       "Email":"reggia@cs.umd.edu",
-       "Phone":"(301) 405-2686",
-       "Office":"IRB 4124"
-    },
-    {
-       "Name":"William Regli  ",
-       "Title":"Professor",
-       "Email":"regli@cs.umd.edu",
-       "Phone":"(301) 405-6738",
-       "Office":"IRB 4152"
-    },
-    {
-       "Name":"Nirupam Roy  ",
-       "Title":"Assistant Professor",
-       "Email":"nirupam@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 5240"
-    },
-    {
-       "Name":"Rachel Rudinger  ",
-       "Title":"Assistant Professor",
-       "Email":"rudinger@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Pedram Sadeghian  ",
-       "Title":"Lecturer",
-       "Email":"pedram@cs.umd.edu",
-       "Phone":"(301) 405-2740",
-       "Office":"IRB 2214"
-    },
-    {
-       "Name":"Hanan Samet  ",
-       "Title":"Professor",
-       "Email":"hjs@cs.umd.edu",
-       "Phone":"(301) 405-1755",
-       "Office":"IRB 4252"
-    },
-    {
-       "Name":"A. Udaya Shankar  ",
-       "Title":"Professor",
-       "Email":"shankar@cs.umd.edu",
-       "Phone":"(301) 405-2688",
-       "Office":"IRB 5150"
-    },
-    {
-       "Name":"Abhinav Shrivastava  ",
-       "Title":"Assistant Professor",
-       "Email":"abhinav@cs.umd.edu",
-       "Phone":"(301) 405-7952",
-       "Office":"IRB 4238"
-    },
-    {
-       "Name":"Neil Spring  ",
-       "Title":"Professor",
-       "Email":"nspring@cs.umd.edu",
-       "Phone":"(301) 405-2909",
-       "Office":"IRB 5138"
-    },
-    {
-       "Name":"Aravind Srinivasan  ",
-       "Title":"Professor",
-       "Email":"srin@cs.umd.edu",
-       "Phone":"(301) 405-2695",
-       "Office":"IRB 4164"
-    },
-    {
-       "Name":"Alan Sussman  ",
-       "Title":"Professor",
-       "Email":"als@cs.umd.edu",
-       "Phone":"(301) 405-3360",
-       "Office":"IRB 5142"
-    },
-    {
-       "Name":"Mohammad Nayeem Teli  ",
-       "Title":"Lecturer",
-       "Email":"nayeem@umd.edu",
-       "Phone":"301.405.0405",
-       "Office":"IRB 1128"
-    },
-    {
-       "Name":"Pratap Tokekar  ",
-       "Title":"Assistant Professor",
-       "Email":"tokekar@umd.edu",
-       "Phone":"(301) 405-9902\u202c",
-       "Office":"Iribe 4222"
-    },
-    {
-       "Name":"David Van Horn  ",
-       "Title":"Associate Professor",
-       "Email":"dvanhorn@cs.umd.edu",
-       "Phone":"(301) 405-2715",
-       "Office":"IRB 5250"
-    },
-    {
-       "Name":"Amitabh Varshney  ",
-       "Title":"Professor",
-       "Email":"varshney@cs.umd.edu",
-       "Phone":"(301) 405-6761, (301) 405-2316",
-       "Office":"IRB 3212"
-    },
-    {
-       "Name":"Xiaodi Wu  ",
-       "Title":"Assistant Professor",
-       "Email":"xwu@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 5210"
-    },
-    {
-       "Name":"Ilchul Yoon  ",
-       "Title":"Lecturer",
-       "Email":"iyoon@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 1248"
-    },
-    {
-       "Name":"Matthias Zwicker  ",
-       "Title":"Professor",
-       "Email":"zwicker@cs.umd.edu",
-       "Phone":"(301) 405-0319",
-       "Office":"IRB 5244"
-    },
-    {
-       "Name":"William Arbaugh  ",
-       "Title":"Associate Professor Emeritus",
-       "Email":"waa@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 2164"
-    },
-    {
-       "Name":"Victor Basili  ",
-       "Title":"Professor Emeritus",
-       "Email":"basili@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 2164"
-    },
-    {
-       "Name":"Ben Bederson  ",
-       "Title":"Professor Emeritus",
-       "Email":"bederson@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Bonnie Dorr  ",
-       "Title":"Professor Emerita",
-       "Email":"bonnie@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 4132"
-    },
-    {
-       "Name":"Laveen Kanal  ",
-       "Title":"Professor Emeritus",
-       "Email":"kanal@cs.umd.edu",
-       "Phone":"(301) 405-2674",
-       "Office":"IRB 2162"
-    },
-    {
-       "Name":"Samir Khuller  ",
-       "Title":"Professor Emeritus",
-       "Email":"samir@cs.umd.edu",
-       "Phone":"(301) 405-6765",
-       "Office":"IRB 5128"
-    },
-    {
-       "Name":"Jack Minker  ",
-       "Title":"Professor Emeritus",
-       "Email":"minker@cs.umd.edu",
-       "Phone":"(301) 405-2676",
-       "Office":"IRB 2162"
-    },
-    {
-       "Name":"Dianne O'Leary  ",
-       "Title":"Professor Emerita",
-       "Email":"oleary@cs.umd.edu",
-       "Phone":"(301) 405-2678",
-       "Office":"IRB 2160"
-    },
-    {
-       "Name":"William Pugh  ",
-       "Title":"Professor Emeritus",
-       "Email":"pugh@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 2164"
-    },
-    {
-       "Name":"Nicholas Roussopoulos  ",
-       "Title":"Professor Emeritus",
-       "Email":"nick@cs.umd.edu",
-       "Phone":"(301) 405-2687",
-       "Office":"IRB 2160"
-    },
-    {
-       "Name":"Ben Shneiderman  ",
-       "Title":"Professor Emeritus",
-       "Email":"ben@cs.umd.edu",
-       "Phone":"(301) 405-2680",
-       "Office":"IRB 2162"
-    },
-    {
-       "Name":"G.W. (Pete) Stewart  ",
-       "Title":"Professor Emeritus",
-       "Email":"stewart@cs.umd.edu",
-       "Phone":"(301) 405-2681",
-       "Office":"IRB 2162"
-    },
-    {
-       "Name":"Marvin Zelkowitz  ",
-       "Title":"Professor Emeritus",
-       "Email":"mvz@umd.edu",
-       "Phone":"(443) 416-4257",
-       "Office":"IRB 2160"
-    },
-    {
-       "Name":"Dov Gordon  ",
-       "Title":"Visiting Senior Research Scientist",
-       "Email":"gordon@cs.umd.edu",
-       "Phone":"(301) 405-7388",
-       "Office":"AVW 3204"
-    },
-    {
-       "Name":"Aliakbar Jalali  ",
-       "Title":"Visiting Professor",
-       "Email":"drjalali@umd.edu",
-       "Phone":"(301) 405-2674",
-       "Office":"3261"
-    },
-    {
-       "Name":"Tae Wook Kwon  ",
-       "Title":"Visiting Associate Professor",
-       "Email":"kwon@cs.umd.eu",
-       "Phone":"(301) 405-2774",
-       "Office":"AVW 3217"
-    },
-    {
-       "Name":"Namachivayam Thirumazhusai  ",
-       "Title":"Visiting Assistant Research Scientist",
-       "Email":"sthiruma@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Jose Calderon  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"jmct@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Carlos Castillo  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"carlosc@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Matthew Coudron  ",
-       "Title":"Adjunct Assistant Professor",
-       "Email":"mcoudron@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Rina Dechter  ",
-       "Title":"Adjunct Professor",
-       "Email":"rdechter@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 2252"
-    },
-    {
-       "Name":"Peter Druschel  ",
-       "Title":"Adjunct Professor",
-       "Email":"pdrusche@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Leah Findlater  ",
-       "Title":"Adjunct Associate Professor",
-       "Email":"leahkf@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Jeffrey Foster  ",
-       "Title":"Adjunct Professor",
-       "Email":"jfoster@cs.umd.edu",
-       "Phone":"(301) 405-2751",
-       "Office":"IRB 2162"
-    },
-    {
-       "Name":"Jon Froehlich  ",
-       "Title":"Adjunct Associate Professor",
-       "Email":"jonf@cs.washington.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Lise Getoor  ",
-       "Title":"Adjunct Professor",
-       "Email":"getoor@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"J. Scott Gilkeson  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"sgilkeso@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Elias Gonzalez  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"egonzal5@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"John Grant  ",
-       "Title":"Adjunct Professor",
-       "Email":"grant@cs.umd.edu",
-       "Phone":"(301) 405-0689",
-       "Office":" "
-    },
-    {
-       "Name":"David Harris  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"dharris7@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Brad Lackey  ",
-       "Title":"Adjunct Professor",
-       "Email":"bclackey@umd.edu",
-       "Phone":"301-314-1819",
-       "Office":"CSS 3100G"
-    },
-    {
-       "Name":"Marc Lichtman  ",
-       "Title":"Adjunct Assistant Professor",
-       "Email":"sdr@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Mikael Lindvall  ",
-       "Title":"Adjunct Professor",
-       "Email":"mikli@fc-md.umd.edu",
-       "Phone":"301-314-6052",
-       "Office":"Fraunhofer USA, Center for Experimental Software Engineering (CESE), 5700 Rivertech Court, Suite 210, Riverdale, MD 20737"
-    },
-    {
-       "Name":"Yi-Kai Liu  ",
-       "Title":"Adjunct Associate Professor",
-       "Email":"yikailiu@umd.edu",
-       "Phone":"(301) 314-1850",
-       "Office":"3100J Atlantic Building"
-    },
-    {
-       "Name":"Jennifer Manly  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"jmanly@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Carl Miller  ",
-       "Title":"Adjunct Assistant Professor",
-       "Email":"camiller@umd.edu",
-       "Phone":"(301) 405-7367",
-       "Office":"3102 Atlantic Bldg."
-    },
-    {
-       "Name":"Eytan Ruppin  ",
-       "Title":"Adjunct Professor",
-       "Email":"ruppin@umiacs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"C. Anton Rytting  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"crytting@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"S. Cenk Sahinalp  ",
-       "Title":"Adjunct Professor",
-       "Email":"cenk.sahinalp@nih.gov",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Elaine  Shi  ",
-       "Title":"Adjunct Associate Professor",
-       "Email":"runting@gmail.com",
-       "Phone":"Unavaliable",
-       "Office":"Cornell University"
-    },
-    {
-       "Name":"Garrett Vanhoy  ",
-       "Title":"Adjunct Lecturer",
-       "Email":"gvanhoy@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Gorjan Alagic  ",
-       "Title":"Affiliate Associate Research Scientist",
-       "Email":"galagic@umd.edu",
-       "Phone":"(301) 314-1763",
-       "Office":"3100E Atlantic Building"
-    },
-    {
-       "Name":"John Baras  ",
-       "Title":"Affiliate Professor",
-       "Email":"baras@irs.umd.edu",
-       "Phone":"301-405-6606",
-       "Office":"2247 A.V. Williams Bldg."
-    },
-    {
-       "Name":"Alexander Barg  ",
-       "Title":"Affiliate Professor",
-       "Email":"abarg@umd.edu",
-       "Phone":"(301) 405-7135",
-       "Office":"AVW 2361"
-    },
-    {
-       "Name":"Aniket Bera  ",
-       "Title":"Affiliate Assistant Research Professor",
-       "Email":"Contact Form",
-       "Phone":"301-405-4209",
-       "Office":"IRB 5144"
-    },
-    {
-       "Name":"Maria Cameron  ",
-       "Title":"Affiliate Associate Professor",
-       "Email":"mariakc@umd.edu",
-       "Phone":"301-405-5068",
-       "Office":"MATH 4410"
-    },
-    {
-       "Name":"Ramalingam Chellappa  ",
-       "Title":"Affiliate Professor",
-       "Email":"rama@cfar.umd.edu",
-       "Phone":"(301) 405-3656",
-       "Office":"IRB 4246"
-    },
-    {
-       "Name":"Eun Kyoung Choe  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"choe@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"2117F Hornbake Building, South Wing"
-    },
-    {
-       "Name":"Michel Cukier  ",
-       "Title":"Affiliate Associate Professor",
-       "Email":"mcukier@umd.edu",
-       "Phone":"(301) 314-2804",
-       "Office":" AVW 3419"
-    },
-    {
-       "Name":"Michael Cummings  ",
-       "Title":"Affiliate Professor",
-       "Email":"mike@umiacs.umd.edu",
-       "Phone":"(301) 405-9903",
-       "Office":"IRB 3240"
-    },
-    {
-       "Name":"Dana Dachman-Soled  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"danadach@umd.edu",
-       "Phone":"(301) 405-0794",
-       "Office":"IRB 5238"
-    },
-    {
-       "Name":"Leila De Floriani  ",
-       "Title":"Affiliate Professor",
-       "Email":"deflo@umiacs.umd.edu",
-       "Phone":"(301) 405-4391",
-       "Office":"IRB 4132"
-    },
-    {
-       "Name":"Tudor Dumitras  ",
-       "Title":"Affiliate Associate Professor",
-       "Email":"tdumitra@umd.edu",
-       "Phone":"(301) 405-7466",
-       "Office":"IRB 5228"
-    },
-    {
-       "Name":"Niklas Elmqvist  ",
-       "Title":"Affiliate Professor",
-       "Email":"elm@umd.edu",
-       "Phone":"(301) 405-2033",
-       "Office":"2117H Hornbake"
-    },
-    {
-       "Name":"Naomi Feldman  ",
-       "Title":"Affiliate Associate Professor",
-       "Email":"nhf@umd.edu",
-       "Phone":"(301) 405-5800",
-       "Office":"IRB 4140"
-    },
-    {
-       "Name":"Vanessa Frias-Martinez  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"vfrias@umd.edu",
-       "Phone":"(301) 405-2032",
-       "Office":"IRB 4144"
-    },
-    {
-       "Name":"Jennifer Golbeck  ",
-       "Title":"Affiliate Professor",
-       "Email":"jgolbeck@umd.edu",
-       "Phone":"(301) 405-7185",
-       "Office":"HBK 2118F"
-    },
-    {
-       "Name":"Naeemul Hassan  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"nhassan@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"3100J Knight Hall"
-    },
-    {
-       "Name":"John Horty  ",
-       "Title":"Affiliate Professor",
-       "Email":"horty@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Hernisa Kacorri  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"hernisa@umd.edu",
-       "Phone":"(301) 405-2032",
-       "Office":"2118A Hornbake Building, South Wing"
-    },
-    {
-       "Name":"Amanda Lazar  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"lazar@umd.edu",
-       "Phone":"301-450-2033",
-       "Office":"2117D Hornbake Library, South Wing, 4130 Campus Dr."
-    },
-    {
-       "Name":"Richard Marciano  ",
-       "Title":"Affiliate Professor",
-       "Email":"marciano@umd.edu",
-       "Phone":"(301) 314-0281",
-       "Office":"HBK 4113 South"
-    },
-    {
-       "Name":"Keith Marzullo  ",
-       "Title":"Affiliate Professor",
-       "Email":"marzullo@umd.edu",
-       "Phone":"(301) 405-2033",
-       "Office":"4105 Hornbake Library"
-    },
-    {
-       "Name":"Doug Oard  ",
-       "Title":"Affiliate Professor",
-       "Email":"oard@umd.edu",
-       "Phone":"(301) 405-5582",
-       "Office":"IRB 4142"
-    },
-    {
-       "Name":"Michael Otte  ",
-       "Title":"Affiliate Assistant Professor",
-       "Email":"otte@umd.edu",
-       "Phone":"301-405-2723",
-       "Office":"3242 Kim Eng., 4928 Campus Dr., College Park, MD 20740"
-    },
-    {
-       "Name":"Charalampos (Babis) Papamanthou  ",
-       "Title":"Affiliate Associate Professor",
-       "Email":"cpap@umd.edu",
-       "Phone":"(301) 405-7212",
-       "Office":"IRB 5224"
-    },
-    {
-       "Name":"Gang Qu  ",
-       "Title":"Affiliate Professor",
-       "Email":"gangqu@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"AVW 1417"
-    },
-    {
-       "Name":"Louiqa Raschid  ",
-       "Title":"Affiliate Professor",
-       "Email":"louiqa@umiacs.cs.umd.edu",
-       "Phone":"(301) 405-6747",
-       "Office":"IRB 4154"
-    },
-    {
-       "Name":"Philip Resnik  ",
-       "Title":"Affiliate Professor",
-       "Email":"resnik@umd.edu",
-       "Phone":"(301) 405-7002",
-       "Office":"Marie Mount Hall 1401C, IRB 4148"
-    },
-    {
-       "Name":"Ankur Srivastava  ",
-       "Title":"Affiliate Professor",
-       "Email":"ankurs@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    },
-    {
-       "Name":"Uzi Vishkin  ",
-       "Title":"Affiliate Professor",
-       "Email":"vishkin@umiacs.umd.edu",
-       "Phone":"(301) 405-6763",
-       "Office":"IRB 5216"
-    },
-    {
-       "Name":"Donald Yeung  ",
-       "Title":"Affiliate Professor",
-       "Email":"yeung@glue.umd.edu",
-       "Phone":"(301) 405-3649",
-       "Office":"AVW 1327"
-    },
-    {
-       "Name":"Souvik Bhattacherjee  ",
-       "Title":"Research Associate",
-       "Email":"bsouvik@cs.umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"IRB 2254"
-    },
-    {
-       "Name":"Ray Chen  ",
-       "Title":"Faculty Research Assistant",
-       "Email":"rchen@cs.umd.edu",
-       "Phone":"(301) 405-2671",
-       "Office":"IRB 5124"
-    },
-    {
-       "Name":"Michael Coblenz  ",
-       "Title":"Research Associate",
-       "Email":"mcoblenz@umd.edu",
-       "Phone":"Unavaliable",
-       "Office":"Unavaliable"
-    }
- ]
+   {    
+      "Name":"A. Udaya Shankar  ",
+      "Title":"Professor",
+      "Email":"shankar@cs.umd.edu",
+      "Phone":"(301) 405-2688",
+      "Office":"IRB 5150"
+   },
+   {
+      "Name":"Abhinav Bhatele  ",
+      "Title":"Assistant Professor",
+      "Email":"bhatele@cs.umd.edu",
+      "Phone":"(301) 405-4507",
+      "Office":"IRB 5218"
+   },
+   {
+      "Name":"Abhinav Shrivastava  ",
+      "Title":"Assistant Professor",
+      "Email":"abhinav@cs.umd.edu",
+      "Phone":"(301) 405-7952",
+      "Office":"IRB 4238"
+   },
+   {
+      "Name":"Adam Porter  ",
+      "Title":"Professor",
+      "Email":"aporter@cs.umd.edu",
+      "Phone":"(301) 405-2702",
+      "Office":"IRB 5212"
+   },
+   {
+      "Name":"Alan Sussman  ",
+      "Title":"Professor",
+      "Email":"als@cs.umd.edu",
+      "Phone":"(301) 405-3360",
+      "Office":"IRB 5142"
+   },
+   {
+      "Name":"Alexander Barg  ",
+      "Title":"Affiliate Professor",
+      "Email":"abarg@umd.edu",
+      "Phone":"(301) 405-7135",
+      "Office":"AVW 2361"
+   },
+   {
+      "Name":"Aliakbar Jalali  ",
+      "Title":"Visiting Professor",
+      "Email":"drjalali@umd.edu",
+      "Phone":"(301) 405-2674",
+      "Office":"3261"
+   },
+   {
+      "Name":"Amanda Lazar  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"lazar@umd.edu",
+      "Phone":"301-450-2033",
+      "Office":"2117D Hornbake Library, South Wing, 4130 Campus Dr."
+   },
+   {
+      "Name":"Amitabh Varshney  ",
+      "Title":"Professor",
+      "Email":"varshney@cs.umd.edu",
+      "Phone":"(301) 405-6761, (301) 405-2316",
+      "Office":"IRB 3212"
+   },
+   {
+      "Name":"Amol Deshpande  ",
+      "Title":"Professor",
+      "Email":"amol@cs.umd.edu",
+      "Phone":"(301) 405-2703",
+      "Office":"IRB 5154"
+   },
+   {
+      "Name":"Andrew Childs  ",
+      "Title":"Professor",
+      "Email":"amchilds@cs.umd.edu",
+      "Phone":"(301) 405-2329",
+      "Office":"ATL 3100F, IRB 5256"
+   },
+   {
+      "Name":"Aniket Bera  ",
+      "Title":"Affiliate Assistant Research Professor",
+      "Email":"Contact Form",
+      "Phone":"301-405-4209",
+      "Office":"IRB 5144"
+   },
+   {
+      "Name":"Ankur Srivastava  ",
+      "Title":"Affiliate Professor",
+      "Email":"ankurs@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Anwar Mamat  ",
+      "Title":"Senior Lecturer",
+      "Email":"anwar@cs.umd.edu",
+      "Phone":"(301) 405-2696",
+      "Office":"IRB 1212"
+   },
+   {
+      "Name":"Aravind Srinivasan  ",
+      "Title":"Professor",
+      "Email":"srin@cs.umd.edu",
+      "Phone":"(301) 405-2695",
+      "Office":"IRB 4164"
+   },
+   {
+      "Name":"Ashok Agrawala  ",
+      "Title":"Professor",
+      "Email":"agrawala@cs.umd.edu",
+      "Phone":"(301) 405-2525",
+      "Office":"IRB 5204"
+   },
+   {
+      "Name":"Ben Bederson  ",
+      "Title":"Professor Emeritus",
+      "Email":"bederson@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Ben Shneiderman  ",
+      "Title":"Professor Emeritus",
+      "Email":"ben@cs.umd.edu",
+      "Phone":"(301) 405-2680",
+      "Office":"IRB 2162"
+   },
+   {
+      "Name":"Bobby Bhattacharjee  ",
+      "Title":"Professor",
+      "Email":"bobby@cs.umd.edu",
+      "Phone":"(301) 405-1658",
+      "Office":"IRB 5140"
+   },
+   {
+      "Name":"Bonnie Dorr  ",
+      "Title":"Professor Emerita",
+      "Email":"bonnie@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 4132"
+   },
+   {
+      "Name":"Brad Lackey  ",
+      "Title":"Adjunct Professor",
+      "Email":"bclackey@umd.edu",
+      "Phone":"301-314-1819",
+      "Office":"CSS 3100G"
+   },
+   {
+      "Name":"C. Anton Rytting  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"crytting@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Carl Miller  ",
+      "Title":"Adjunct Assistant Professor",
+      "Email":"camiller@umd.edu",
+      "Phone":"(301) 405-7367",
+      "Office":"3102 Atlantic Bldg."
+   },
+   {
+      "Name":"Carlos Castillo  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"carlosc@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Charalampos (Babis) Papamanthou  ",
+      "Title":"Affiliate Associate Professor",
+      "Email":"cpap@umd.edu",
+      "Phone":"(301) 405-7212",
+      "Office":"IRB 5224"
+   },
+   {
+      "Name":"Clyde Kruskal  ",
+      "Title":"Associate Professor",
+      "Email":"kruskal@cs.umd.edu",
+      "Phone":"(301) 405-2683",
+      "Office":"IRB 2240"
+   },
+   {
+      "Name":"Dana Dachman-Soled  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"danadach@umd.edu",
+      "Phone":"(301) 405-0794",
+      "Office":"IRB 5238"
+   },
+   {
+      "Name":"Dana Nau  ",
+      "Title":"Professor",
+      "Email":"nau@cs.umd.edu",
+      "Phone":"(301) 405-2684",
+      "Office":"IRB 4158"
+   },
+   {
+      "Name":"Daniel Abadi  ",
+      "Title":"Professor",
+      "Email":"Contact Form",
+      "Phone":"(301) 405-9695",
+      "Office":"IRB 5156"
+   },
+   {
+      "Name":"Dave Levin  ",
+      "Title":"Assistant Professor",
+      "Email":"dml@cs.umd.edu",
+      "Phone":"(301) 405-8515",
+      "Office":"IRB 5222"
+   },
+   {
+      "Name":"David Harris  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"dharris7@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"David Jacobs  ",
+      "Title":"Professor",
+      "Email":"djacobs@cs.umd.edu",
+      "Phone":"(301) 405-0679",
+      "Office":"IRB 4240"
+   },
+   {
+      "Name":"David Mount  ",
+      "Title":"Professor",
+      "Email":"mount@cs.umd.edu",
+      "Phone":"(301) 405-2704",
+      "Office":"IRB 4162"
+   },
+   {
+      "Name":"David Van Horn  ",
+      "Title":"Associate Professor",
+      "Email":"dvanhorn@cs.umd.edu",
+      "Phone":"(301) 405-2715",
+      "Office":"IRB 5250"
+   },
+   {
+      "Name":"Dianne O'Leary  ",
+      "Title":"Professor Emerita",
+      "Email":"oleary@cs.umd.edu",
+      "Phone":"(301) 405-2678",
+      "Office":"IRB 2160"
+   },
+   {
+      "Name":"Dinesh Manocha  ",
+      "Title":"Professor",
+      "Email":"dm@cs.umd.edu",
+      "Phone":"(301) 405-2741",
+      "Office":"IRB 5164"
+   },
+   {
+      "Name":"Don Perlis  ",
+      "Title":"Professor",
+      "Email":"perlis@cs.umd.edu",
+      "Phone":"(301) 405-2685",
+      "Office":"IRB 4156"
+   },
+   {
+      "Name":"Donald Yeung  ",
+      "Title":"Affiliate Professor",
+      "Email":"yeung@glue.umd.edu",
+      "Phone":"(301) 405-3649",
+      "Office":"AVW 1327"
+   },
+   {
+      "Name":"Doug Oard  ",
+      "Title":"Affiliate Professor",
+      "Email":"oard@umd.edu",
+      "Phone":"(301) 405-5582",
+      "Office":"IRB 4142"
+   },
+   {
+      "Name":"Dov Gordon  ",
+      "Title":"Visiting Senior Research Scientist",
+      "Email":"gordon@cs.umd.edu",
+      "Phone":"(301) 405-7388",
+      "Office":"AVW 3204"
+   },
+   {
+      "Name":"Elaine  Shi  ",
+      "Title":"Adjunct Associate Professor",
+      "Email":"runting@gmail.com",
+      "Phone":"Unavaliable",
+      "Office":"Cornell University"
+   },
+   {
+      "Name":"Elias Gonzalez  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"egonzal5@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Eun Kyoung Choe  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"choe@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"2117F Hornbake Building, South Wing"
+   },
+   {
+      "Name":"Evan Golub  ",
+      "Title":"Principal Lecturer",
+      "Email":"egolub@cs.umd.edu",
+      "Phone":"(301) 405-0180",
+      "Office":"IRB 1210"
+   },
+   {
+      "Name":"Eytan Ruppin  ",
+      "Title":"Adjunct Professor",
+      "Email":"ruppin@umiacs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Fawzi Emad  ",
+      "Title":"Senior Lecturer",
+      "Email":"fpe@cs.umd.edu",
+      "Phone":"(301) 405-2709",
+      "Office":"IRB 2212"
+   },
+   {
+      "Name":"Furong Huang  ",
+      "Title":"Assistant Professor",
+      "Email":"furongh@cs.umd.edu",
+      "Phone":"(301) 405-8010",
+      "Office":"IRB 4204"
+   },
+   {
+      "Name":"G.W. (Pete) Stewart  ",
+      "Title":"Professor Emeritus",
+      "Email":"stewart@cs.umd.edu",
+      "Phone":"(301) 405-2681",
+      "Office":"IRB 2162"
+   },
+   {
+      "Name":"Gang Qu  ",
+      "Title":"Affiliate Professor",
+      "Email":"gangqu@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"AVW 1417"
+   },
+   {
+      "Name":"Garrett Vanhoy  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"gvanhoy@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Gorjan Alagic  ",
+      "Title":"Affiliate Associate Research Scientist",
+      "Email":"galagic@umd.edu",
+      "Phone":"(301) 314-1763",
+      "Office":"3100E Atlantic Building"
+   },
+   {
+      "Name":"Hal Daum\u00e9 III  ",
+      "Title":"Professor",
+      "Email":"hal@umiacs.umd.edu",
+      "Phone":"(301) 405-1073",
+      "Office":"IRB 4150"
+   },
+   {
+      "Name":"Hanan Samet  ",
+      "Title":"Professor",
+      "Email":"hjs@cs.umd.edu",
+      "Phone":"(301) 405-1755",
+      "Office":"IRB 4252"
+   },
+   {
+      "Name":"Hector Corrada Bravo  ",
+      "Title":"Associate Professor",
+      "Email":"hcorrada@umiacs.umd.edu",
+      "Phone":"BSB (301) 405-2481, AVW (301) 405-6713",
+      "Office":"IRB 3226"
+   },
+   {
+      "Name":"Hernisa Kacorri  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"hernisa@umd.edu",
+      "Phone":"(301) 405-2032",
+      "Office":"2118A Hornbake Building, South Wing"
+   },
+   {
+      "Name":"Howard Elman  ",
+      "Title":"Professor",
+      "Email":"elman@cs.umd.edu",
+      "Phone":"(301) 405-2694",
+      "Office":"IRB 4210"
+   },
+   {
+      "Name":"Huaishu Peng  ",
+      "Title":"Assistant Professor",
+      "Email":"huaishu@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 4206"
+   },
+   {
+      "Name":"Ian Miers  ",
+      "Title":"Assistant Professor",
+      "Email":"imiers@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 5242"
+   },
+   {
+      "Name":"Ilchul Yoon  ",
+      "Title":"Lecturer",
+      "Email":"iyoon@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 1248"
+   },
+   {
+      "Name":"J. Scott Gilkeson  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"sgilkeso@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Jack Minker  ",
+      "Title":"Professor Emeritus",
+      "Email":"minker@cs.umd.edu",
+      "Phone":"(301) 405-2676",
+      "Office":"IRB 2162"
+   },
+   {
+      "Name":"James Purtilo  ",
+      "Title":"Associate Professor",
+      "Email":"purtilo@umd.edu",
+      "Phone":"(301) 405-2706",
+      "Office":"IRB 5214"
+   },
+   {
+      "Name":"James Reggia  ",
+      "Title":"Professor",
+      "Email":"reggia@cs.umd.edu",
+      "Phone":"(301) 405-2686",
+      "Office":"IRB 4124"
+   },
+   {
+      "Name":"Jandelyn Plane  ",
+      "Title":"Principal Lecturer",
+      "Email":"Contact Form",
+      "Phone":"(301) 405-2754",
+      "Office":"IRB 1254"
+   },
+   {
+      "Name":"Jason Filippou  ",
+      "Title":"Lecturer",
+      "Email":"jasonfil@cs.umd.edu",
+      "Phone":"(301) 405-2726",
+      "Office":"IRB 2206"
+   },
+   {
+      "Name":"Jeffrey Foster  ",
+      "Title":"Adjunct Professor",
+      "Email":"jfoster@cs.umd.edu",
+      "Phone":"(301) 405-2751",
+      "Office":"IRB 2162"
+   },
+   {
+      "Name":"Jeffrey K. Hollingsworth  ",
+      "Title":"Professor",
+      "Email":"hollings@umd.edu",
+      "Phone":"(301) 405-7700, (301) 405-2708",
+      "Office":"IRB 5152"
+   },
+   {
+      "Name":"Jennifer Golbeck  ",
+      "Title":"Affiliate Professor",
+      "Email":"jgolbeck@umd.edu",
+      "Phone":"(301) 405-7185",
+      "Office":"HBK 2118F"
+   },
+   {
+      "Name":"Jennifer Manly  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"jmanly@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"John Aloimonos  ",
+      "Title":"Professor",
+      "Email":"yiannis@cs.umd.edu",
+      "Phone":"(301) 405-1743",
+      "Office":"IRB 4214"
+   },
+   {
+      "Name":"John Baras  ",
+      "Title":"Affiliate Professor",
+      "Email":"baras@irs.umd.edu",
+      "Phone":"301-405-6606",
+      "Office":"2247 A.V. Williams Bldg."
+   },
+   {
+      "Name":"John Dickerson  ",
+      "Title":"Assistant Professor",
+      "Email":"john@cs.umd.edu",
+      "Phone":"(301) 405-2774",
+      "Office":"IRB 4128"
+   },
+   {
+      "Name":"John Grant  ",
+      "Title":"Adjunct Professor",
+      "Email":"grant@cs.umd.edu",
+      "Phone":"(301) 405-0689",
+      "Office":" "
+   },
+   {
+      "Name":"John Horty  ",
+      "Title":"Affiliate Professor",
+      "Email":"horty@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Jon Froehlich  ",
+      "Title":"Adjunct Associate Professor",
+      "Email":"jonf@cs.washington.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Jonathan Katz  ",
+      "Title":"Professor",
+      "Email":"jkatz@cs.umd.edu",
+      "Phone":"(301) 405-1226",
+      "Office":"IRB 5226"
+   },
+   {
+      "Name":"Jordan Boyd-Graber  ",
+      "Title":"Associate Professor",
+      "Email":"jbg@cs.umd.edu",
+      "Phone":"(301) 405-6766",
+      "Office":"IRB 4146"
+   },
+   {
+      "Name":"Jose Calderon  ",
+      "Title":"Adjunct Lecturer",
+      "Email":"jmct@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Keith Marzullo  ",
+      "Title":"Affiliate Professor",
+      "Email":"marzullo@umd.edu",
+      "Phone":"(301) 405-2033",
+      "Office":"4105 Hornbake Library"
+   },
+   {
+      "Name":"Larry Davis  ",
+      "Title":"Professor",
+      "Email":"lsd@cs.umd.edu",
+      "Phone":"(301) 405-6718",
+      "Office":"IRB 4248"
+   },
+   {
+      "Name":"Larry Herman  ",
+      "Title":"Lecturer",
+      "Email":"larry@cs.umd.edu",
+      "Phone":"(301) 405-2762",
+      "Office":"IRB 1124"
+   },
+   {
+      "Name":"Laveen Kanal  ",
+      "Title":"Professor Emeritus",
+      "Email":"kanal@cs.umd.edu",
+      "Phone":"(301) 405-2674",
+      "Office":"IRB 2162"
+   },
+   {
+      "Name":"Leah Findlater  ",
+      "Title":"Adjunct Associate Professor",
+      "Email":"leahkf@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Leila De Floriani  ",
+      "Title":"Affiliate Professor",
+      "Email":"deflo@umiacs.umd.edu",
+      "Phone":"(301) 405-4391",
+      "Office":"IRB 4132"
+   },
+   {
+      "Name":"Leilani Battle  ",
+      "Title":"Assistant Professor",
+      "Email":"leilani@cs.umd.edu",
+      "Phone":"(301) 405-8412",
+      "Office":"IRB 5148"
+   },
+   {
+      "Name":"Leonidas Lampropoulos  ",
+      "Title":"Assistant Professor",
+      "Email":"leonidas@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Iribe 5248"
+   },
+   {
+      "Name":"Lise Getoor  ",
+      "Title":"Adjunct Professor",
+      "Email":"getoor@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Louiqa Raschid  ",
+      "Title":"Affiliate Professor",
+      "Email":"louiqa@umiacs.cs.umd.edu",
+      "Phone":"(301) 405-6747",
+      "Office":"IRB 4154"
+   },
+   {
+      "Name":"Marc Lichtman  ",
+      "Title":"Adjunct Assistant Professor",
+      "Email":"sdr@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Maria Cameron  ",
+      "Title":"Affiliate Associate Professor",
+      "Email":"mariakc@umd.edu",
+      "Phone":"301-405-5068",
+      "Office":"MATH 4410"
+   },
+   {
+      "Name":"Marine Carpuat  ",
+      "Title":"Associate Professor",
+      "Email":"marine@cs.umd.edu",
+      "Phone":"(301) 405-8801",
+      "Office":"IRB 4130"
+   },
+   {
+      "Name":"Marvin Zelkowitz  ",
+      "Title":"Professor Emeritus",
+      "Email":"mvz@umd.edu",
+      "Phone":"(443) 416-4257",
+      "Office":"IRB 2160"
+   },
+   {
+      "Name":"Matthew Coudron  ",
+      "Title":"Adjunct Assistant Professor",
+      "Email":"mcoudron@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Matthias Zwicker  ",
+      "Title":"Professor",
+      "Email":"zwicker@cs.umd.edu",
+      "Phone":"(301) 405-0319",
+      "Office":"IRB 5244"
+   },
+   {
+      "Name":"Max Leiserson  ",
+      "Title":"Assistant Professor",
+      "Email":"mdml@cs.umd.edu",
+      "Phone":"(301) 405-7395",
+      "Office":"IRB 3244"
+   },
+   {
+      "Name":"Michael Coblenz  ",
+      "Title":"Research Associate",
+      "Email":"mcoblenz@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Michael Cummings  ",
+      "Title":"Affiliate Professor",
+      "Email":"mike@umiacs.umd.edu",
+      "Phone":"(301) 405-9903",
+      "Office":"IRB 3240"
+   },
+   {
+      "Name":"Michael Hicks  ",
+      "Title":"Professor",
+      "Email":"mwh@cs.umd.edu",
+      "Phone":"(301) 405-2710",
+      "Office":"IRB 5246"
+   },
+   {
+      "Name":"Michael Marsh  ",
+      "Title":"Lecturer",
+      "Email":"mmarsh@cs.umd.edu",
+      "Phone":"(301) 405-7445, 2402702276",
+      "Office":"IRB 2218"
+   },
+   {
+      "Name":"Michael Otte  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"otte@umd.edu",
+      "Phone":"301-405-2723",
+      "Office":"3242 Kim Eng., 4928 Campus Dr., College Park, MD 20740"
+   },
+   {
+      "Name":"Michel Cukier  ",
+      "Title":"Affiliate Associate Professor",
+      "Email":"mcukier@umd.edu",
+      "Phone":"(301) 314-2804",
+      "Office":" AVW 3419"
+   },
+   {
+      "Name":"Michelle Hugue  ",
+      "Title":"Lecturer",
+      "Email":"meesh@cs.umd.edu",
+      "Phone":"(301) 405-3012",
+      "Office":"IRB 1250"
+   },
+   {
+      "Name":"Michelle Mazurek  ",
+      "Title":"Associate Professor",
+      "Email":"mmazurek@cs.umd.edu",
+      "Phone":"(301) 405-6463",
+      "Office":"IRB 5236"
+   },
+   {
+      "Name":"Mihai Pop  ",
+      "Title":"Professor",
+      "Email":"mpop@umiacs.umd.edu",
+      "Phone":"301-405-6722",
+      "Office":"IRB 3222"
+   },
+   {
+      "Name":"Mikael Lindvall  ",
+      "Title":"Adjunct Professor",
+      "Email":"mikli@fc-md.umd.edu",
+      "Phone":"301-314-6052",
+      "Office":"Fraunhofer USA, Center for Experimental Software Engineering (CESE), 5700 Rivertech Court, Suite 210, Riverdale, MD 20737"
+   },
+   {
+      "Name":"Ming Lin  ",
+      "Title":"Professor",
+      "Email":"lin@cs.umd.edu",
+      "Phone":"(301) 405-2662",
+      "Office":"IRB 5202, IRB 2134"
+   },
+   {
+      "Name":"Mohammad Hajiaghayi  ",
+      "Title":"Professor",
+      "Email":"hajiagha@cs.umd.edu",
+      "Phone":"(301) 405-6724",
+      "Office":"IRB 5158"
+   },
+   {
+      "Name":"Mohammad Nayeem Teli  ",
+      "Title":"Lecturer",
+      "Email":"nayeem@umd.edu",
+      "Phone":"301.405.0405",
+      "Office":"IRB 1128"
+   },
+   {
+      "Name":"Naeemul Hassan  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"nhassan@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"3100J Knight Hall"
+   },
+   {
+      "Name":"Namachivayam Thirumazhusai  ",
+      "Title":"Visiting Assistant Research Scientist",
+      "Email":"sthiruma@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Naomi Feldman  ",
+      "Title":"Affiliate Associate Professor",
+      "Email":"nhf@umd.edu",
+      "Phone":"(301) 405-5800",
+      "Office":"IRB 4140"
+   },
+   {
+      "Name":"Neil Spring  ",
+      "Title":"Professor",
+      "Email":"nspring@cs.umd.edu",
+      "Phone":"(301) 405-2909",
+      "Office":"IRB 5138"
+   },
+   {
+      "Name":"Nelson Padua-Perez  ",
+      "Title":"Senior Lecturer",
+      "Email":"nelson@cs.umd.edu",
+      "Phone":"(301) 405-4539",
+      "Office":"IRB 2210"
+   },
+   {
+      "Name":"Nicholas Roussopoulos  ",
+      "Title":"Professor Emeritus",
+      "Email":"nick@cs.umd.edu",
+      "Phone":"(301) 405-2687",
+      "Office":"IRB 2160"
+   },
+   {
+      "Name":"Niklas Elmqvist  ",
+      "Title":"Affiliate Professor",
+      "Email":"elm@umd.edu",
+      "Phone":"(301) 405-2033",
+      "Office":"2117H Hornbake"
+   },
+   {
+      "Name":"Nirupam Roy  ",
+      "Title":"Assistant Professor",
+      "Email":"nirupam@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 5240"
+   },
+   {
+      "Name":"Pedram Sadeghian  ",
+      "Title":"Lecturer",
+      "Email":"pedram@cs.umd.edu",
+      "Phone":"(301) 405-2740",
+      "Office":"IRB 2214"
+   },
+   {
+      "Name":"Pete Keleher  ",
+      "Title":"Associate Professor",
+      "Email":"keleher@cs.umd.edu",
+      "Phone":"(301) 405-0345",
+      "Office":"IRB 5146"
+   },
+   {
+      "Name":"Peter Druschel  ",
+      "Title":"Adjunct Professor",
+      "Email":"pdrusche@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Philip Resnik  ",
+      "Title":"Affiliate Professor",
+      "Email":"resnik@umd.edu",
+      "Phone":"(301) 405-7002",
+      "Office":"Marie Mount Hall 1401C, IRB 4148"
+   },
+   {
+      "Name":"Pratap Tokekar  ",
+      "Title":"Assistant Professor",
+      "Email":"tokekar@umd.edu",
+      "Phone":"(301) 405-9902\u202c",
+      "Office":"Iribe 4222"
+   },
+   {
+      "Name":"Rachel Rudinger  ",
+      "Title":"Assistant Professor",
+      "Email":"rudinger@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Ramalingam Chellappa  ",
+      "Title":"Affiliate Professor",
+      "Email":"rama@cfar.umd.edu",
+      "Phone":"(301) 405-3656",
+      "Office":"IRB 4246"
+   },
+   {
+      "Name":"Ramani Duraiswami  ",
+      "Title":"Professor",
+      "Email":"ramani@umiacs.umd.edu",
+      "Phone":"(301) 405-6710",
+      "Office":"IRB 4244"
+   },
+   {
+      "Name":"Rance Cleaveland  ",
+      "Title":"Professor",
+      "Email":"rance@cs.umd.edu",
+      "Phone":"AVW (301) 405-8572, FC (301) 405-2065",
+      "Office":"IRB 5160"
+   },
+   {
+      "Name":"Ray Chen  ",
+      "Title":"Faculty Research Assistant",
+      "Email":"rchen@cs.umd.edu",
+      "Phone":"(301) 405-2671",
+      "Office":"IRB 5124"
+   },
+   {
+      "Name":"Richard Marciano  ",
+      "Title":"Affiliate Professor",
+      "Email":"marciano@umd.edu",
+      "Phone":"(301) 314-0281",
+      "Office":"HBK 4113 South"
+   },
+   {
+      "Name":"Rina Dechter  ",
+      "Title":"Adjunct Professor",
+      "Email":"rdechter@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 2252"
+   },
+   {
+      "Name":"Rob Patro  ",
+      "Title":"Associate Professor",
+      "Email":"rob@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 3220"
+   },
+   {
+      "Name":"Roger Eastman  ",
+      "Title":"Professor of the Practice",
+      "Email":"reastman@cs.umd.edu",
+      "Phone":"(301) 405-2773",
+      "Office":"IRB 1126"
+   },
+   {
+      "Name":"S. Cenk Sahinalp  ",
+      "Title":"Adjunct Professor",
+      "Email":"cenk.sahinalp@nih.gov",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   },
+   {
+      "Name":"Samir Khuller  ",
+      "Title":"Professor Emeritus",
+      "Email":"samir@cs.umd.edu",
+      "Phone":"(301) 405-6765",
+      "Office":"IRB 5128"
+   },
+   {
+      "Name":"Soheil Feizi  ",
+      "Title":"Assistant Professor",
+      "Email":"sfeizi@cs.umd.edu",
+      "Phone":"(301) 405-8743",
+      "Office":"IRB 4202"
+   },
+   {
+      "Name":"Souvik Bhattacherjee  ",
+      "Title":"Research Associate",
+      "Email":"bsouvik@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 2254"
+   },
+   {
+      "Name":"Tae Wook Kwon  ",
+      "Title":"Visiting Associate Professor",
+      "Email":"kwon@cs.umd.eu",
+      "Phone":"(301) 405-2774",
+      "Office":"AVW 3217"
+   },
+   {
+      "Name":"Tom Goldstein  ",
+      "Title":"Associate Professor",
+      "Email":"Contact Form",
+      "Phone":"(301) 405-0053",
+      "Office":"IRB 4212"
+   },
+   {
+      "Name":"Tudor Dumitras  ",
+      "Title":"Affiliate Associate Professor",
+      "Email":"tdumitra@umd.edu",
+      "Phone":"(301) 405-7466",
+      "Office":"IRB 5228"
+   },
+   {
+      "Name":"Uzi Vishkin  ",
+      "Title":"Affiliate Professor",
+      "Email":"vishkin@umiacs.umd.edu",
+      "Phone":"(301) 405-6763",
+      "Office":"IRB 5216"
+   },
+   {
+      "Name":"Vanessa Frias-Martinez  ",
+      "Title":"Affiliate Assistant Professor",
+      "Email":"vfrias@umd.edu",
+      "Phone":"(301) 405-2032",
+      "Office":"IRB 4144"
+   },
+   {
+      "Name":"Victor Basili  ",
+      "Title":"Professor Emeritus",
+      "Email":"basili@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 2164"
+   },
+   {
+      "Name":"William Arbaugh  ",
+      "Title":"Associate Professor Emeritus",
+      "Email":"waa@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 2164"
+   },
+   {
+      "Name":"William Gasarch  ",
+      "Title":"Professor",
+      "Email":"gasarch@cs.umd.edu",
+      "Phone":"(301) 405-2698",
+      "Office":"IRB 2242"
+   },
+   {
+      "Name":"William Pugh  ",
+      "Title":"Professor Emeritus",
+      "Email":"pugh@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 2164"
+   },
+   {
+      "Name":"William Regli  ",
+      "Title":"Professor",
+      "Email":"regli@cs.umd.edu",
+      "Phone":"(301) 405-6738",
+      "Office":"IRB 4152"
+   },
+   {
+      "Name":"Xiaodi Wu  ",
+      "Title":"Assistant Professor",
+      "Email":"xwu@cs.umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"IRB 5210"
+   },
+   {
+      "Name":"Yi-Kai Liu  ",
+      "Title":"Adjunct Associate Professor",
+      "Email":"yikailiu@umd.edu",
+      "Phone":"(301) 314-1850",
+      "Office":"3100J Atlantic Building"
+   },
+   {
+      "Name":"Zhicheng Liu  ",
+      "Title":"Assistant Professor",
+      "Email":"leozcliu@umd.edu",
+      "Phone":"Unavaliable",
+      "Office":"Unavaliable"
+   }
+]
