@@ -38,6 +38,7 @@
 }
 
 .week-day, .day-label, .event {
+  font-size: 30%;
   padding: 4px 10px;
 }
 
