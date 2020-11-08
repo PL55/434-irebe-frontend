@@ -24,8 +24,8 @@ for t in table:
         questionsAnswers["Answer"] = answer
 
         completeList.append(questionsAnswers)
+        questionsAnswers = {}
 
-print(len(completeList))
 
 with open('faqs.json', 'w') as json_file:
     json.dump(completeList,json_file)
