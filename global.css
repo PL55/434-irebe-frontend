@@ -172,13 +172,14 @@ body {
 }
 
 .course-popup-info {
-  background-color: #fefefe;
+  background-color: #fffacd;
   height: 30%;
-  width: 50%;
+  width: 40%;
   margin: 25% auto;
   padding: 10px;
   border: 1px solid #888;  
   line-height: 2.2;
+  
 }
 
 .close-course-popup {

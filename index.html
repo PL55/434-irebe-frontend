@@ -235,13 +235,13 @@
                 sections = sections.slice(0, -2)
                 instructors = instructors.slice(0, -2)
 
-                text.innerHTML = "Course: " + info.course + "<br/>"
-                    + "Time: " + info.start_time + " - " + info.end_time + "<br/>"
-                    + "Seats: " + info.seats + "<br/>"
-                    + "Open Seats: " + info.open_seats + "<br/>"
-                    + "Sections: " + sections + "<br/>"
-                    + "Instructors: " + instructors
-
+                text.innerHTML = "Course: ".bold() + info.course + "<br/>"
+                    + "Time: ".bold() + info.start_time + " - " + info.end_time + "<br/>"
+                    + "Seats: ".bold() + info.seats + "<br/>"
+                    + "Open Seats: ".bold() + info.open_seats + "<br/>"
+                    + "Instructors: ".bold() + instructors + "<br/>"
+                    + "Sections: ".bold() + sections
+                    
                 document.getElementById("course-popup-id").style.display = "block";
             }
 
