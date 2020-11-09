@@ -235,6 +235,30 @@ background-color: #f6f6f6;
 
 }
 
+
+
+/* Faculty stuff */
+
+
+.faculty-table {
+  text-align: left;
+  padding: 8px;
+  font-size: 24px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #EAAA00;
+}
+
+.fac_row {
+  padding:20px;
+}
+
+.fac_row:nth-child(even){background-color: #EEC24A;}
+
+/* End Faculty stuff */
+
+
+
 /* Scrollbar stuff */
 ::-webkit-scrollbar {
   width: 20px;
