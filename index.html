@@ -54,11 +54,10 @@
                         onMouseLeave={() => this.mouseLeave()}
                         onClick={() => this.clicked()}
                         style={{
-                            margin: 10, padding: 10, paddingTop: 60, paddingBottom: 60, textAlign: "center", cursor: "pointer",
-                            color: (this.state.mouseOver ? "white" : (this.props.floor == this.props.selectedFloor ? "white" : "#aa0000")),
-                            fontSize: (this.state.mouseOver ? 50 : (this.props.floor == this.props.selectedFloor ? 40 : 25)),
-                            backgroundColor: (this.state.mouseOver ? "#cc0000" : (this.props.floor == this.props.selectedFloor ? "#aa0000" : "#00000000")),
-                            boxShadow: "inset 0px 0px 0px 5px #aa0000"
+                            margin: 10, padding: 10, paddingTop: 25, paddingBottom: 25, textAlign: "center", cursor: "pointer",
+                            color: (this.props.floor == this.props.selectedFloor ? "white" : "black"),
+                            fontSize: (this.props.floor == this.props.selectedFloor ? 40 : 30),
+                            backgroundColor: (this.props.floor == this.props.selectedFloor ? "#aa0000" : "#aaa")
                         }}>
                         {this.props.floor}
                     </div>
@@ -128,7 +127,7 @@
             render() {
                 return (
                     <div style={{ width: "98%", height: "100%" }}>
-                        <div style={{ position: "fixed", top: 20, left: 450, fontSize: 40, fontWeight: "bold", backgroundColor: "#000000aa", color: "white", padding: 10 }}>{this.props.floor}</div>
+                        <div class="animate__animated animate__fadeInDown" style={{ position: "fixed", top: 20, left: 450, fontSize: 40, fontWeight: "bold", backgroundColor: "#000000aa", color: "white", padding: 10 }}>{this.props.floor}</div>
                         <img src={"public/floors/" + this.props.floor + ".png"}></img>
                     </div>
                 );
@@ -337,7 +336,7 @@
                         <div class="side-panel">
                             <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Floors</div>
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {["Ground Floor", "Floor 1", "Floor 2", "Floor 3", "Floor 4", "Floor 5", "Roof"].map(e =>
+                                {["Ground Floor", "Floor 1", "Floor 2", "Floor 3", "Floor 4", "Floor 5", "Roof"].reverse().map(e =>
                                     <Button floor={e} setFloor={this.setFloor} selectedFloor={this.state.floor}></Button>)}
                             </div>
 
@@ -741,7 +740,6 @@
             }
         }
     </script>
-
 
     <!-- Faculty -->
     <script type="text/babel">
@@ -1826,10 +1824,6 @@
             }
         }
     </script>
-
-
-
-
 
     <!-- Gallery -->
     <script type="text/babel">
