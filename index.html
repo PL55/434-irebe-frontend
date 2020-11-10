@@ -67,21 +67,21 @@
             constructor(props) {
                 super(props);
                 this.state = {
-
+                    mouseOver: false
                 };
             }
 
-            // clicked() {
-            //     alert("Link to event: \n" + this.props.children.link);
-            // }
+            clicked() {
+                alert("Link to event: \n");
+            }
 
-            // mouseEnter() {
-            //     this.setState({ mouseOver: true })
-            // }
+            mouseEnter() {
+                this.setState({ mouseOver: true })
+            }
 
-            // mouseLeave() {
-            //     this.setState({ mouseOver: false })
-            // }
+            mouseLeave() {
+                this.setState({ mouseOver: false })
+            }
 
 
             render() {
@@ -111,14 +111,23 @@
             // document.getElementById("content").appendChild(node);
             //document.getElementById("content").innerHTML += "<h3>This is the text which has been inserted by JS</h3>";
             var addHTML = "";
-            var nameClass = ""
-            if (this.props.children.occursOn == this.props.day) {
+            var nameClass = "";
+            var date = new Date(this.props.children.time);
+            if (date.getDay() == this.props.day) {
                 addHTML +=  this.props.children.title;
-                nameClass += "event event-start event-end"
-            }    
-            return (
-                <div class={nameClass} data-span="1">{addHTML}</div>
+                return (
+                    <div>
+                        <div class="event-hover event event-start event-end"
+                            onMouseOver={() => this.mouseEnter()}
+                            onMouseLeave={() => this.mouseLeave()}
+                            onClick={() => this.clicked()}
+                            data-span="1">
+                            {addHTML} <br></br>
+                        </div>
+                    </div>
                 )
+            }    
+            return([]);
              }
         }
     </script>
@@ -185,14 +194,35 @@
                 this.state = {
                     events: [
                         {
-                            title: "Meet and Greet",
-                            occursOn: "Monday"}, 
+                            title: "Resume Workshop",
+                            time: "2020-11-09 13:00:00"
+                        }, 
                         {
-                            title: "Lobby Day",
-                            occursOn: "Tuesday"}, 
+                            title: "Lobby Day 1",
+                            time: "2020-11-10 15:00:00"
+                        },
                         {
                             title: "Lobby Day 2",
-                            occursOn: "Wednesday"
+                            time: "2020-11-11 15:00:00"
+                        },                         {
+                            title: "Lobby Day 3",
+                            time: "2020-11-12 15:00:00"
+                        },                         {
+                            title: "Lobby Day 4",
+                            time: "2020-11-13 15:00:00"
+                        },                         {
+                            title: "Lobby Day 5",
+                            time: "2020-11-14 15:00:00"
+                        },                         {
+                            title: "Lobby Day 6",
+                            time: "2020-11-15 15:00:00"
+                        },                         {
+                            title: "Lobby Day 7",
+                            time: "2020-11-16 15:00:00"
+                        },  
+                        {
+                            title: "Tech Speaker",
+                            time: "2020-11-14 12:30:00"
                         }
                     ]
                 }
@@ -204,56 +234,51 @@
 
             render() {
                 return (
-                    <div class="event-style">
-                        <p>Brendan Iribe Center Events</p>
-                    <div class="week">
-                    <div class="week-day">Sunday</div>
-                    <div class="week-day">Monday</div>
-                    <div class="week-day">Tuesday</div>
-                    <div class="week-day">Wednesday</div>
-                    <div class="week-day">Thursday</div>
-                    <div class="week-day">Friday</div>
-                    <div class="week-day">Saturday</div>  
-                    </div>
-                    <div class="week">
-                    <div class="day">
-                        <h3 class="day-label">1</h3>
-                        <div class="event event-start event-end" data-span="2">Class</div>
-                        <div class="event event-end">
-                            Interview
-                            <br></br>
-                            <div class="event-times">
-                            Event Time
-                            </div>
-                            {this.state.events.map(e => <Event day="Sunday">{e}</Event>)}
+                    <div>
+                        <div class="event-background">
+                        <div class="event-style"
+                        style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                            <p>Brendan Iribe Center Events</p>
+                        <div class="week">
+                        <div class="week-day">Sunday</div>
+                        <div class="week-day">Monday</div>
+                        <div class="week-day">Tuesday</div>
+                        <div class="week-day">Wednesday</div>
+                        <div class="week-day">Thursday</div>
+                        <div class="week-day">Friday</div>
+                        <div class="week-day">Saturday</div>  
                         </div>
-                        
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">2</h3>
-                        {this.state.events.map(e => <Event day="Monday">{e}</Event>)}
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">3</h3>
-                        {this.state.events.map(e => <Event day="Tuesday">{e}</Event>)}
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">4</h3>
-                        {this.state.events.map(e => <Event day="Wednesday">{e}</Event>)}
-
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">5</h3>
-                        {this.state.events.map(e => <Event day="Thursday">{e}</Event>)}
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">6</h3>
-                        {this.state.events.map(e => <Event day="Friday">{e}</Event>)}
-                    </div>
-                    <div class="day">
-                        <h3 class="day-label">7</h3>
-                        {this.state.events.map(e => <Event day="Saturday">{e}</Event>)}
-                    </div>
+                        <div class="week">
+                        <div class="day">
+                            <h3 class="day-label">1</h3>
+                            {this.state.events.map(e => <Event day="0">{e}</Event>)}               
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">2</h3>
+                            {this.state.events.map(e => <Event day="1">{e}</Event>)}
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">3</h3>
+                            {this.state.events.map(e => <Event day="2">{e}</Event>)}
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">4</h3>
+                            {this.state.events.map(e => <Event day="3">{e}</Event>)}
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">5</h3>
+                            {this.state.events.map(e => <Event day="4">{e}</Event>)}
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">6</h3>
+                            {this.state.events.map(e => <Event day="5">{e}</Event>)}
+                        </div>
+                        <div class="day">
+                            <h3 class="day-label">7</h3>
+                            {this.state.events.map(e => <Event day="6">{e}</Event>)}
+                        </div>
+                        </div>
+                        </div>
                     </div>
                     </div>
                 );
