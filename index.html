@@ -112,17 +112,31 @@
             // document.getElementById("content").appendChild(node);
             //document.getElementById("content").innerHTML += "<h3>This is the text which has been inserted by JS</h3>";
             var date = new Date(this.props.children.time);
+            var mins = date.getMinutes();
+            var minsString = "";
+            var hours = date.getHours();
+            var hoursString = "";
+            if (mins < 10) {
+                minsString += "0"+mins;
+            } else {
+                minsString += mins;
+            }
+            if (hours >= 12) {
+                hoursString += (hours-12) + ":" + minsString + " p.m.";
+            } else {
+                hoursString += hours + ":" + minsString + " a.m.";
+            }
             if (date.getDay() == this.props.day) {
                 return (
                     <div>
-                        <div class="event-hover event event-start event-end"
+                        <div class="event event-start event-end"
                             onMouseOver={() => this.mouseEnter()}
                             onMouseLeave={() => this.mouseLeave()}
                             onClick={() => this.clicked()}
                             data-span="2">
                             {this.props.children.title} 
+                            <p>Starts at: {hoursString}</p>
                         </div>
-                        <br></br>
                     </div>
                 )
             }    
@@ -229,8 +243,7 @@
                 return (
                     <div class="container">
                         <div class="event-background">
-                        <div class="event-style"
-                        style={{ backgroundImage: "linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0))", color:"white",paddingTop:20,paddingBottom:20 }}>
+                        <div class="event-style">
                             <p>Brendan Iribe Center Events</p>
                         <div class="week">
                         <div class="week-day">Sunday</div> 
@@ -243,31 +256,24 @@
                         </div>
                         <div class="week"> 
                             <div class="day">
-                                <h3 class="day-label">1</h3>
                                 {this.state.events.map(e => <Event day="0">{e}</Event>)}               
                             </div>
                             <div class="day">
-                                <h3 class="day-label">2</h3>
                                 {this.state.events.map(e => <Event day="1">{e}</Event>)}
                             </div>
                             <div class="day">
-                                <h3 class="day-label">3</h3>
                                 {this.state.events.map(e => <Event day="2">{e}</Event>)}
                             </div>
                             <div class="day">
-                                <h3 class="day-label">4</h3>
                                 {this.state.events.map(e => <Event day="3">{e}</Event>)}
                             </div>
                             <div class="day">
-                                <h3 class="day-label">5</h3>
                                 {this.state.events.map(e => <Event day="4">{e}</Event>)}
                             </div>
                             <div class="day">
-                                <h3 class="day-label">6</h3>
                                 {this.state.events.map(e => <Event day="5">{e}</Event>)}
                             </div>
                             <div class="day">
-                                <h3 class="day-label">7</h3>
                                 {this.state.events.map(e => <Event day="6">{e}</Event>)}
                             </div>
                         </div>
