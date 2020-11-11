@@ -72,8 +72,7 @@
             }
 
             clicked() {
-                var date = new Date(this.props.children.time);
-                alert("Link to event: \n" + date.getDay());
+                alert("Description: \n" + this.props.children.description);
             }
 
             mouseEnter() {
@@ -115,16 +114,24 @@
             var mins = date.getMinutes();
             var minsString = "";
             var hours = date.getHours();
-            var hoursString = "";
-            if (mins < 10) {
-                minsString += "0"+mins;
+            var hoursString = "Starts at ";
+            if (mins == 0 && hours == 0) {
+                hoursString = "No events today"
             } else {
-                minsString += mins;
-            }
-            if (hours >= 12) {
-                hoursString += (hours-12) + ":" + minsString + " p.m.";
-            } else {
-                hoursString += hours + ":" + minsString + " a.m.";
+                if (mins < 10) {
+                    minsString += "0"+mins;
+                } else {
+                    minsString += mins;
+                }
+                if (hours >= 12) {
+                    var hour = hours;
+                    if (hours > 12) {
+                        hour -= 12;
+                    }
+                    hoursString += hour + ":" + minsString + " p.m.";
+                } else {
+                    hoursString += hours + ":" + minsString + " a.m.";
+                }
             }
             if (date.getDay() == this.props.day) {
                 return (
@@ -133,9 +140,9 @@
                             onMouseOver={() => this.mouseEnter()}
                             onMouseLeave={() => this.mouseLeave()}
                             onClick={() => this.clicked()}
-                            data-span="2">
+                            data-span="1">
                             {this.props.children.title} 
-                            <p>Starts at: {hoursString}</p>
+                            <p>{hoursString}</p>
                         </div>
                     </div>
                 )
@@ -207,6 +214,11 @@
                 this.state = {
                     events: [
                         {
+                            title: "None",
+                            time: "2020-11-08 00:00:00",
+                            description: ""
+                        }, 
+                        {
                             title: "Resume Workshop",
                             time: "2020-11-09 13:00:00",
                             description: ""
@@ -218,17 +230,22 @@
                         },
                         {
                             title: "Lobby Day 2",
-                            time: "2020-11-14 15:00:00",
+                            time: "2020-11-13 15:00:00",
                             description: ""
                         },    
                         {
-                            title: "Tech Speaker",
-                            time: "2020-11-15 12:30:00",
+                            title: "Guest Speaker",
+                            time: "2020-11-09 10:30:00",
                             description: ""
-                        },    
+                        },   
                         {
                             title: "Resume Workshop 2",
-                            time: "2020-11-11 12:30:00",
+                            time: "2020-11-11 16:30:00",
+                            description: ""
+                        },
+                        {
+                            title: "None",
+                            time: "2020-11-14 00:00:00",
                             description: ""
                         }
                     ]
@@ -244,7 +261,7 @@
                     <div class="container">
                         <div class="event-background">
                         <div class="event-style">
-                            <p>Brendan Iribe Center Events</p>
+                            <p>This Week's Events</p>
                         <div class="week">
                         <div class="week-day">Sunday</div> 
                         <div class="week-day">Monday</div> 
