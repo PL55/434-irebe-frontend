@@ -1800,6 +1800,19 @@
             }
 
             render() {
+
+                const AutoList = ({ facs }) => {
+                    return facs.map((a, i) => <div
+                        onClick={() => this.setState({ selected: i })}
+                        style={{
+                            padding: 20, margin: 10, textSize: 20, fontWeight: "bold", cursor: "pointer",
+                            backgroundColor: (i == this.state.selected ? "#aa0000" : "#ccc"),
+                            color: (i == this.state.selected ? "white" : "black")
+                        }}>
+                        {a.Name} - <i style={{ color: (i == this.state.selected ? "#ccc" : "#444") }}>{a.Title}</i>
+                    </div>);
+                };
+
                 return (
                     <div style={{ height: "100%", display: "inline" }}>
                         <div class="side-panel">
@@ -1807,7 +1820,6 @@
                             <input type="text" id="myInput" placeholder="Seach for names..." onChange={this.filterOnChange} />
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
                                 <AutoList facs={this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty : this.state.faculty} />
-
                             </div>
                         </div>
 
@@ -1846,14 +1858,7 @@
         // };
 
 
-        const AutoList = ({ facs }) => {
-            return facs.map((a, i) => <div
-                style={{
-                    padding: 20, margin: 10, textSize: 20, fontWeight: "bold", cursor: "pointer",
-                }}>
-                {a.Name} - {a.Title}
-            </div>);
-        };
+
 
     </script>
 
