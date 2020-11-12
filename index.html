@@ -8,6 +8,7 @@
     <title>Iribe Kiosk</title>
     <link rel="shortcut icon" href="public/favicon.ico">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="event.css">
     <link rel="stylesheet" href="libraries/animate.min.css" />
 
     <!-- Import the React, React-Dom and Babel libraries from unpkg -->
@@ -267,6 +268,98 @@
         }
     </script>
 
+    <script type="text/babel">
+
+        class Event extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    mouseOver: false
+                };
+            }
+
+            clicked() {
+                alert("Description: \n" + this.props.children.description);
+            }
+
+            mouseEnter() {
+                this.setState({ mouseOver: true })
+            }
+
+            mouseLeave() {
+                this.setState({ mouseOver: false })
+            }
+
+
+            render() {
+                //     var d = this.props.children.pubDate;
+                //     var date_split = d.split(" ");
+                //     return (
+                //         <div>
+
+                //             <div class="event-header">
+                //                 {date_split[0]} 
+                //             </div>
+                //             <div class="event-hover"
+                //                 onMouseOver={() => this.mouseEnter()}
+                //                 onMouseLeave={() => this.mouseLeave()}
+                //                 onClick={() => this.clicked()}
+                //                 style={{
+                //                     fontSize: (this.state.mouseOver ? 30 : 20),  
+                //                     backgroundColor: (this.state.mouseOver ? "#cc0000" : "#aa0000")
+                //                 }}>
+                //                 {this.props.children.title} <br></br>
+                //             </div>
+                //         </div>
+                //     );
+                // var node = document.createElement("LI");
+                // var textnode = document.createTextNode("Water");
+                // node.appendChild(textnode);
+                // document.getElementById("content").appendChild(node);
+                //document.getElementById("content").innerHTML += "<h3>This is the text which has been inserted by JS</h3>";
+                var date = new Date(this.props.children.time);
+                var mins = date.getMinutes();
+                var minsString = "";
+                var hours = date.getHours();
+                var hoursString = "Starts at ";
+                if (mins == 0 && hours == 0) {
+                    hoursString = "No events today"
+                } else {
+                    if (mins < 10) {
+                        minsString += "0" + mins;
+                    } else {
+                        minsString += mins;
+                    }
+                    if (hours >= 12) {
+                        var hour = hours;
+                        if (hours > 12) {
+                            hour -= 12;
+                        }
+                        hoursString += hour + ":" + minsString + " p.m.";
+                    } else {
+                        hoursString += hours + ":" + minsString + " a.m.";
+                    }
+                }
+                if (date.getDay() == this.props.day) {
+                    return (
+                        <div>
+                            <div class="event event-start event-end"
+                                onMouseOver={() => this.mouseEnter()}
+                                onMouseLeave={() => this.mouseLeave()}
+                                onClick={() => this.clicked()}
+                                data-span="1">
+                                {this.props.children.title}
+                                <p>{hoursString}</p>
+                            </div>
+                        </div>
+                    )
+                }
+                return (null);
+            }
+        }
+    </script>
+
+
 
 
     <!-- ==================== Pages ==================== -->
@@ -451,9 +544,12 @@
                             <div class="schedule-content-panel">
                                 <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
 
-                                <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
-                                <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
-                                <div id="room-viewing-title">Viewing Room 0324</div>
+                                <div class="schedule-button-container">
+                                    <button id="left-schedule-button" style={{ backgroundColor: "rgb(252,215,51)" }} onClick={this.selectRoom0324.bind(this)}>Antonov Auditorium (0324)</button>
+                                    <div class="room-viewing-title">Viewing Room 0324</div>
+                                    <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Gannon Auditorium (0318)</button>
+                                </div>
+
 
                                 <div id="course-popup-id" class="course-popup">
                                     <div class="course-popup-info">
@@ -620,9 +716,11 @@
                     <div class="schedule-content-panel">
                         <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Lecture Hall Schedule</div>
 
-                        <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Room 0324</button>
-                        <button id="right-schedule-button" onClick={this.selectRoom0318.bind(this)}>Room 0318</button>
-                        <div id="room-viewing-title">Viewing Room 0318</div>
+                        <div class="schedule-button-container">
+                            <button id="left-schedule-button" onClick={this.selectRoom0324.bind(this)}>Antonov Auditorium (0324)</button>
+                            <div class="room-viewing-title">Viewing Room 0318</div>
+                            <button id="right-schedule-button" style={{ backgroundColor: "rgb(252,215,51)" }} onClick={this.selectRoom0318.bind(this)}>Gannon Auditorium (0318)</button>
+                        </div>
 
                         <div id="course-popup-id" class="course-popup">
                             <div class="course-popup-info">
@@ -741,13 +839,116 @@
         }
     </script>
 
+    <!-- Events page -->
+    <script type="text/babel">
+        class Events extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    events: [
+                        {
+                            title: "None",
+                            time: "2020-11-08 00:00:00",
+                            description: ""
+                        },
+                        {
+                            title: "Resume Workshop",
+                            time: "2020-11-09 13:00:00",
+                            description: ""
+                        },
+                        {
+                            title: "Lobby Day 1",
+                            time: "2020-11-11 15:00:00",
+                            description: ""
+                        },
+                        {
+                            title: "Lobby Day 2",
+                            time: "2020-11-13 15:00:00",
+                            description: ""
+                        },
+                        {
+                            title: "Guest Speaker",
+                            time: "2020-11-09 10:30:00",
+                            description: ""
+                        },
+                        {
+                            title: "Resume Workshop 2",
+                            time: "2020-11-11 16:30:00",
+                            description: ""
+                        },
+                        {
+                            title: "None",
+                            time: "2020-11-14 00:00:00",
+                            description: ""
+                        }
+                    ]
+                }
+            }
+
+            componentDidMount() {
+
+            }
+
+            render() {
+                return (
+                    <div>
+                        <div class="container">
+                            <div class="event-background">
+                                <div class="event-style">
+                                    <p>This Week's Events</p>
+                                    <div class="week">
+                                        <div class="week-day">Sunday</div>
+                                        <div class="week-day">Monday</div>
+                                        <div class="week-day">Tuesday</div>
+                                        <div class="week-day">Wednesday</div>
+                                        <div class="week-day">Thursday</div>
+                                        <div class="week-day">Friday</div>
+                                        <div class="week-day">Saturday</div>
+                                    </div>
+                                    <div class="week">
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="0">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="1">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="2">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="3">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="4">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="5">{e}</Event>)}
+                                        </div>
+                                        <div class="day">
+                                            {this.state.events.map(e => <Event day="6">{e}</Event>)}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <Footer currentPage="events" setPage={this.props.setPage}></Footer>
+                        </div>
+                    </div>
+
+                );
+            }
+        }
+    </script>
+
     <!-- Faculty -->
     <script type="text/babel">
         class Faculty extends React.Component {
             constructor(props) {
                 super(props);
                 this.state = {
-                    selected:0,
+                    selected: 0,
+                    filteredFaculty: [],
                     faculty: [
                         {
                             "Name": "A. Udaya Shankar  ",
@@ -1782,40 +1983,60 @@
                 };
             }
 
+            onReset = () => {
+                this.setState({
+                    filteredFaculty: []
+                });
+            };
+
+
+            filterOnChange = (event) => {
+                console.log(event.target.value)
+                let filtered = this.state.faculty.filter((x) => x.Name.includes(event.target.value))
+
+                this.setState({
+                    filteredFaculty: filtered
+                })
+            }
+
             render() {
+
+                const AutoList = ({ facs }) => {
+                    return facs.map((a, i) => <div
+                        onClick={() => this.setState({ selected: i })}
+                        style={{
+                            padding: 20, margin: 10, textSize: 20, fontWeight: "bold", cursor: "pointer",
+                            backgroundColor: (i == this.state.selected ? "#aa0000" : "#ccc"),
+                            color: (i == this.state.selected ? "white" : "black")
+                        }}>
+                        {a.Name} - <i style={{ color: (i == this.state.selected ? "#ccc" : "#444") }}>{a.Title}</i>
+                    </div>);
+                };
+
                 return (
                     <div style={{ height: "100%", display: "inline" }}>
-
                         <div class="side-panel">
                             <div style={{ margin: 10, fontSize: 32, fontWeight: "bold", textAlign: "center", backgroundColor: "rgba(0,0,0,0.1)", margin: 0, padding: 20, height: 40 }}>Faculty</div>
+                            <input type="text" id="myInput" placeholder="Seach for names..." onChange={this.filterOnChange} />
                             <div style={{ overflowY: "auto", height: "calc(100% - 80px)" }}>
-                                {this.state.faculty.map((f, i) =>
-                                    <div
-                                        onClick={() => this.setState({ selected: i })}
-                                        style={{
-                                            padding: 20, margin: 10, textSize: 20, fontWeight: "bold", cursor: "pointer",
-                                            backgroundColor: (i == this.state.selected ? "#aa0000" : "#ccc"),
-                                            color: (i == this.state.selected ? "white" : "black")
-                                        }}>
-                                        {f.Name} - <i style={{color: (i == this.state.selected ? "#ccc" : "#444")}}>{f.Title}</i>
-                                    </div>)}
+                                <AutoList facs={this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty : this.state.faculty} />
                             </div>
-
                         </div>
+
                         <div class="content-panel">
                             <div class="animate__animated animate__fadeInUp" style={{ margin: "2vw", padding: "2vw", backgroundColor: "#eee" }}>
                                 <div style={{ margin: 10, fontSize: 32, fontWeight: "bold" }}>
-                                    {this.state.faculty[this.state.selected].Name} <span style={{backgroundColor:"#aa0000",padding:10,fontSize:24,color:"white",borderRadius:5}}>{this.state.faculty[this.state.selected].Title}</span>
+                                    {this.state.faculty[this.state.selected].Name} <span style={{ backgroundColor: "#aa0000", padding: 10, fontSize: 24, color: "white", borderRadius: 5 }}>{this.state.faculty[this.state.selected].Title}</span>
                                 </div>
                                 <div style={{ margin: 20, fontSize: 24 }}>
                                     Contact:
-                                    <div style={{paddingTop:10}}>
-                                        {this.state.faculty[this.state.selected].Email} <span style={{float:"right"}}>{this.state.faculty[this.state.selected].Phone}</span>
+                                    <div style={{ paddingTop: 10 }}>
+                                        {this.state.faculty[this.state.selected].Email} <span style={{ float: "right" }}>{this.state.faculty[this.state.selected].Phone}</span>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
                         <div class="footer">
                             <Footer currentPage="faculty" setPage={this.props.setPage}></Footer>
                         </div>
@@ -1823,6 +2044,7 @@
                 );
             }
         }
+
     </script>
 
     <!-- Gallery -->
@@ -2161,6 +2383,11 @@
                 else if (this.state.page == "schedule")
                     return (
                         <Schedule setPage={this.setPage} />
+                    );
+
+                else if (this.state.page == "events")
+                    return (
+                        <Events setPage={this.setPage} />
                     );
 
                 else if (this.state.page == "gallery")
