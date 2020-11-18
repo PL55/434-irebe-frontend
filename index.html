@@ -1791,11 +1791,11 @@
 
 
             filterOnChange = (event) => {
-                console.log(event.target.value)
                 let filtered = this.state.faculty.filter((x) => x.Name.includes(event.target.value))
 
                 this.setState({
-                    filteredFaculty: filtered
+                    filteredFaculty: filtered,
+                    selected: 0
                 })
             }
 
@@ -1826,12 +1826,14 @@
                         <div class="content-panel">
                             <div class="animate__animated animate__fadeInUp" style={{ margin: "2vw", padding: "2vw", backgroundColor: "#eee" }}>
                                 <div style={{ margin: 10, fontSize: 32, fontWeight: "bold" }}>
-                                    {this.state.faculty[this.state.selected].Name} <span style={{ backgroundColor: "#aa0000", padding: 10, fontSize: 24, color: "white", borderRadius: 5 }}>{this.state.faculty[this.state.selected].Title}</span>
+
+                                    {this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty[this.state.selected].Name : this.state.faculty[this.state.selected].Name} <span style={{ backgroundColor: "#aa0000", padding: 10, fontSize: 24, color: "white", borderRadius: 5 }}>{this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty[this.state.selected].Title : this.state.faculty[this.state.selected].Title}</span>
+
                                 </div>
                                 <div style={{ margin: 20, fontSize: 24 }}>
                                     Contact:
                                     <div style={{ paddingTop: 10 }}>
-                                        {this.state.faculty[this.state.selected].Email} <span style={{ float: "right" }}>{this.state.faculty[this.state.selected].Phone}</span>
+                                        {this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty[this.state.selected].Email : this.state.faculty[this.state.selected].Email} <span style={{ float: "right" }}>{this.state.filteredFaculty.length > 0 ? this.state.filteredFaculty[this.state.selected].Phone : this.state.faculty[this.state.selected].Phone}</span>
                                     </div>
                                 </div>
                             </div>
